@@ -20,6 +20,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
 mix.scripts([
     'resources/assets/js/vendors/jquery-ui.js',
     'resources/assets/js/vendors/owl.carousel.js',
+    'resources/assets/js/vendors/responsiveslides.js',
     //Customized
     'resources/assets/js/vendors/function-admin.js',
     'resources/assets/js/vendors/function.js',
