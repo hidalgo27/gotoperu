@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row margin-top-40">
+                    <div class="row margin-top-40 hide">
 
                         {{--<div class="col-md-12">--}}
                             {{--<div class="text-center">--}}
