@@ -220,7 +220,7 @@
             </div>
             <ul class="rslides" id="slider1">
                 {{--<li><img src="{{asset('images/slider/machupicchu.jpg')}}" alt=""></li>--}}
-                <li><img src="{{asset('images/slider/mapi-2.jpg')}}" alt=""></li>
+                <li><img src="{{asset('images/slider/mapi-4.jpg')}}" alt=""></li>
                 <li><img src="{{asset('images/slider/mapi-2.jpg')}}" alt=""></li>
             </ul>
         </header>
