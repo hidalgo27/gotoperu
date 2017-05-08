@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row margin-top-40 hide">
+                    <div class="row margin-top-20">
 
                         {{--<div class="col-md-12">--}}
                             {{--<div class="text-center">--}}
@@ -51,12 +51,12 @@
                             {{--</div>--}}
                         {{--</div>--}}
                         {{--<div class="col-md-12 margin-top-50">--}}
-                            {{--<div class="text-center">--}}
-                                {{--<a href="" class="btn btn-lg btn-warning">BOOK NOW</a>--}}
-                                {{--<a href="" class="btn btn-lg btn-success">CUSTOMIZE</a>--}}
-                            {{--</div>--}}
+                            <div class="text-center margin-top-150">
+                                <a href="" class="btn btn-lg btn-warning">BOOK NOW</a>
+                                <a href="" class="btn btn-lg btn-success">CUSTOMIZE</a>
+                            </div>
                         {{--</div>--}}
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-8 col-md-offset-2 hide">
                             {{--<div class="col-md-4 text-center">--}}
                                 {{--<div class="text-center margin-top-40">--}}
                                     {{--<img src="https://gotoperu.com/img/logos/tripadvisor_logo.png" alt="">--}}
