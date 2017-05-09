@@ -15,301 +15,132 @@
 
 </head>
 <body>
-    <div id="wrapper">
-        <div class="overlay"></div>
 
-        <header class="slider">
-            <div class="header">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href=""></a>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="padding-10">
-                                <img src="{{asset('images/logos/logo-gotoperu-ave.png')}}" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-right margin-top-15">
-                                <b class="text-30 font-montserrat">
-                                    (813) 454-9707
-                                    <a href="" class="btn btn-lg bg-goto-green color-white">BOOK NOW</a>
-                                    {{--<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>--}}
-                                    {{--<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>--}}
-                                    {{--<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>--}}
-                                </b>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row margin-top-20">
+<div class="cd-header">
+{{--    <a href="#0" class="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}
+    <a href="#0" class="cd-3d-nav-trigger">
+        Menu
+        <span></span>
+    </a>
+</div> <!-- .cd-header -->
+<nav class="cd-3d-nav-container">
+    <ul class="cd-3d-nav no-padding">
+        <li class="cd-selected">
+            <a href="#0">Tour Packages</a>
+        </li>
 
-                        {{--<div class="col-md-12">--}}
-                            {{--<div class="text-center">--}}
-                                {{--<p class="text-50 no-margin">A <b>BETTER</b> WAY TO TRAVEL TO PERU</p>--}}
-                                {{--<p class="text-25">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-12 margin-top-50">--}}
-                            <div class="text-center margin-top-150">
-                                <a href="" class="btn btn-lg btn-warning">BOOK NOW</a>
-                                <a href="" class="btn btn-lg btn-success">CUSTOMIZE</a>
-                            </div>
-                        {{--</div>--}}
-                        <div class="col-md-8 col-md-offset-2 hide">
-                            {{--<div class="col-md-4 text-center">--}}
-                                {{--<div class="text-center margin-top-40">--}}
-                                    {{--<img src="https://gotoperu.com/img/logos/tripadvisor_logo.png" alt="">--}}
-                                    {{--<p class="color-white text-36">PERU OUR COUNTRY YOUR ADVENTURE</p>--}}
-                            {{--<a href="" class="btn btn-lg btn-warning">BOOK NOW</a>--}}
-                            {{--<a href="" class="btn btn-lg btn-success">CUSTOMIZE</a>--}}
-                            {{--</div>--}}
-                            {{--<a href="" class="btn btn-lg btn-warning">BOOK NOW</a>--}}
-                            {{--</div>--}}
-                            <div class="col-lg-6">
-                                </div>
+        <li>
+            <a href="#0">Destinations</a>
+        </li>
 
-                            <div class="col-lg-6">
-                                <div class="owl-carousel owl-theme box-carousel">
-                                    <div class="item">
-                                        <a href="">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h2 class="color-goto-grey"><strong>Peru & Machu Picchu</strong></h2>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <div class="text-center padding-top-10 position-relative color-white">
-                                                        <b class="text-72">6</b>
-                                                        <span class="text-25 position-day text-center">DAYS</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <li>
+            <a href="#0">Getting To Peru</a>
+        </li>
 
+        <li>
+            <a href="#0">FAQ</a>
+        </li>
 
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="text-20">
-                                                        <b class="color-white text-20">$1599 with flights</b>
-                                                        <kbd class="color-goto-orange text-20">$799 Ground Packages</kbd>
-                                                        {{--<span class="color-goto-orange bg-goto-gray">$799 Ground Packages</span>--}}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h2><strong>Peru & Machu Picchu</strong></h2>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <div class="text-center padding-top-10 position-relative color-white">
-                                                        <b class="text-72">6</b>
-                                                        <span class="text-25 position-day text-center">DAYS</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 margin-bottom-10 no-padding">
-                                                        <div class="padding-5">
-                                                            <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <li>
+            <a href="#0">Travel Blog</a>
+        </li>
+    </ul> <!-- .cd-3d-nav -->
 
+    <span class="cd-marker color-1"></span>
+</nav> <!-- .cd-3d-nav-container -->
 
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="text-20">
-                                                        <b class="color-white text-20">$1599 with flights</b>
-                                                        <kbd class="color-goto-orange text-20">$799 Ground Packages</kbd>
-                                                        {{--<span class="color-goto-orange bg-goto-gray">$799 Ground Packages</span>--}}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="rslides" id="slider1">
-                {{--<li><img src="{{asset('images/slider/machupicchu.jpg')}}" alt=""></li>--}}
-                <li><img src="{{asset('images/slider/mapi-1.jpg')}}" alt=""></li>
-                <li><img src="{{asset('images/slider/mapi-2.jpg')}}" alt=""></li>
-            </ul>
-        </header>
-
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <a href="#" class="text-center">
-                    <img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="text-center img-responsive">
-                </a>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">Team</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">Dropdown heading</li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/maridlcrmn">Follow me</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="container">
-            <div class="row spacer-10">
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-facebook.png')}}" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-asta-grey.png')}}" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-newyorktimes.png')}}" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-apotur.png')}}" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-promperu.png')}}" alt="">
-                </div>
-                <div class="col-md-2">
-                    <img src="{{asset('images/logos/logo-meetup.png')}}" alt="">
-                </div>
-            </div>
-        </section>
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-                <b class="text-menu">MENU</b>
-            </button>
-            {{--<b class="header-phone"></b>--}}
-            <a href="" class="btn btn-lg btn-warning header-phone">HELP ME PLAN MY TRIP</a>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Fancy Toggle Sidebar Navigation</h1>
-                        <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
-                        <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
-                        <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
-                        <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
-                        <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>
-                    </div>
-                </div>
+<div id="cd-intro">
+    <div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="padding-10">
+                <img src="{{asset('images/logos/logo-gotoperu-ave.png')}}" alt="" class="img-responsive">
             </div>
         </div>
+        <div class="col-md-4"></div>
     </div>
+    <div id="cd-intro-tagline">
+        {{--<h1>Secondary Fixed Navigation</h1>--}}
+        <a href="http://codyhouse.co/?p=296" class="cd-btn">Inquire Now</a>
+        {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
+        {{--<a href="#0" id="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}
+    </div> <!-- #cd-intro-tagline -->
+</div> <!-- #cd-intro -->
+
+<div class="cd-secondary-nav">
+    <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+    <nav>
+        <ul class="no-margin">
+            <li>
+                <a href="#cd-placeholder-1">
+                    <b>TOUR PACKAGES</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-placeholder-2">
+                    <b>HOTELS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-placeholder-3">
+                    <b>REVIEWS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-placeholder-4">
+                    <b>TRAVEL AGENTS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-placeholder-5">
+                    <b>INQUIRE NOW</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div> <!-- .cd-secondary-nav -->
+<div class="cd-main-content">
+    <section id="cd-placeholder-1" class="cd-section cd-container">
+        <h2>TOUR PACKAGES</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempore, harum consequatur optio laboriosam nihil sint voluptatem ducimus porro quae expedita alias consectetur explicabo cumque maxime facere praesentium! Ad illo quibusdam omnis suscipit qui eos autem est laborum ducimus! Tenetur?
+        </p>
+    </section> <!-- #cd-placeholder-1 -->
+
+    <section id="cd-placeholder-2" class="cd-section cd-container">
+        <h2>HOTELS</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit voluptatem provident ut veniam aliquid, labore culpa.
+        </p>
+    </section> <!-- #cd-placeholder-2 -->
+
+    <section id="cd-placeholder-3" class="cd-section cd-container">
+        <h2>REVIEWS</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt mollitia atque tempore ea cum exercitationem, quisquam est consectetur tempora ipsam, obcaecati voluptate a. Autem minus cumque voluptatem eaque fugit nostrum reprehenderit incidunt officia. Nesciunt reiciendis delectus officiis fugit sint at totam nisi commodi repellendus iusto dolorum molestias dignissimos natus, impedit quam atque ex voluptas ut facere assumenda iure incidunt rerum vitae accusamus? Et voluptatibus unde, fugiat tenetur sed dolore, praesentium magni illo nobis incidunt, possimus doloremque dolorem sunt. Aliquid ducimus delectus esse voluptatem officia perferendis, a voluptate omnis adipisci expedita distinctio praesentium natus veniam accusamus iure, quasi, inventore reiciendis.
+        </p>
+    </section> <!-- #cd-placeholder-3 -->
+
+    <section id="cd-placeholder-4" class="cd-section cd-container">
+        <h2>TRAVEL AGENTS</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus nisi ipsam quasi. Reprehenderit quo dolorem ratione in, porro placeat nihil asperiores, ab earum excepturi sint non. Error officiis, sint expedita dolore fuga voluptates ipsam temporibus vero suscipit porro asperiores deserunt sapiente optio. Quas vero nam nihil, id suscipit, similique facere dicta velit, quis, commodi perspiciatis. Perferendis necessitatibus, in, sequi ipsum eum voluptates quisquam voluptatem, rerum fugiat deleniti voluptatum eius odio, expedita enim libero quaerat! Veniam eos, maiores nostrum mollitia reprehenderit, obcaecati repudiandae eius perspiciatis? Quo voluptatum ipsa voluptatem sequi esse eius consectetur, quae ea accusamus porro autem ipsum, quam dignissimos, nesciunt consequuntur quaerat. Numquam iure velit veniam saepe sunt enim asperiores hic nam aperiam illo officia molestias quis dicta autem incidunt consequatur dolor, explicabo corrupti nostrum odio ea laudantium magni, nulla. Eaque officiis, distinctio, dolores eligendi facilis tempore reiciendis illum iste sed temporibus rerum aliquid culpa dolor, et voluptatibus!
+        </p>
+    </section> <!-- #cd-placeholder-4 -->
+
+    <section id="cd-placeholder-5" class="cd-section cd-container">
+        <h2>INQUIRE NOW</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque, tempora. Accusamus similique labore harum in ut repellat. Earum iusto non ex perspiciatis sequi a, provident nam optio, vitae ea vel illum excepturi aut fugiat quos. Fugit facere a, quidem quia perferendis ipsum impedit eaque repellendus esse, tenetur repellat natus voluptatem ab possimus laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, aut cum deserunt dolore dolorem excepturi, fugit modi nesciunt nulla perspiciatis placeat quae quo? Exercitationem maxime nemo placeat quidem ratione saepe.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque, tempora. Accusamus similique labore harum in ut repellat. Earum iusto non ex perspiciatis sequi a, provident nam optio, vitae ea vel illum excepturi aut fugiat quos. Fugit facere a, quidem quia perferendis ipsum impedit eaque repellendus esse, tenetur repellat natus voluptatem ab possimus laborum tempora qui nam vero et omnis. Sed ipsum possimus in, dignissimos optio itaque quis, reprehenderit vero vel tempora, maiores odit totam. Doloribus voluptatem similique possimus corporis pariatur labore, nulla, minima magnam, officia rerum vel alias, molestiae soluta quisquam ea. Necessitatibus hic vitae nisi ipsum cum a voluptatibus commodi eius ad minus animi cumque nulla suscipit itaque, reiciendis placeat modi sequi eligendi voluptatum. Quasi veritatis autem omnis, voluptatum hic eos dicta, repudiandae iusto rem error facere pariatur commodi impedit reprehenderit temporibus facilis magnam asperiores. Ipsam, illum commodi laboriosam neque eligendi eaque quisquam quidem illo sint eos. Esse velit provident, veritatis dolor facilis dignissimos commodi molestias saepe impedit excepturi qui odit repudiandae cumque? Sunt omnis voluptatum, eaque repellat, pariatur iure nobis cum eos repellendus voluptate culpa totam alias autem ea earum animi optio laudantium neque nisi suscipit in adipisci enim quisquam laboriosam! Cumque, fugit saepe alias mollitia dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, aut cum deserunt dolore dolorem excepturi, fugit modi nesciunt nulla perspiciatis placeat quae quo? Exercitationem maxime nemo placeat quidem ratione saepe.
+        </p>
+    </section> <!-- #cd-placeholder-5 -->
+</div> <!-- .cd-main-content -->
     {{--scripts--}}
     <script>
         window.Laravel = {!! json_encode([
