@@ -221,222 +221,812 @@
     <div class="container">
         <div class="row margin-top-20">
             <div class="col-md-12">
-                <div class="btn-group btn-group-justified btn-group-customize" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default">Travel offers</button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">With us flights</button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default">Machupicchu & Galapagos</button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default">Multicountries</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="collapse in" id="collapseExample">
-                    <div class="row margin-top-10">
-                        <div class="col-md-6">
-                            <div class="text-center font-montserrat">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <p><b>By Days</b></p>
+                <div class="tab_container">
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1">
+                        {{--<i class="fa fa-code"></i>--}}
+                        <span>Travel offers</span>
+                    </label>
+
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2">
+                        {{--<i class="fa fa-pencil-square-o"></i>--}}
+                        <span>With us flights</span>
+                    </label>
+
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3">
+                        {{--<i class="fa fa-bar-chart-o"></i>--}}
+                        <span>Machupicchu & Galapagos</span>
+                    </label>
+
+                    <input id="tab4" type="radio" name="tabs">
+                    <label for="tab4">
+                        {{--<i class="fa fa-folder-open-o"></i>--}}
+                        <span>Multicountries</span>
+                    </label>
+
+                    {{--<input id="tab5" type="radio" name="tabs">--}}
+                    {{--<label for="tab5"><i class="fa fa-envelope-o"></i><span>Contact</span></label>--}}
+
+                    <section id="content1" class="tab-content">
+                        <div class="row margin-top-10">
+                            <div class="col-md-6">
+                                <div class="text-center font-montserrat">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><b>By Days</b></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="warning">3 - 5</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="warning">6 - 8</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="warning">12 - 15</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="warning">16+</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="warning">unknown</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-center font-montserrat">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <p><b>By Price</b></p>
-                                    </div>
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                 </div>
-                                <span class="button-checkbox">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center font-montserrat">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><b>By Price</b></p>
+                                        </div>
+                                    </div>
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="info">3 - 5</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="info">6 - 8</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="info">12 - 15</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="info">16+</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                <span class="button-checkbox">
+                                    <span class="button-checkbox">
                                     <button type="button" class="btn" data-color="info">unknown</button>
                                     <input type="checkbox" class="hidden" />
                                 </span>
-                                {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row margin-top-20">
-                        <div class="col-md-6">
-                            <div class="offer">
-                                {{--<div class="shape">--}}
-                                    {{--<div class="shape-text">--}}
-                                        {{--top--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                <div class="row">
-                                    <a href="">
-                                        <div class="col-lg-4">
-                                            <img src="{{asset('images/packages/GTP600.jpg')}}" alt="" class="img-responsive">
-                                        </div>
-                                        <div class="col-lg-8">
-                                        <div class="row font-montserrat">
-                                            <div class="col-lg-12">
-                                                <b class="text-30 color-grey">6 Days</b>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <h2 class="text-20 no-margin color-grey"><strong>Peru & Machu Picchu</strong></h2>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="list-services margin-top-20">
-                                                    <ul class="no-padding margin-bottom-0">
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                        <li>
-                                                            <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1799 with flights</b></p>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <p class="text-20 color-goto-light no-margin">$799 Ground Package</p>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="offer">
-                                {{--<div class="shape">--}}
-                                {{--<div class="shape-text">--}}
-                                {{--top--}}
-                                {{--</div>--}}
-                                {{--</div>--}}
-                                <div class="row">
-                                    <a href="">
-                                        <div class="col-lg-4">
-                                            <img src="{{asset('images/packages/GTP601.jpg')}}" alt="" class="img-responsive">
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div class="row font-montserrat">
-                                                <div class="col-lg-12">
-                                                    <b class="text-30 color-grey">6 Days</b>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <h2 class="text-20 no-margin color-grey"><strong>INCA TRAIL TO MACHU PICCHU</strong></h2>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="list-services margin-top-20">
-                                                        <ul class="no-padding margin-bottom-0">
-                                                            <li>
-                                                                <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                                                                {{--<span class="text-8">Assistances</span>--}}
-                                                            </li>
-                                                            <li>
-                                                                <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                                                {{--<span class="text-8">breakfast</span>--}}
-                                                            </li>
-                                                            <li>
-                                                                <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                                                {{--<span class="text-8">entrances</span>--}}
-                                                            </li>
-                                                            <li>
-                                                                <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                                                {{--<span class="text-8">flight</span>--}}
-                                                            </li>
-                                                            <li>
-                                                                <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                                                {{--<span class="text-8">hotels</span>--}}
-                                                            </li>
-                                                        </ul>
+                        <div class="row margin-top-20">
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP600.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>Peru & Machu Picchu</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1799 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$799 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12">
-                                                    <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1599 with flights</b></p>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <p class="text-20 color-goto-light no-margin">$599 Ground Package</p>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley, Puno,Arequipa</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP601.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>INCA TRAIL TO MACHU PICCHU</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">Assistances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">breakfast</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">entrances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">flight</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">hotels</span>--}}
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1599 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$599 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley, Puno,Arequipa</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section id="content2" class="tab-content">
+                        <div class="row margin-top-10">
+                            <div class="col-md-12">
+
+                                <div class="text-center font-montserrat">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><b>From</b></p>
+                                        </div>
+                                    </div>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">New York</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">Miami</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">Washington DC</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">Los Angeles</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">Chicago</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    <span class="button-checkbox">
+                                        <button type="button" class="btn" data-color="warning">Houston</button>
+                                        <input type="checkbox" class="hidden" />
+                                    </span>
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-top-20">
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP600.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>Peru & Machu Picchu</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1799 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$799 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP601.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>INCA TRAIL TO MACHU PICCHU</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">Assistances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">breakfast</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">entrances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">flight</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">hotels</span>--}}
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1599 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$599 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley, Puno,Arequipa</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="content3" class="tab-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP600.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>Peru & Machu Picchu</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1799 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$799 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP601.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>INCA TRAIL TO MACHU PICCHU</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">Assistances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">breakfast</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">entrances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">flight</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">hotels</span>--}}
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1599 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$599 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley, Puno,Arequipa</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="content4" class="tab-content">
+                        <div class="row margin-top-10">
+                            <div class="col-md-12 filter-destinations text-center">
+
+                                <ul class="no-padding">
+                                    <li><input type="checkbox" id="cb1" />
+                                        <label for="cb1">
+                                            <img src="{{asset('images/destinations/tabs/machupicchu.jpg')}}" class="img-responsive"/>
+                                            <span>Peru</span>
+                                        </label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb2" />
+                                        <label for="cb2">
+                                            <img src="{{asset('images/destinations/tabs/uyuni.jpg')}}" class="img-responsive"/>
+                                            <span>Bolivia</span>
+                                        </label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb3" />
+                                        <label for="cb3">
+                                            <img src="{{asset('images/destinations/tabs/rio.jpg')}}" class="img-responsive"/>
+                                            <span>Brasil</span>
+                                        </label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb4" />
+                                        <label for="cb4">
+                                            <img src="{{asset('images/destinations/tabs/galapagos.jpg')}}" class="img-responsive"/>
+                                            <span>Ecuador</span>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                {{--<div class="text-center font-montserrat">--}}
+                                    {{--<div class="row">--}}
+                                        {{--<div class="col-lg-12">--}}
+                                            {{--<p><b>From</b></p>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                        {{--<button type="button" class="btn" data-color="warning">Peru</button>--}}
+                                        {{--<input type="checkbox" class="hidden" />--}}
+                                    {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                        {{--<button type="button" class="btn" data-color="warning">Bolivia</button>--}}
+                                        {{--<input type="checkbox" class="hidden" />--}}
+                                    {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                        {{--<button type="button" class="btn" data-color="warning">Brasil</button>--}}
+                                        {{--<input type="checkbox" class="hidden" />--}}
+                                    {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                        {{--<button type="button" class="btn" data-color="warning">Ecuador</button>--}}
+                                        {{--<input type="checkbox" class="hidden" />--}}
+                                    {{--</span>--}}
+
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                {{--</div>--}}
+                            </div>
+
+                        </div>
+                        <div class="row margin-top-10">
+                            <div class="col-md-6">
+                                <div class="text-center font-montserrat">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><b>By Days</b></p>
+                                        </div>
+                                    </div>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="warning">3 - 5</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="warning">6 - 8</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="warning">12 - 15</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="warning">16+</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="warning">unknown</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center font-montserrat">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><b>By Price</b></p>
+                                        </div>
+                                    </div>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info">3 - 5</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info">6 - 8</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info">12 - 15</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info">16+</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    <span class="button-checkbox">
+                                    <button type="button" class="btn" data-color="info">unknown</button>
+                                    <input type="checkbox" class="hidden" />
+                                </span>
+                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-20">
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP600.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>Peru & Machu Picchu</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1799 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$799 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="offer">
+                                    {{--<div class="shape">--}}
+                                    {{--<div class="shape-text">--}}
+                                    {{--top--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="col-lg-4">
+                                                <img src="{{asset('images/packages/GTP601.jpg')}}" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="row font-montserrat">
+                                                    <div class="col-lg-12">
+                                                        <b class="text-30 color-grey">6 Days</b>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <h2 class="text-20 no-margin color-grey"><strong>INCA TRAIL TO MACHU PICCHU</strong></h2>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="list-services margin-top-20">
+                                                            <ul class="no-padding margin-bottom-0">
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">Assistances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">breakfast</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">entrances</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">flight</span>--}}
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                                    {{--<span class="text-8">hotels</span>--}}
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-30 margin-bottom-0 margin-top-10 color-goto-orange"><b>$1599 with flights</b></p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="text-20 color-goto-light no-margin">$599 Ground Package</p>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="no-margin text-13"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu, Cusco, Sacred Valley, Puno,Arequipa</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {{--<section id="content5" class="tab-content">--}}
+                        {{--<h3>Headline 5</h3>--}}
+                        {{--<p>Tab 5 Content.</p>--}}
+                    {{--</section>--}}
                 </div>
+
+            </div>
+
+            <div class="col-md-12">
+
             </div>
         </div>
     </div>

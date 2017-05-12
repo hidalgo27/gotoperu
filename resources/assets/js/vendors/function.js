@@ -198,4 +198,9 @@ $(document).ready(function(){
         });
     });
 
+    //check destinations
+    $("#btn").click(function(){
+        alert(cb1);
+    });
+
 });
