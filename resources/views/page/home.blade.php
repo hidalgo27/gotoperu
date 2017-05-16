@@ -817,76 +817,76 @@
                             </div>
 
                         </div>
-                        <div class="row margin-top-10">
-                            <div class="col-md-6">
-                                <div class="text-center font-montserrat">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <p><b>By Days</b></p>
-                                        </div>
-                                    </div>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="warning">3 - 5</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="warning">6 - 8</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="warning">12 - 15</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="warning">16+</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="warning">unknown</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
+                        {{--<div class="row margin-top-10">--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--<div class="text-center font-montserrat">--}}
+                                    {{--<div class="row">--}}
+                                        {{--<div class="col-lg-12">--}}
+                                            {{--<p><b>By Days</b></p>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="warning">3 - 5</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="warning">6 - 8</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="warning">12 - 15</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="warning">16+</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="warning">unknown</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
                                     {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-center font-montserrat">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <p><b>By Price</b></p>
-                                        </div>
-                                    </div>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info">3 - 5</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info">6 - 8</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info">12 - 15</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info">16+</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
-                                    <span class="button-checkbox">
-                                    <button type="button" class="btn" data-color="info">unknown</button>
-                                    <input type="checkbox" class="hidden" />
-                                </span>
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--<div class="text-center font-montserrat">--}}
+                                    {{--<div class="row">--}}
+                                        {{--<div class="col-lg-12">--}}
+                                            {{--<p><b>By Price</b></p>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="info">3 - 5</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="info">6 - 8</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="info">12 - 15</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="info">16+</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
+                                    {{--<span class="button-checkbox">--}}
+                                    {{--<button type="button" class="btn" data-color="info">unknown</button>--}}
+                                    {{--<input type="checkbox" class="hidden" />--}}
+                                {{--</span>--}}
                                     {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
                                     {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                </div>
-                            </div>
-                        </div>
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                         <div class="row margin-top-20">
                             <div class="col-md-6">
                                 <div class="offer">
@@ -1025,8 +1025,113 @@
 
             </div>
 
+        </div>
+        <div class="row margin-top-20 margin-bottom-100">
             <div class="col-md-12">
+                <div class="text-center margin-top-20">
+                    <a href="" class="btn btn-lg btn-warning">View all packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="banner-middle">
+        <div class="fullscreen background parallax" style="background-image:url('images/destinations/home/cusco.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b color-white">
+                    <h2>WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS</h2>
+                    <h3>WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS</h3>
+                    <a href="" class="btn btn-lg btn-warning margin-top-20">View all packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row margin-top-100">
+            <div class="col-md-6">
+                <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
+                <p>A local company with local knowledge, expertise and resources, specializing in the design of unforgettable vacations. Our unique activities, Peru tours & excursions, Peru hotel deals, transportation and program logistics make us Peru leading travel experts. GOTOPERU offer you every kind of travel services you need; ranging from all inclusive Peru travel packages, accommodations, and entertainment and leisure activities. In addition offering different types of travel products like "Online-Booking" and personal "Custom-made Trips"</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content-video-1 margin-bottom-10">
+                            <img src="https://gotoperu.com/img/video/prom-peru.jpg" alt="video" class="img-responsive">
+
+                            <div class="content-video-btn-1">
+                                <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{--<div class="col-md-12">--}}
+                        {{--<div class="content-video-1">--}}
+                            {{--<img src="https://gotoperu.com/img/video/gotoperu-group.jpg" alt="video" class="img-responsive">--}}
+
+                            {{--<div class="content-video-btn-1">--}}
+                                {{--<a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row margin-top-40 margin-bottom-20">
+            <div class="col-md-12">
+                <div class="text-center font-montserrat">
+                    <h2>PERU DESTINATIONS</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="grid-destinations">
+                    <figure class="effect-destinations">
+                        <img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">
+                        <figcaption>
+                            <h2>Machu<span>picchu</span></h2>
+                            <p>Ciudad de los incas</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="grid-destinations">
+                    <figure class="effect-destinations">
+                        <img src="{{asset('images/destinations/home/cusco.jpg')}}" alt="" class="img-responsive">
+                        <figcaption>
+                            <h2>Cu<span>sco</span></h2>
+                            <p>Capital del imperio Inca</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="grid-destinations">
+                    <figure class="effect-destinations">
+                        <img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">
+                        <figcaption>
+                            <h2>Titi<span>caca</span></h2>
+                            <p>Civilizacion andina más antigua</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center margin-top-20">
+                    <a href="" class="btn btn-lg btn-warning">View featured destination</a>
+                </div>
             </div>
         </div>
     </div>
