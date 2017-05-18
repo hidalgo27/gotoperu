@@ -1380,9 +1380,11 @@ Placeholder Sections
 
 //destinations peru hover
 
-
+.container-category{
+  background: #f0f0f0;
+}
 /* Common style */
-.grid-destinations figure {
+.grid-destinations figure, .grid-category figure{
   position: relative;
   float: left;
   overflow: hidden;
@@ -1392,15 +1394,15 @@ Placeholder Sections
   cursor: pointer;
 }
 
-.grid-destinations figure img {
+.grid-destinations figure img, .grid-category figure img {
   position: relative;
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.grid-destinations figure figcaption {
+.grid-destinations figure figcaption, .grid-category figure figcaption {
   //padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -1410,12 +1412,16 @@ Placeholder Sections
 }
 
 .grid-destinations figure figcaption::before,
-.grid-destinations figure figcaption::after {
+.grid-destinations figure figcaption::after,
+.grid-category figure figcaption::before,
+.grid-category figure figcaption::after{
   pointer-events: none;
 }
 
 .grid-destinations figure figcaption,
-.grid-destinations figure figcaption > a {
+.grid-destinations figure figcaption > a,
+.grid-category figure figcaption,
+.grid-category figure figcaption > a{
   position: absolute;
   top: 0;
   left: 0;
@@ -1424,31 +1430,32 @@ Placeholder Sections
 }
 
 
-.grid-destinations figure figcaption > a {
+.grid-destinations figure figcaption > a, .grid-category figure figcaption > a {
   opacity: 0;
 }
 
-.grid-destinations figure h2 {
+.grid-destinations figure h2, .grid-category figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid-destinations figure h2 span {
+.grid-destinations figure h2 span, .grid-category figure h2 span {
   font-weight: 800;
 }
 
 .grid-destinations figure h2,
-.grid-destinations figure p {
+.grid-destinations figure p,
+.grid-category figure h2,
+.grid-category figure p{
   margin: 0;
 }
 
-.grid-destinations figure p {
+.grid-destinations figure p, .grid-category figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 
 /* effects */
-
 
 figure.effect-destinations figcaption::before {
   position: absolute;
@@ -1507,6 +1514,80 @@ figure.effect-destinations:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+//
+
+figure.effect-category {
+  background: #000000;
+}
+
+figure.effect-category img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-category:hover img {
+  opacity: 0.8;
+}
+
+figure.effect-category figcaption::before,
+figure.effect-category figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-category figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+figure.effect-category figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+figure.effect-category h2 {
+  padding-top: 30%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,-20px,0);
+  transform: translate3d(0,-20px,0);
+}
+
+figure.effect-category p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-category:hover figcaption::before,
+figure.effect-category:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-category:hover h2,
+figure.effect-category:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
 //video
 .content-video-1{position:relative;}
 .content-video-btn-1{
@@ -1567,5 +1648,5 @@ figure.effect-destinations:hover p {
   position:relative;
   vertical-align:middle;
   text-align:center;
-  background: rgba(0,0,0,.5);
+  background: rgba(42, 178, 123, 0.9);
 }

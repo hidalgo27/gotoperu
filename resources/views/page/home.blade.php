@@ -1037,45 +1037,13 @@
 
     <div class="banner-middle">
         <div class="fullscreen background parallax" style="background-image:url('images/destinations/home/cusco.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
-            <div class="content-a">
-                <div class="content-b color-white">
+            <div class="content-a color-white">
+                <div class="content-b font-montserrat">
                     <h2>WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS</h2>
                     <h3>WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS</h3>
-                    <a href="" class="btn btn-lg btn-warning margin-top-20">View all packages</a>
+                    <a href="" class="btn btn-lg btn-danger margin-top-20">View all packages</a>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row margin-top-100">
-            <div class="col-md-6">
-                <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
-                <p>A local company with local knowledge, expertise and resources, specializing in the design of unforgettable vacations. Our unique activities, Peru tours & excursions, Peru hotel deals, transportation and program logistics make us Peru leading travel experts. GOTOPERU offer you every kind of travel services you need; ranging from all inclusive Peru travel packages, accommodations, and entertainment and leisure activities. In addition offering different types of travel products like "Online-Booking" and personal "Custom-made Trips"</p>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content-video-1 margin-bottom-10">
-                            <img src="https://gotoperu.com/img/video/prom-peru.jpg" alt="video" class="img-responsive">
-
-                            <div class="content-video-btn-1">
-                                <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{--<div class="col-md-12">--}}
-                        {{--<div class="content-video-1">--}}
-                            {{--<img src="https://gotoperu.com/img/video/gotoperu-group.jpg" alt="video" class="img-responsive">--}}
-
-                            {{--<div class="content-video-btn-1">--}}
-                                {{--<a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -1136,6 +1104,147 @@
         </div>
     </div>
 
+    <div class="container-category margin-top-60">
+        <div class="container">
+            <div class="row margin-top-40 margin-bottom-20">
+                <div class="col-md-12">
+                    <div class="text-center font-montserrat">
+                        <h2>Category</h2>
+                        <h3>Nuestra categorias</h3>
+                        <p>Paquetes turisticos para todo tipo de ocaciones</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-bottom-60">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="grid-category">
+                                <figure class="effect-category">
+                                    <img src="{{asset('images/category/family.jpg')}}" alt="" class="img-responsive"/>
+                                    <figcaption>
+                                        <h2>Family <span>Combos</span></h2>
+                                        <p>Paquetes familiares</p>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="grid-category">
+                                <figure class="effect-category">
+                                    <img src="{{asset('images/category/trekking.jpg')}}" alt="" class="img-responsive"/>
+                                    <figcaption>
+                                        <h2>Trek<span>king</span></h2>
+                                        <p>Viva la experiencia del camino inca</p>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="grid-category">
+                                <figure class="effect-category">
+                                    <img src="{{asset('images/category/luxury.jpg')}}" alt="" class="img-responsive"/>
+                                    <figcaption>
+                                        <h2>Lux <span>ury</span></h2>
+                                        <p>Paquetes de lujo para personas exigentes.</p>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <div class="grid-category">
+                                <figure class="effect-category">
+                                    <img src="{{asset('images/category/galapagos.jpg')}}" alt="" class="img-responsive"/>
+                                    <figcaption>
+                                        <h2>Gala<span>pagos</span></h2>
+                                        <p>Visite el paraiso en la tierra.</p>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="grid-category">
+                                <figure class="effect-category">
+                                    <img src="{{asset('images/category/amazon.jpg')}}" alt="" class="img-responsive"/>
+                                    <figcaption>
+                                        <h2>Ama<span>zon</span></h2>
+                                        <p>Reconciliate con la naturaleza.</p>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="text-center margin-top-60 font-montserrat">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h3>CONTACT</h3>
+                    <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h3>DESIGN</h3>
+                    <p>We will craft out a first travel proposal according to the outline or idea that you shared with us. From then on we will customize it until you are satisfied with the planning! We will then send you a day by day itinerary and leave the rest to you!</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h3>VACATION</h3>
+                    <p>Be ready for an unforgettable vacation to the land of the Incas, with promptly transfers at every point (airports, hotels, buses,trains) with knowledgable local Guides on each destination plus the best hotel locations and perks...GOTOPERU team will be always with you</p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div><!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row margin-top-100">
+            <div class="col-md-6">
+                <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
+                <p>A local company with local knowledge, expertise and resources, specializing in the design of unforgettable vacations. Our unique activities, Peru tours & excursions, Peru hotel deals, transportation and program logistics make us Peru leading travel experts. GOTOPERU offer you every kind of travel services you need; ranging from all inclusive Peru travel packages, accommodations, and entertainment and leisure activities. In addition offering different types of travel products like "Online-Booking" and personal "Custom-made Trips"</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content-video-1 margin-bottom-10">
+                            <img src="https://gotoperu.com/img/video/prom-peru.jpg" alt="video" class="img-responsive">
+
+                            <div class="content-video-btn-1">
+                                <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{--<div class="col-md-12">--}}
+                    {{--<div class="content-video-1">--}}
+                    {{--<img src="https://gotoperu.com/img/video/gotoperu-group.jpg" alt="video" class="img-responsive">--}}
+
+                    {{--<div class="content-video-btn-1">--}}
+                    {{--<a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="">
         <section id="cd-placeholder-1" class="cd-section cd-container">
             <h2>TOUR PACKAGES</h2>
