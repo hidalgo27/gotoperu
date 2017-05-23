@@ -1242,33 +1242,70 @@
         </div>
     </div>
 
+
+    
+    
     <div class="container">
         <div class="row margin-top-60 font-montserrat">
-            <div class="col-md-6">
-                <a href="">
-                    <h4>Peru travel useful information</h4>
-                    <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
-                </a>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive">
             </div>
-            <div class="col-md-6">
-                <a href="">
-                    <h4>Andes travel guide</h4>
-                    <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
-                </a>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row margin-top-40">
+            <div class="col-md-12">
+                <img src="{{asset('images/team.jpg')}}" alt="" class="img-responsive">
             </div>
         </div>
     </div>
 
-
     <div class="container">
-        <div class="row margin-top-60 font-montserrat">
-            <div class="col-md-12">
-                <a href="">
-                    <h4>Peru travel useful information</h4>
-                    <img src="{{asset('images/team.png')}}" alt="" class="img-responsive">
-                </a>
+        <div class="text-center font-montserrat margin-top-60">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>Small Groups and Private tours</h4>
+                    {{--<p></p>--}}
+                </div>
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>We live here, trully a 24/7 Assistance</h4>
+                    {{--<p></p>--}}
+                </div>
             </div>
-
+            <div class="row margin-bottom-30 margin-top-30">
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>Cutting the middlemen, headquarters at Peru</h4>
+                    {{--<p></p>--}}
+                </div>
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>We take pride of our tripadvisor reviews!</h4>
+                    {{--<p></p>--}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>We can adapt to any arrival and departure</h4>
+                    {{--<p></p>--}}
+                </div>
+                <div class="col-md-6">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>Book Now option or Customize a dream trip!</h4>
+                    {{--<p></p>--}}
+                </div>
+            </div>
+            <div class="row margin-top-60">
+                <div class="col-md-12">
+                    <b class="text-18 color-goto-green">24/7 in trip Support. We have your back around the clock.</b>
+                </div>
+                <div class="col-md-12 margin-top-30">
+                    <a href="" class="btn btn-lg btn-warning">About Us</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1290,9 +1327,24 @@
         </div>
     </div>
 
-
-
     <div class="container">
+        <div class="row margin-top-60 font-montserrat">
+            <div class="col-md-6">
+                <a href="">
+                    <h4>Peru travel useful information</h4>
+                    <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="">
+                    <h4>Andes travel guide</h4>
+                    <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hide">
         <div class="row margin-top-100">
             <div class="col-md-6">
                 <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
@@ -1324,7 +1376,26 @@
         </div>
     </div>
 
-    <div class="">
+    <div class="container">
+        <div class="row margin-top-85 margin-bottom-10"><!--.row -->
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="https://www.facebook.com/GOTOPERUcom/" target="_blank"><img src="{{asset('images/logos/logo-facebook.png')}}" title="gotoperu facebook 30k like" alt="gotoperu facebook 30k like"></a></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.asta.org/MemberServices/MemberDirectoryIndivdualDisplayASTA.cfm?navItemNumber=11304&amp;id=900235751" target="_blank"><img src="{{asset('images/logos/logo-asta-grey.png')}}" title="asta" alt="logo asta"></a></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://investors.nytco.com/press/press-releases/press-release-details/2014/The-New-York-Times-Travel-Show-Announces-Special-Travel-Discounts-for-Show-Attendees/default.aspx" target="_blank"><img src="{{asset('images/logos/logo-newyorktimes.png')}}" title="the new york times" alt="the new york times"></a></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://apoturperu.org/" target="_blank"><img src="{{asset('images/logos/logo-apotur.png')}}" title="apotur" alt="logo apotur"></a></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.peru.travel/en-us/Search-Travel-Services/pageindex/0/categoryid/5/subcategoryidl1/-1/subcategoryidl2/-1.aspx?keyword=go+to+peru&amp;destid=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" target="_blank"><img src="{{asset('images/logos/logo-promperu.png')}}" title="promperu" alt="logo promperu"></a></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#" target="_blank"><img src="{{asset('images/logos/logo-meetup.png')}}" title="meetup" alt="logo meetup"></a></div>
+        </div>
+    </div>
+
+    <footer class="margin-top-60">
+        <img src="{{asset('images/footer-1.jpg')}}" alt="" class="img-responsive">
+    </footer>
+    <div class="hide">
         <section id="cd-placeholder-1" class="cd-section cd-container">
             <h2>TOUR PACKAGES</h2>
             <p>
