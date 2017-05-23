@@ -11,10 +11,10 @@ $panel-inner-border: $laravel-border-color;
 
 // Brands
 $brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
+$brand-info: #5bc0de;
+$brand-success: #5cb85c;
 $brand-warning: #ffa500;
-$brand-danger: #bf5329;
+$brand-danger: #d9534f;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
@@ -60,4 +60,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 // font montserrat
 .font-montserrat{
   font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none !important;
 }

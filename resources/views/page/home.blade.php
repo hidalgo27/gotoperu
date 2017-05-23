@@ -1214,6 +1214,84 @@
         </div><!-- /.row -->
     </div>
 
+
+    <div class="container-category margin-top-60">
+        <div class="container">
+            <div class="row margin-top-40 margin-bottom-20">
+                <div class="col-md-12">
+                    <div class="text-center font-montserrat">
+                        <h2>Hotels</h2>
+                        {{--<h3>Nuestra categorias</h3>--}}
+                        {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-hotel">
+            <img src="{{asset('images/hotels/banner-hotel.jpg')}}" alt="" class="img-responsive">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center margin-top-20 margin-bottom-60">
+                        <p class="text-16"><b>Lorem ipsum dolor sit amet, consectetur m illo impedit ipsum laboriosam laudantium modi officiis perspiciatis porro quam similique tenetur. Ad dolore eum nesciunt officia velit.</b></p>
+                        <a href="" class="btn btn-lg btn-primary margin-top-20">Hotels</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row margin-top-60 font-montserrat">
+            <div class="col-md-6">
+                <a href="">
+                    <h4>Peru travel useful information</h4>
+                    <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="">
+                    <h4>Andes travel guide</h4>
+                    <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row margin-top-60 font-montserrat">
+            <div class="col-md-12">
+                <a href="">
+                    <h4>Peru travel useful information</h4>
+                    <img src="{{asset('images/team.png')}}" alt="" class="img-responsive">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-testimonial margin-top-70">
+        <div class="container">
+            <div class="row margin-top-70 margin-bottom-70">
+                <div class="col-md-6">
+                    {{--<img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">--}}
+                </div>
+                <div class="col-md-6">
+                    <div class="color-white">
+                        <h3><i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i> Everything about this trip was wonderful and it was because of the service and attention of the great staff at GOTOPERU</h3>
+                        <p class="text-right">Jennifer Powers & Family New York - USA</p>
+                        <a href="" class="btn btn-lg btn-warning margin-top-20 text-right">View All Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container">
         <div class="row margin-top-100">
             <div class="col-md-6">
@@ -1245,6 +1323,7 @@
 
         </div>
     </div>
+
     <div class="">
         <section id="cd-placeholder-1" class="cd-section cd-container">
             <h2>TOUR PACKAGES</h2>

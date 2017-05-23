@@ -1615,6 +1615,9 @@ figure.effect-category:hover p {
 .content-vbtn-color-orange{color:#f27242;}
 .content-vbtn-color-orange:hover{color:#f27242;}
 
+.img-responsive{
+  width: 100%;
+}
 //banner medio
 .banner-middle{
   height: 250px;
@@ -1649,4 +1652,11 @@ figure.effect-category:hover p {
   vertical-align:middle;
   text-align:center;
   background: rgba(42, 178, 123, 0.9);
+}
+
+//Testimonial
+.container-testimonial{
+  background: url("./banners/banner-testimonials.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
