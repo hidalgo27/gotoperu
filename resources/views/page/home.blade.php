@@ -1255,7 +1255,7 @@
         </div>
         <div class="row margin-top-40">
             <div class="col-md-12">
-                <img src="{{asset('images/team.jpg')}}" alt="" class="img-responsive">
+                <img src="{{asset('images/team.png')}}" alt="" class="img-responsive">
             </div>
         </div>
     </div>
