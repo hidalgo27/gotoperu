@@ -1196,17 +1196,17 @@
         <div class="row">
             <div class="text-center margin-top-60 font-montserrat">
                 <div class="col-lg-4">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="img-circle" src="{{asset('images/icons/item/contact.png')}}" alt="" width="140" height="140">
                     <h3>CONTACT</h3>
                     <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="img-circle" src="{{asset('images/icons/item/design.png')}}" alt="" width="140" height="140">
                     <h3>DESIGN</h3>
                     <p>We will craft out a first travel proposal according to the outline or idea that you shared with us. From then on we will customize it until you are satisfied with the planning! We will then send you a day by day itinerary and leave the rest to you!</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <img class="img-circle" src="{{asset('images/icons/item/vacations.png')}}" alt="" width="140" height="140">
                     <h3>VACATION</h3>
                     <p>Be ready for an unforgettable vacation to the land of the Incas, with promptly transfers at every point (airports, hotels, buses,trains) with knowledgable local Guides on each destination plus the best hotel locations and perks...GOTOPERU team will be always with you</p>
                 </div><!-- /.col-lg-4 -->
@@ -1264,37 +1264,67 @@
         <div class="text-center font-montserrat margin-top-60">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>Small Groups and Private tours</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/groups.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>Small Groups and Private tours</h4>
+                        <p>Lorem ipsum dolor sit am. dolor sit am.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>We live here, trully a 24/7 Assistance</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/hour.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>We live here, trully a 24/7 Assistance</h4>
+                        <p>Lorem ipsum dolor sit am. dolor sit am.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
             </div>
             <div class="row margin-bottom-30 margin-top-30">
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>Cutting the middlemen, headquarters at Peru</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/alert.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>Cutting the middlemen, headquarters at Peru</h4>
+                        <p>Lorem ipsum dolor sit am. dolor sit am.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>We take pride of our tripadvisor reviews!</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/tripadvisor.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>We take pride of our tripadvisor reviews!</h4>
+                        <p>Lorem ipsum dolor sit amet. dolor sit amet.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>We can adapt to any arrival and departure</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/women.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>We can adapt to any arrival and departure</h4>
+                        <p>Lorem ipsum dolor sit am. dolor sit am.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-6">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h4>Book Now option or Customize a dream trip!</h4>
+                    <div class="col-md-4 col-lg-offset-4">
+                        <img class="img-responsive" src="{{asset('images/icons/item/customize.png')}}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h4>Book Now option or Customize a dream trip!</h4>
+                        <p>Lorem ipsum dolor si. ipsum dolor si.</p>
+                    </div>
                     {{--<p></p>--}}
                 </div>
             </div>
@@ -1325,6 +1355,35 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="row margin-top-40 margin-bottom-20">
+            <div class="col-md-12">
+                <div class="text-center font-montserrat">
+                    <h2>Create Your Dream Adventure</h2>
+                    <h3>We have it all. Just ask!</h3>
+                    {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center font-montserrat">
+                    <h4>HOTEL QUALITY</h4>
+                    {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 well">
+                <div class="text-center font-montserrat">
+                    <h4>HOTEL QUALITY</h4>
+                    {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="container">
