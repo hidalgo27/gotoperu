@@ -24432,7 +24432,24 @@ $(document).ready(function(){
                 margin: 20
             }
         }
-    })
+    });
+
+
+    //contact
+    $('#step1-link').click(function(e) {
+        $("#step1-section").delay(300).fadeIn(400);
+        $("#step2-section").fadeOut(400);
+        $('#step2-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+    $('#step2-link').click(function(e) {
+        $("#step2-section").delay(100).fadeIn(400);
+        $("#step1-section").fadeOut(400);
+        $('#step1-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
 
 
 });
