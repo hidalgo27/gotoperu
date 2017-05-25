@@ -24186,7 +24186,7 @@ $(document).ready(function(){
                 secondaryNav.addClass('animate-children');
                 $('#cd-logo').addClass('slide-in');
                 $('.cd-btn').addClass('slide-in');
-            }, 200);
+            });
         } else {
             secondaryNav.removeClass('is-fixed');
             $('.cd-main-content').removeClass('has-top-margin');
@@ -24194,7 +24194,7 @@ $(document).ready(function(){
                 secondaryNav.removeClass('animate-children');
                 $('#cd-logo').removeClass('slide-in');
                 $('.cd-btn').removeClass('slide-in');
-            }, 200);
+            });
         }
 
         //on desktop - update the active link in the secondary fixed navigation

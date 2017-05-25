@@ -51,8 +51,8 @@
 
     <div id="cd-intro">
         <div class="banner-header color-white">
-            <div class="banner-header-top text-center font-montserrat">
-                <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block">(3 days)</span></p>
+            <div class="banner-header-top font-montserrat">
+                <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
                 <div class="list-services text-center">
                     <ul class="no-padding margin-bottom-0">
                         <li>
@@ -81,18 +81,17 @@
                         </li>
                     </ul>
                 </div>
-                <p class="text-18 text-center">$1500 with flights <span class="text-12 display-block">$891 Ground Package</span></p>
-                <a href="" class="btn btn-sm btn-success ">View Trip</a>
+                <p class="text-16 margin-top-10">LAND $999<span class="display-block">LAND + FLIGHTS $1499</span></p>
+                <div class="text-center">
+                    <a href="" class="btn btn-sm btn-success ">View Trip</a>
+                </div>
             </div>
             <div class="divider margin-top-20"></div>
             <div class="banner-header-bottom">
-                <h4 class="text-16 color-goto-orange margin-bottom-5"><b>Daily Departures</b></h4>
-                <p>We have groups starting every ?? Cusco Machu Picchu Lima</p>
-                <h4 class="text-16 color-goto-orange margin-bottom-5"><b>Local Operator</b></h4>
-                <p>We live and work in Peru that also allow to offer you the best</p>
-                <h4 class="text-16 color-goto-orange margin-bottom-5"><b>Daily Departures</b></h4>
-                <p>For our travellers and our communities <a href="" class="btn-link">View last activities</a></p>
-
+                <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
+                <p class="no-margin color-goto-light">$150 average saving</p>
+                <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
+                <p class="no-margin color-goto-light">100s of testimonials</p>
             </div>
         </div>
         <div class="container-fluid">
@@ -132,17 +131,15 @@
         <div id="cd-intro-tagline" class="font-montserrat clearfix">
             {{--<h1>Secondary Fixed Navigation</h1>--}}
 
-            <div class="col-md-6 col-md-offset-5  margin-top-85">
+            <div class="col-md-6 col-md-offset-5  margin-top-10">
                 <div class="padding-10">
-                    <div class="col-md-6">
-                        <div class="box-header-action thumbnail padding-10">
-                            <p class="text-20 no-margin">Customize</p>
+                    <div class="col-md-12">
+                        <div class="padding-10">
+                            <p class="text-16 no-margin">Customize</p>
                             <a href="" class="cd-btn">Inquire Now</a>
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box-header-action thumbnail padding-10">
-                            <p class="text-20 no-margin">Book Today</p>
+                        <div class="padding-10">
+                            <p class="text-16 no-margin">Book Today</p>
                             <a href="" class="cd-btn-header bg-goto-green">View Offers</a>
                         </div>
                     </div>
@@ -1196,7 +1193,7 @@
         <div class="row">
             <div class="text-center margin-top-60 font-montserrat">
                 <div class="col-lg-4">
-                    <img class="img-circle" src="{{asset('images/icons/item/contact.png')}}" alt="" width="140" height="140">
+                    <img class="img-responsive" src="{{asset('images/contact.png')}}" alt="" >
                     <h3>CONTACT</h3>
                     <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
                 </div><!-- /.col-lg-4 -->
@@ -1253,11 +1250,11 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        <div class="row margin-top-40">
-            <div class="col-md-12">
-                <img src="{{asset('images/team.png')}}" alt="" class="img-responsive">
-            </div>
-        </div>
+        {{--<div class="row margin-top-40">--}}
+            {{--<div class="col-md-12">--}}
+                {{--<img src="{{asset('images/team.png')}}" alt="" class="img-responsive">--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
 
     <div class="container">
