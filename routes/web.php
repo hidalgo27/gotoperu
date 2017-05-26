@@ -13,9 +13,15 @@
 
 
 //web page
+//---homepage
 Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home_path',
+]);
+//---itinerary
+Route::get('/packages/{titulo}', [
+    'uses' => 'HomeController@show',
+    'as' => 'home_show_path',
 ]);
 
 //Route::get('cliente/login', [

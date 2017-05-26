@@ -1390,6 +1390,39 @@ Placeholder Sections
 .container-category{
   background: #f0f0f0;
 }
+
+.grid-category .grid-box{
+  position: absolute;
+  bottom: 20%;
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255, .6);
+}
+
+
+.line{
+  background: #000;
+  height: 1px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+.grid-category{
+  transition:all 0.5s ease-in-out;
+}
+.grid-category:hover .grid-box{
+  transition:all 0.5s ease-in-out;
+  background: rgba(2,2,2, .8);
+}
+.grid-category:hover i{
+  transition:all 0.3s ease-in-out;
+  color: #7F8429;
+}
+.grid-category:hover b{
+  transition:all 0.3s ease-in-out;
+  color: #ffa500;
+}
+
 /* Common style */
 .grid-destinations figure, .grid-category figure{
   position: relative;
