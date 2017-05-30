@@ -1,14 +1,68 @@
-@extends('layouts.page.default')
+@extends('layouts.page.itinerary')
 
 @section('content')
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <h1>Peru Packages: Machu Picchu Express</h1>
-                <h3>Presented by Kim MacQuarrie, Four-time Emmy winner.</h3>
+        <div class="row margin-top-40">
+            <div class="col-md-8 font-montserrat">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="color-goto-orange"><strong>Peru Packages: Machu Picchu Express</strong></h1>
+                        <p class="text-18"><b>Machu Picchu, Cusco, Sacred Valley</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="color-goto-grey"><strong>Overview</strong></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well clearfix">
+                            <div class="col-md-3">
+                                <h3 class="color-goto-grey"><i class="fa fa-map-marker" aria-hidden="true"></i> Route</h3>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Day 1 :</strong> Arrival in Lima</p>
+                                        <p><strong>Day 2 :</strong> Arrival in Cusco <p/>
+                                        <p><strong>Day 3 :</strong> Cusco City Tour <p/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Day 1 :</strong> Sacred Valley Tour</p>
+                                        <p><strong>Day 2 :</strong> Machu Picchu Tour <p/>
+                                        <p><strong>Day 3 :</strong> Departure from Cusco <p/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-md-12">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                    </div>
+                </div>
 
+            </div>
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+        <div class="row main-wrapper">
+            <div class="col-md-8">
                 <div class="cd-articles">
                     <article>
                         <header>
@@ -117,8 +171,9 @@
 
                 </div> <!-- .cd-articles -->
             </div>
-            <div class="col-md-3">
-                <aside class="cd-read-more">
+            <div class="col-md-4">
+                <aside class="aside-itinerary" id="sidebar">
+                    <img src="{{asset('images/itinerary/GTP500.jpg')}}" alt="" class="img-responsive">
                     <ul>
                         <li>
                             <a href="index.html">

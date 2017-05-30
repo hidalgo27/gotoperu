@@ -636,7 +636,7 @@ Navigation
   height: 50px;
   //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   //background-color: #030d18;
-  z-index: 3;
+  z-index: 4;
 }
 @media only screen and (min-width: 768px) {
   .cd-header {
@@ -860,7 +860,9 @@ Intro
   //height: 73%;
   border-radius: 0 5px 5px 0;
   padding: 20px;
+  z-index: 1;
 }
+
 .list-services li{
   text-align: center;
   list-style: none;
@@ -880,6 +882,13 @@ Secondary Fixed Navigation
   z-index: 3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.cd-secondary-nav.cd-secondary-nav-tinerary{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0,0,0,.4);
 }
 .cd-secondary-nav ul {
   /* mobile first - secondary navigation hidden by default, triggered by tap/click on .cd-secondary-nav-trigger*/
@@ -1025,6 +1034,7 @@ Secondary Fixed Navigation
     /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
     /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(3, 13, 24, 0.96);
   }
   .cd-secondary-nav.animate-children li a {
     //padding: 26px 30px 0 30px;
@@ -1756,37 +1766,6 @@ figure.effect-category:hover p {
 
 //---itinerary
 
-.cd-header {
-  height: 140px;
-  border-bottom: 1px solid #e6e6e6;
-  text-align: center;
-  padding-top: 24px;
-}
-.cd-header h1 {
-  font-family: Georgia, serif;
-  font-size: 2rem;
-  color: #141414;
-}
-@media only screen and (min-width: 1100px) {
-  .cd-header {
-    height: 250px;
-    padding-top: 70px;
-  }
-  .cd-header h1 {
-    font-size: 3.6rem;
-  }
-}
-
-.cd-footer {
-  height: 250px;
-  background-color: #141414;
-  text-align: center;
-}
-.cd-footer p {
-  font-family: Georgia, serif;
-  font-size: 1.8rem;
-  line-height: 250px;
-}
 
 /* --------------------------------
 
@@ -1833,9 +1812,7 @@ Articles
 -------------------------------- */
 .cd-articles {
   position: relative;
-  width: 90%;
-  max-width: 650px;
-  margin: 0 auto 3em;
+
 }
 .cd-articles::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -1864,19 +1841,12 @@ Articles
   padding-bottom: 0;
 }
 @media only screen and (min-width: 1100px) {
-  .cd-articles {
-    width: 970px;
-    max-width: none;
-    padding-right: 320px;
-    margin-bottom: 5em;
-  }
+
   .cd-articles::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
-  .cd-articles h1 {
-    font-size: 3.6rem;
-  }
+
   .cd-articles p {
     font-size: 1.8rem;
   }
@@ -1887,27 +1857,25 @@ Articles
 Aside
 
 -------------------------------- */
-.cd-read-more {
-  /* hide on mobile */
-  display: none;
-  width: 100%;
+.aside-itinerary {
+
   background-color: #f2f2f2;
 }
-.cd-read-more ul{
+.aside-itinerary ul{
   padding: 0;
 }
-.cd-read-more li {
+.aside-itinerary li {
   counter-increment: articles;
 }
-.cd-read-more a {
+.aside-itinerary a {
   display: block;
   position: relative;
   padding: 1.6em 1.1em 1.6em 4.3em;
 }
-.cd-read-more a::before, .cd-read-more a::after {
+.aside-itinerary a::before, .aside-itinerary a::after {
   position: absolute;
 }
-.cd-read-more a::before {
+.aside-itinerary a::before {
   /* article number */
   content: counter(articles);
   top: 50%;
@@ -1930,7 +1898,7 @@ Aside
   -moz-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-.cd-read-more a::after {
+.aside-itinerary a::after {
   /* bottom separation - line */
   content: '';
   left: 50%;
@@ -1945,26 +1913,26 @@ Aside
   width: 260px;
   background-color: #d9d9d9;
 }
-.cd-read-more a.read em {
+.aside-itinerary a.read em {
   color: #a6a6a6;
 }
-.cd-read-more a.read::before {
+.aside-itinerary a.read::before {
   background-color: #d9d9d9;
 }
-.cd-read-more a.reading em {
+.aside-itinerary a.reading em {
   color: #2a76e8;
 }
-.cd-read-more a.reading svg {
+.aside-itinerary a.reading svg {
   display: block;
 }
-.cd-read-more a.reading::before {
+.aside-itinerary a.reading::before {
   background-color: #ffffff;
   color: #141414;
 }
-.cd-read-more li:last-of-type a::after {
+.aside-itinerary li:last-of-type a::after {
   display: none;
 }
-.cd-read-more em {
+.aside-itinerary em {
   display: block;
   font-size: 1.4rem;
   line-height: 1.2;
@@ -1977,13 +1945,13 @@ Aside
   -moz-transition: color 0.3s;
   transition: color 0.3s;
 }
-.cd-read-more b {
+.aside-itinerary b {
   color: #a6a6a6;
   font-size: 1.2rem;
   font-family: Georgia, serif;
   font-style: italic;
 }
-.cd-read-more svg {
+.aside-itinerary svg {
   /* this is the filling circle around the article number */
   display: none;
   position: absolute;
@@ -1998,15 +1966,32 @@ Aside
   stroke: #2a76e8;
 }
 @media only screen and (min-width: 1100px) {
-  .cd-read-more {
+  .aside-itinerary {
     display: block;
     //position: absolute;
     //top: 3em;
     //right: 0;
   }
-  .cd-read-more.fixed {
+  .aside-itinerary.fixed {
     position: fixed;
     //right: calc(50% - 485px);
     top: 15%;
   }
+}
+
+//itinerary
+.banner{
+  display:block;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.banner .box-header {
+  float:left;
+  position:absolute;
+  top:0px;
+  z-index: 1;
+  width: 100%;
 }

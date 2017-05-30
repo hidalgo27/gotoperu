@@ -18,5 +18,8 @@
     "lodash": "^4.17.4",
     "vue": "^2.1.10",
     "vue-router": "^2.5.3"
+  },
+  "dependencies": {
+    "sticky-kit": "^1.1.3"
   }
 }
