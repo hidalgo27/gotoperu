@@ -24735,7 +24735,7 @@ $(document).ready(function(){
     $('#sidebar')
         .stick_in_parent({
             parent: '.main-wrapper',
-            offset_top: 100
+            offset_top: 50
         })
         .on('sticky_kit:bottom', function(e) {
             $(this).parent().css('position', 'static');
@@ -24856,4 +24856,5 @@ jQuery(document).ready(function($){
     function checkMQ() {
         return window.getComputedStyle(articlesWrapper.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
     }
+
 });

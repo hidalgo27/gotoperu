@@ -1,3 +1,6 @@
+a:focus{
+  outline: 0;
+}
 .color-white{color:#fff;}
 .color-black{color:#000;}
 .color-grey{color: #636b6f}
@@ -1820,19 +1823,18 @@ Articles
   display: none;
 }
 .cd-articles article {
-  padding: 3em 0;
+  padding-bottom: 35px;
   border-bottom: 1px solid #e6e6e6;
 }
 .cd-articles article:last-of-type {
   border-bottom: none;
 }
-.cd-articles h1 {
-  margin: .6em 0 .2em;
-  color: #141414;
-  line-height: 1.2;
-  font-size: 2.4rem;
-  font-family: Georgia, serif;
-}
+//.cd-articles h1 {
+//  margin: .6em 0 .2em;
+//  color: #141414;
+//  line-height: 1.2;
+//  font-size: 2.4rem;
+//}
 .cd-articles p {
   padding: 1em 0;
   line-height: 1.6;
@@ -1848,7 +1850,7 @@ Articles
   }
 
   .cd-articles p {
-    font-size: 1.8rem;
+    font-size: 16px;
   }
 }
 
@@ -1891,7 +1893,6 @@ Aside
   line-height: 34px;
   border-radius: 50%;
   color: #b3b3b3;
-  font-family: Georgia, serif;
   text-align: center;
   box-shadow: inset 0 0 0 1px #d9d9d9;
   -webkit-transition: background-color 0.3s, color 0.3s;
@@ -1980,6 +1981,9 @@ Aside
 }
 
 //itinerary
+.carousel-control.right, .carousel-control.left{
+  background: none;
+}
 .banner{
   display:block;
 }
@@ -1994,4 +1998,152 @@ Aside
   top:0px;
   z-index: 1;
   width: 100%;
+}
+.box-route-ininerary{
+  font-size: 0.9em;
+  color: #666;
+  line-height: 2em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  margin: 10px 0 30px 0;
+  border: 1px solid #dedede;
+  padding: 0;
+}
+.box-route-ininerary-right{
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  -moz-column-gap: 1.5em;
+  -o-column-gap: 1.5em;
+  border-left: 1px solid #dedede;
+  padding: 15px 0 15px 60px;
+}
+.box-route-ininerary h3{
+  position: absolute;
+  top: 50%;
+  margin-top: -14px !important;
+  padding: 0 0 0 10px;
+  margin-bottom: 0;
+}
+.box-price-aside{
+  padding: 25px 15px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+}
+.box-price-aside sup{
+  padding-left: 5px;
+  font-weight: normal;
+  font-size: 0.563em;
+  top: -3.5em;
+}
+.nav-list {
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+//gallery
+.project figure {
+  position: relative;
+  display: inline-block;
+  -moz-box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
+  -webkit-box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
+  box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
+  -webkit-box-shadow: 0 3px 0 #e2e2e2;
+  -moz-box-shadow: 0 3px 0 #e2e2e2;
+  box-shadow: 0 3px 0 #e2e2e2;
+}
+
+.project figure figcaption {
+  position: relative;
+  z-index: 10;
+  padding: 8px 18px 11px;
+  background: #fff;
+  -ms-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  text-align: left;
+  color: #555;
+}
+
+.project figure:hover .actions {
+  opacity: 1;
+}
+
+.project figure .actions {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(29,29,29,.7);
+  -ms-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.project figure img {
+  border: 0;
+  width: 100%;
+}
+.btn-warning bnt-action{
+  margin: 0% 0% auto;
+}
+
+.project figure .actions a {
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+}
+.project figure .actions a i {
+  margin-top: 27%;
+}
+
+
+
+
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #ffa500;
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
 }
