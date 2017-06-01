@@ -37,6 +37,11 @@ class HomeController extends Controller
         //
     }
 
+    public function packages()
+    {
+        return view('page.packages');
+    }
+
     /**
      * Display the specified resource.
      *
