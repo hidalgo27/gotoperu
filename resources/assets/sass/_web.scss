@@ -890,7 +890,7 @@ Secondary Fixed Navigation
   position: absolute;
   z-index: 3;
   width: 100%;
-  bottom: 0;
+  bottom: -1px;
   background: rgba(0,0,0,.4);
 }
 .cd-secondary-nav.cd-secondary-nav-packages{
@@ -1431,7 +1431,7 @@ Placeholder Sections
   bottom: 20%;
   display: block;
   width: 100%;
-  background: rgba(255,255,255, .6);
+  background: rgba(255,255,255, .3);
 }
 
 

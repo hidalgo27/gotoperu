@@ -26,11 +26,11 @@
 <nav class="cd-3d-nav-container">
     <ul class="cd-3d-nav no-padding">
         <li class="cd-selected">
-            <a href="{{route('packages_path')}}">Tour Packages</a>
+            <a href="#cd-placeholder-1">Tour Packages</a>
         </li>
 
         <li>
-            <a href="{{route('destinations_path')}}">Destinations</a>
+            <a href="#cd-placeholder-1">Destinations</a>
         </li>
 
         <li>
@@ -49,138 +49,81 @@
     <span class="cd-marker color-1"></span>
 </nav> <!-- .cd-3d-nav-container -->
 
-<div id="cd-intro">
-    <div class="banner-header color-white">
-        <div class="banner-header-top font-montserrat">
-            <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
-            <div class="list-services text-center">
-                <ul class="no-padding margin-bottom-0">
-                    <li>
-                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                    </li>
-                </ul>
-            </div>
-            <p class="text-16 margin-top-10">LAND $999<span class="display-block">LAND + FLIGHTS $1499</span></p>
-            <div class="text-center">
-                <a href="" class="btn btn-sm btn-success ">View Trip</a>
-            </div>
-        </div>
-        <div class="divider margin-top-20"></div>
-        <div class="banner-header-bottom">
-            <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
-            <p class="no-margin color-goto-light">$150 average saving</p>
-            <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
-            <p class="no-margin color-goto-light">100s of testimonials</p>
-        </div>
-    </div>
-    <div class="container-fluid">
-        {{--<div class="col-md-5">--}}
-        {{--<div class="margin-top-10">--}}
-        {{--<a href="">--}}
-        {{--<div class="col-md-2 no-padding">--}}
-        {{--<img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--<div class="col-md-10 no-padding">--}}
-        {{--<div class="margin-top-10">--}}
-        {{--<img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        {{--</a>--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        <div class="col-md-7">
-            {{--<div class="margin-top-30">--}}
-            {{--<b class="text-30">...once in your lifetime!</b>--}}
-            {{--</div>--}}
-            <div class="margin-top-20">
-                <img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive">
-            </div>
-        </div>
-        {{--<div class="col-md-2">--}}
-        {{--<div class="padding-10">--}}
-        {{--<img src="{{asset('images/logos/logo-gotoperu-ave.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        <div class="col-md-5">
-            <div class="text-right font-montserrat margin-top-10">
-                <b class="text-30 margin-right-30">(813) 454-9707</b>
-            </div>
-        </div>
-    </div>
+<div class="position-relative">
+
     <div id="cd-intro-tagline" class="font-montserrat clearfix">
         {{--<h1>Secondary Fixed Navigation</h1>--}}
 
-        <div class="col-md-6 col-md-offset-5  margin-top-10">
-            <div class="padding-10">
-                <div class="col-md-12">
-                    <div class="padding-10">
-                        <p class="text-16 no-margin">Customize</p>
-                        <a href="" class="cd-btn">Inquire Now</a>
+        <div class="banner position-relative">
+
+
+
+            <div class="box-header container-fluid">
+
+                <div class="row">
+
+                    <div class="col-md-7">
+
+                        <div class="margin-top-20">
+                            <img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive">
+                        </div>
                     </div>
-                    <div class="padding-10">
-                        <p class="text-16 no-margin">Book Today</p>
-                        <a href="" class="cd-btn-header bg-goto-green">View Offers</a>
+
+                    <div class="col-md-5">
+                        <div class="text-right margin-top-10">
+                            <b class="text-30 margin-right-30">(813) 454-9707</b>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
+                        <h1 class="color-white text-50 color-title-packages">Destinations</h1>
+                        {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
                     </div>
                 </div>
             </div>
-            {{--<a href="" class="cd-btn">Inquire Now</a>--}}
+            <img src="{{asset('images/banners/itinerary/plaza-cusco.jpg')}}"/>
         </div>
+
         {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
         {{--<a href="#0" id="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}
     </div> <!-- #cd-intro-tagline -->
+
 </div> <!-- #cd-intro -->
 
-<div class="cd-secondary-nav">
+<div class="cd-secondary-nav cd-secondary-nav-tinerary">
     <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
     <nav>
         <ul class="no-margin">
             <li>
-                <a href="#cd-placeholder-1">
-                    <b>TOUR PACKAGES</b>
+                <a href="#cd-culture">
+                    <b>PERU</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-2">
-                    <b>HOTELS</b>
+                <a href="#cd-active">
+                    <b>ECUADOR</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-3">
-                    <b>REVIEWS</b>
+                <a href="#cd-nature">
+                    <b>BRASIL</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-4">
-                    <b>TRAVEL AGENTS</b>
+                <a href="#cd-cities">
+                    <b>BOLIVIA</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-5">
+                <a href="#cd-inquire" class="btn btn-warning">
                     <b>INQUIRE NOW</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
@@ -230,7 +173,93 @@
     </div>
 </div>
 
-@yield('content')
+<div class="container">
+    <div class="row margin-top-20">
+        <div class="col-lg-12 text-center font-montserrat">
+            <h1 class="text-30 color-goto-orange"><b>PERU DESTINATIONS</b></h1>
+            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
+        </div>
+    </div>
+    <div class="row margin-top-30">
+        <div class="col-md-4">
+            <div class="grid-category position-relative">
+                <a href="" class="color-goto-grey">
+                    <img src="{{asset('images/destinations/machupicchu.jpg')}}" alt="" class="img-responsive"/>
+                    <div class="grid-box padding-30 text-center">
+                        <span class="no-margin text-20"><i>Machu</i><b>picchu</b></span>
+                        <div class="line"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grid-category position-relative">
+                        <a href="" class="color-goto-grey">
+                            <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
+                            <div class="grid-box padding-30 text-center">
+                                <span class="no-margin text-20"><i>Cus</i><b>co</b></span>
+                                <div class="line"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-category position-relative">
+                        <a href="" class="color-goto-grey">
+                            <img src="{{asset('images/destinations/ballestas.jpg')}}" alt="" class="img-responsive"/>
+                            <div class="grid-box padding-30 text-center">
+                                <span class="no-margin text-20"><i>Ball</i><b>estas</b></span>
+                                <div class="line"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top-30">
+                <div class="col-md-6">
+                    <div class="grid-category position-relative">
+                        <a href="" class="color-goto-grey">
+                            <img src="{{asset('images/destinations/sacred-valley.jpg')}}" alt="" class="img-responsive"/>
+                            <div class="grid-box padding-30 text-center">
+                                <span class="no-margin text-20"><i>Sacred</i> <b>Valley</b></span>
+                                <div class="line"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-category position-relative">
+                        <a href="" class="color-goto-grey">
+                            <img src="{{asset('images/destinations/titicaca.jpg')}}" alt="" class="img-responsive"/>
+                            <div class="grid-box padding-30 text-center">
+                                <span class="no-margin text-20"><i>Titi</i><b>caca</b></span>
+                                <div class="line"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-top-30">
+        <div class="col-md-12">
+
+            <div class="grid-category position-relative">
+                <a href="" class="color-goto-grey">
+                    <img src="{{asset('images/destinations/ecuador.jpg')}}" alt="" class="img-responsive"/>
+                    <div class="grid-box padding-30 text-center">
+                        <span class="no-margin text-20"><i>Gala</i><b>pagos</b></span>
+                        <div class="line"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div class="container-testimonial margin-top-70">
     <div class="container">
@@ -250,7 +279,7 @@
 </div>
 
 <div class="container">
-    <div class="row margin-top-40 margin-bottom-20">
+    <div class="row margin-top-40 margin-bottom-20" id="cd-inquire">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
                 <h2>Create Your Dream Adventure</h2>
@@ -776,86 +805,10 @@
 </div>
 
 
-<div class="banner-middle margin-top-85">
-    <div class="fullscreen background parallax" style="background-image:url('images/destinations/home/cusco.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <div class="content-a color-white">
-            <div class="content-b font-montserrat">
-                <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
-                <h3>Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
-                <a href="" class="btn btn-lg btn-danger margin-top-20">Why us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row margin-top-100">
-        <div class="col-md-6">
-            <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
-            <p>A local company with local knowledge, expertise and resources, specializing in the design of unforgettable vacations. Our unique activities, Peru tours & excursions, Peru hotel deals, transportation and program logistics make us Peru leading travel experts. GOTOPERU offer you every kind of travel services you need; ranging from all inclusive Peru travel packages, accommodations, and entertainment and leisure activities. In addition offering different types of travel products like "Online-Booking" and personal "Custom-made Trips"</p>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content-video-1 margin-bottom-10">
-                        <img src="https://gotoperu.com/img/video/prom-peru.jpg" alt="video" class="img-responsive">
-
-                        <div class="content-video-btn-1">
-                            <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>
-                        </div>
-                    </div>
-                </div>
-                {{--<div class="col-md-12">--}}
-                {{--<div class="content-video-1">--}}
-                {{--<img src="https://gotoperu.com/img/video/gotoperu-group.jpg" alt="video" class="img-responsive">--}}
-
-                {{--<div class="content-video-btn-1">--}}
-                {{--<a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"  class="html5lightbox content-vbtn-color-blue" data-width="570" data-height="320" title="title here "><i class="fa fa-play-circle"></i></a>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="container">
-    <div class="row margin-top-60 margin-bottom-20">
-        <div class="col-md-12">
-            <div class="text-center font-montserrat">
-                <h2 class="color-goto-orange">Outstanding work by our Chief Explorer Kim MacQuarrie</h2>
-                {{--<h3>We have it all. Just ask!</h3>--}}
-                {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
-            </div>
-        </div>
-    </div>
-
-    <div class="row margin-top-20 font-montserrat">
-        <div class="col-md-6">
-            <a href="" class="color-goto-grey">
-                <h4>Peru travel useful information</h4>
-                <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <a href="" class="color-goto-grey">
-                <h4>Andes travel guide</h4>
-                <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
-            </a>
-        </div>
-    </div>
-
-    <div class="row margin-top-60 margin-bottom-20">
-        <div class="col-md-12">
-            <div class="text-center font-montserrat">
-                <a href="" class="btn btn-lg btn-warning">View our bloc</a>
-            </div>
-        </div>
-    </div>
 
 
-</div>
+
+
 
 <div class="container">
     <div class="row margin-top-85 margin-bottom-10"><!--.row -->
@@ -876,7 +829,7 @@
 <footer class="margin-top-60">
     <img src="{{asset('images/footer-1.jpg')}}" alt="" class="img-responsive">
 </footer>
-<div class="">
+<div class="hide">
     <section id="cd-placeholder-1" class="cd-section cd-container">
         <h2>TOUR PACKAGES</h2>
         <p>

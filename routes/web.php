@@ -23,6 +23,11 @@ Route::get('/packages', [
     'uses' => 'HomeController@packages',
     'as' => 'packages_path',
 ]);
+//---packages
+Route::get('/destinations', [
+    'uses' => 'HomeController@destinations',
+    'as' => 'destinations_path',
+]);
 //---itinerary
 Route::get('/packages/{titulo}', [
     'uses' => 'HomeController@show',
