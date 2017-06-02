@@ -478,4 +478,7 @@ jQuery(document).ready(function($){
         return window.getComputedStyle(articlesWrapper.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
     }
 
+    //tooltip
+        $('[data-toggle="tooltip"]').tooltip()
+
 });

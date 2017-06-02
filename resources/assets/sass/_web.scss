@@ -893,6 +893,20 @@ Secondary Fixed Navigation
   bottom: 0;
   background: rgba(0,0,0,.4);
 }
+.cd-secondary-nav.cd-secondary-nav-packages{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom: -1px;
+  background: rgba(255,255,255,.7);
+}
+.cd-secondary-nav.cd-secondary-nav-packages li a b{
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.cd-secondary-nav.cd-secondary-nav-packages li a:hover b, .cd-secondary-nav.cd-secondary-nav-packages li a.active b{
+  color: #333333;
+}
 .cd-secondary-nav ul {
   /* mobile first - secondary navigation hidden by default, triggered by tap/click on .cd-secondary-nav-trigger*/
   position: fixed;
@@ -1039,6 +1053,14 @@ Secondary Fixed Navigation
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     background: rgba(3, 13, 24, 0.96);
   }
+
+  .cd-secondary-nav.cd-secondary-nav-packages.animate-children {
+    /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
+    /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.96);
+  }
+
   .cd-secondary-nav.animate-children li a {
     //padding: 26px 30px 0 30px;
   }
@@ -2146,4 +2168,18 @@ Aside
   color: #777777;
   padding: 20px;
   margin: 0px;
+}
+
+//packages
+.pacakges-footer{
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.pacakges-box:hover .list-services img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.color-title-packages{
+  margin-top: 17%;
+  color: rgba(255,255,255,.7);
 }

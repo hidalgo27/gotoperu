@@ -876,7 +876,7 @@
 <footer class="margin-top-60">
     <img src="{{asset('images/footer-1.jpg')}}" alt="" class="img-responsive">
 </footer>
-<div class="hide">
+<div class="">
     <section id="cd-placeholder-1" class="cd-section cd-container">
         <h2>TOUR PACKAGES</h2>
         <p>

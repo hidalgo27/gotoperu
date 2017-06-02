@@ -56,49 +56,7 @@
 
         <div class="banner position-relative">
 
-            <div class="banner-header banner-header-itinerary color-white">
-                <div class="banner-header-top font-montserrat">
-                    <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
-                    <div class="list-services text-center">
-                        <ul class="no-padding margin-bottom-0">
-                            <li>
-                                <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-center margin-top-10">
-                        <a href="" class="btn btn-info">Inquire Now</a>
-                    </div>
-                </div>
-                <div class="divider margin-top-20"></div>
-                <div class="banner-header-bottom">
-                    <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
-                    <p class="no-margin color-goto-light">$150 average saving</p>
-                    <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
-                    <p class="no-margin color-goto-light">100s of testimonials</p>
-                </div>
-            </div>
+
 
             <div class="box-header container-fluid">
 
@@ -119,15 +77,13 @@
                 </div>
 
 
-
-
-                {{--<div class="row margin-top-150">--}}
-                {{--<div class="col-lg-12 text-center">--}}
+                <div class="row">
+                <div class="col-lg-12 text-center">
                 {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
-                {{--<h1 class="color-goto-orange text-50">Machu Picchu Express</h1>--}}
+                <h1 class="color-white text-50 color-title-packages">Traveler to Traveler</h1>
                 {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
-                {{--</div>--}}
-                {{--</div>--}}
+                </div>
+                </div>
             </div>
             <img src="{{asset('images/banners/itinerary/titicaca.jpg')}}"/>
         </div>
@@ -143,25 +99,43 @@
     <nav>
         <ul class="no-margin">
             <li>
-                <a href="#cd-placeholder-1">
-                    <b>OVERVIEW</b>
+                <a href="#cd-culture">
+                    <b>CULTURE</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-2">
-                    <b>ITINERARY</b>
+                <a href="#cd-active">
+                    <b>ACTIVE</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-3">
-                    <b>PRICES</b>
+                <a href="#cd-nature">
+                    <b>NATURE</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-5" class="btn btn-warning">
+                <a href="#cd-cities">
+                    <b>CITIES</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-trek">
+                    <b>TREK</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-galapagos">
+                    <b>GALAPAGOS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#cd-inquire" class="btn btn-warning">
                     <b>INQUIRE NOW</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
@@ -231,7 +205,7 @@
 </div>
 
 <div class="container">
-    <div class="row margin-top-40 margin-bottom-20">
+    <div class="row margin-top-40 margin-bottom-20" id="cd-inquire">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
                 <h2>Create Your Dream Adventure</h2>
