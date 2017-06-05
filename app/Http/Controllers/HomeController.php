@@ -45,6 +45,10 @@ class HomeController extends Controller
     {
         return view('page.destinations');
     }
+    public function destinations_sow($title)
+    {
+        return view('page.destinations-show');
+    }
 
     /**
      * Display the specified resource.

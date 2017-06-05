@@ -17,6 +17,7 @@ a:focus{
 .bg-goto-orange{background:#ffa500;}
 .bg-goto-gray{background:#333333;}
 .bg-goto-pink {background: #f00a77;}
+.bg-goto-blue-light{background: #f8f8f8;}
 
 .bg-goto-gray-1{background:#f1f1f1;}
 .bg-goto-gray-2{background:#525252;}
@@ -148,6 +149,7 @@ a:focus{
 
 .padding-right-0{padding-right:0;}
 .padding-rl-100{padding-left:100px;padding-right:100px;}
+.padding-rl-10{padding: 0 10px}
 
 .margin-left-0{margin-left: 0;}
 .margin-right-0{margin-right: 0;}
@@ -2182,4 +2184,18 @@ Aside
 .color-title-packages{
   margin-top: 17%;
   color: rgba(255,255,255,.7);
+}
+
+//destinations
+.nav-destinations a{
+  padding: 0 !important;
+  transition: 0.25s;
+}
+.nav-destinations a:hover{
+  transition: 0.25s;
+  color: #ffa500;
+  background-color: transparent !important;
+}
+.nav-destinations .active{
+  color: #ffa500;
 }
