@@ -26,11 +26,11 @@
 <nav class="cd-3d-nav-container">
     <ul class="cd-3d-nav no-padding">
         <li class="cd-selected">
-            <a href="#cd-placeholder-1">Tour Packages</a>
+            <a href="{{route('packages_path')}}">Tour Packages</a>
         </li>
 
         <li>
-            <a href="#cd-placeholder-1">Destinations</a>
+            <a href="{{route('destinations_path')}}">Destinations</a>
         </li>
 
         <li>
@@ -49,141 +49,6 @@
     <span class="cd-marker color-1"></span>
 </nav> <!-- .cd-3d-nav-container -->
 
-<div class="position-relative">
-
-    <div id="cd-intro-tagline" class="font-montserrat clearfix">
-        {{--<h1>Secondary Fixed Navigation</h1>--}}
-
-        <div class="banner position-relative">
-
-
-
-            <div class="box-header container-fluid">
-
-                <div class="row">
-
-                    <div class="col-md-7">
-
-                        <div class="margin-top-20">
-                            <img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive">
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="text-right margin-top-10">
-                            <b class="text-30 margin-right-30">(813) 454-9707</b>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                <div class="col-lg-12 text-center">
-                {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
-                <h1 class="color-white text-50 color-title-packages">Traveler to Traveler</h1>
-                {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
-                </div>
-                </div>
-            </div>
-            <img src="{{asset('images/banners/itinerary/titicaca.jpg')}}"/>
-        </div>
-
-        {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
-        {{--<a href="#0" id="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}
-    </div> <!-- #cd-intro-tagline -->
-
-</div> <!-- #cd-intro -->
-
-<div class="cd-secondary-nav cd-secondary-nav-tinerary">
-    <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
-    <nav>
-        <ul class="no-margin">
-            <li>
-                <a href="#cd-culture">
-                    <b>CULTURE</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-active">
-                    <b>ACTIVE</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-nature">
-                    <b>NATURE</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-cities">
-                    <b>CITIES</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-trek">
-                    <b>TREK</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-galapagos">
-                    <b>GALAPAGOS</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-            <li>
-                <a href="#cd-inquire" class="btn btn-warning">
-                    <b>INQUIRE NOW</b>
-                    {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div> <!-- .cd-secondary-nav -->
-
-<div class="container-category">
-    <div class="row padding-top-10 padding-bottom-10"><!--.row -->
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/apotur.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/asta.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/expedia.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/facebook.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/meetup.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="{{asset('images/logos/new.png')}}" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="http://gotoperu.travel/img/logos/peru.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="http://gotoperu.travel/img/logos/prom-peru.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="http://gotoperu.travel/img/logos/tripadvisor.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="http://gotoperu.travel/img/logos/yelp.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-1">
-            <img src="http://gotoperu.travel/img/logos/youtube.png" alt="" class="img-responsive">
-        </div>
-    </div>
-</div>
 
 @yield('content')
 

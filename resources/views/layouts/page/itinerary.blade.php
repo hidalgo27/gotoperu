@@ -26,11 +26,11 @@
 <nav class="cd-3d-nav-container">
     <ul class="cd-3d-nav no-padding">
         <li class="cd-selected">
-            <a href="#cd-placeholder-1">Tour Packages</a>
+            <a href="{{route('packages_path')}}">Tour Packages</a>
         </li>
 
         <li>
-            <a href="#cd-placeholder-1">Destinations</a>
+            <a href="{{route('destinations_path')}}">Destinations</a>
         </li>
 
         <li>
@@ -107,7 +107,7 @@
                     <div class="col-md-7">
 
                         <div class="margin-top-20">
-                            <img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive">
+                            <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive"></a>
                         </div>
                     </div>
 
@@ -143,25 +143,25 @@
     <nav>
         <ul class="no-margin">
             <li>
-                <a href="#cd-placeholder-1">
+                <a href="#cd-overview">
                     <b>OVERVIEW</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-2">
+                <a href="#cd-itinerary">
                     <b>ITINERARY</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-3">
+                <a href="#cd-prices">
                     <b>PRICES</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-placeholder-5" class="btn btn-warning">
+                <a href="#cd-inquire" class="btn btn-warning">
                     <b>INQUIRE NOW</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
@@ -231,7 +231,7 @@
 </div>
 
 <div class="container">
-    <div class="row margin-top-40 margin-bottom-20">
+    <div class="row margin-top-40 margin-bottom-20" id="cd-inquire">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
                 <h2>Create Your Dream Adventure</h2>
