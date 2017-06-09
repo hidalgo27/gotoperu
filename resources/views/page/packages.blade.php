@@ -1,4 +1,4 @@
-@extends('layouts.page.packages')
+@extends('layouts.page.default')
 
 @section('content')
     <div class="position-relative">
@@ -104,122 +104,122 @@
         </div>
     </div>
 
-<div class="container">
-    <div class="row margin-top-40">
-        <div class="col-md-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-green"><b>PERU TRAVEL FEATURED PACKAGES</b></h1>
-            <p class="text-16">our most popular Peru and South America itineraries, these packages could be used as a reference to customize your own trip. At GOTOPERU we specialize in crafting personalize experiences based on your preferences; we invited to review these programs to have glimpse of the most important destinations for instance MachuPicchu, Lake Titicaca, Nazca and the Amazon.</p>
-        </div>
-    </div>
-
-
-    @foreach($categoria as $categorias)
-        <div class="row padding-top-50" id="cd-{{str_replace(' ', '-', strtolower($categorias->nombre))}}">
-            <div class="col-md-12 font-montserrat">
-                <h2 class="color-goto-grey">{{ucwords(strtolower($categorias->nombre))}}</h2>
-                <p class="text-15">If you have an inclination towards arts and culture, then Peru would leave you absorbed. Peru to lovers of culture and antiquity is the equivalent of what Disneyland means to kids. Peru has many diverse sites that resonate with the splendors of ancient Inca. The abundance of interesting locations and sites like the Cusco and Machu Picchu engage your taste for antiquity. Just when you think you have seen it all, a visit to Lima would jolt you out of the past and into the more contemporary Peru where an emerging hybrid culture is being fueled by the integration of different races from all over the world! A feel of Peruvian culture would mean a trip to Puno and Lake Titicaca where you would experience the colorful and pulsating festivals devoted to reveling Quechua and Aymara roots.</p>
+    <div class="container">
+        <div class="row margin-top-40">
+            <div class="col-md-12 text-center font-montserrat">
+                <h1 class="text-30 color-goto-green"><b>PERU TRAVEL FEATURED PACKAGES</b></h1>
+                <p class="text-16">our most popular Peru and South America itineraries, these packages could be used as a reference to customize your own trip. At GOTOPERU we specialize in crafting personalize experiences based on your preferences; we invited to review these programs to have glimpse of the most important destinations for instance MachuPicchu, Lake Titicaca, Nazca and the Amazon.</p>
             </div>
         </div>
-        <div class="row margin-top-20">
-        @foreach($paquete_categoria->where('idcategoria',$categorias->id) as $paquete_categorias)
-                <div class="col-md-4 margin-bottom-30">
 
-                    <div class="pacakges-box clearfix">
 
-                        <div class="font-montserrat bg-goto-blue-light">
-                            <div class="pacakges-img">
-                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
-                            </div>
-                            <div class="pacakges-body">
-                                <div class="padding-rl-10">
-                                    <div class="margin-top-5 margin-bottom-5">
-                                        <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><h2 class="text-16 no-margin color-goto-grey"><b class="color-goto-orange">{{$paquete_categorias->paquete->codigo}}:</b> {{ucfirst(strtolower($paquete_categorias->paquete->titulo))}}</h2></a>
+        @foreach($categoria as $categorias)
+            <div class="row padding-top-50" id="cd-{{str_replace(' ', '-', strtolower($categorias->nombre))}}">
+                <div class="col-md-12 font-montserrat">
+                    <h2 class="color-goto-grey">{{ucwords(strtolower($categorias->nombre))}}</h2>
+                    <p class="text-15">If you have an inclination towards arts and culture, then Peru would leave you absorbed. Peru to lovers of culture and antiquity is the equivalent of what Disneyland means to kids. Peru has many diverse sites that resonate with the splendors of ancient Inca. The abundance of interesting locations and sites like the Cusco and Machu Picchu engage your taste for antiquity. Just when you think you have seen it all, a visit to Lima would jolt you out of the past and into the more contemporary Peru where an emerging hybrid culture is being fueled by the integration of different races from all over the world! A feel of Peruvian culture would mean a trip to Puno and Lake Titicaca where you would experience the colorful and pulsating festivals devoted to reveling Quechua and Aymara roots.</p>
+                </div>
+            </div>
+            <div class="row margin-top-20">
+            @foreach($paquete_categoria->where('idcategoria',$categorias->id) as $paquete_categorias)
+                    <div class="col-md-4 margin-bottom-30">
+
+                        <div class="pacakges-box clearfix">
+
+                            <div class="font-montserrat bg-goto-blue-light">
+                                <div class="pacakges-img">
+                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="pacakges-body">
+                                    <div class="padding-rl-10">
+                                        <div class="margin-top-5 margin-bottom-5">
+                                            <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><h2 class="text-16 no-margin color-goto-grey"><b class="color-goto-orange">{{$paquete_categorias->paquete->codigo}}:</b> {{ucfirst(strtolower($paquete_categorias->paquete->titulo))}}</h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="padding-rl-10">
+                                        <p class="text-info text-12">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            @foreach($paquete_destinos->where('idpaquetes',$paquete_categorias->paquete->id)->take(2) as $paquete_destino)
+                                                {{ucwords(strtolower($paquete_destino->destinos->nombre))}}/
+                                            @endforeach
+                                            <button tabindex="0" class="btn btn-link text-12 color-goto-pink no-padding" role="button" data-toggle="popover" data-trigger="focus" title="Countries Visited" data-content="
+                                                                @php $i=0; @endphp
+                                            @foreach($paquete_destinos->where('idpaquetes',$paquete_categorias->paquete->id) as $paquete_destino)
+                                            {{ucwords(strtolower($paquete_destino->destinos->nombre))}},
+                                                                @php $i++; @endphp
+                                            @endforeach" data-placement="top">
+                                                @if($i > 2)
+                                                    {{$i-2}} more...
+                                                @endif
+                                            </button>
+                                        </p>
+
+                                    </div>
+                                    <div class="padding-rl-10">
+                                        <div class="list-services text-center spacer-10">
+                                            <ul class="no-padding margin-bottom-0">
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
+                                                </li>
+                                                -                              <li>
+                                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                                <li>
+                                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="padding-rl-10">
-                                    <p class="text-info text-12">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        @foreach($paquete_destinos->where('idpaquetes',$paquete_categorias->paquete->id)->take(2) as $paquete_destino)
-                                            {{ucwords(strtolower($paquete_destino->destinos->nombre))}}/
-                                        @endforeach
-                                        <button tabindex="0" class="btn btn-link text-12 color-goto-pink no-padding" role="button" data-toggle="popover" data-trigger="focus" title="Countries Visited" data-content="
-                                                            @php $i=0; @endphp
-                                        @foreach($paquete_destinos->where('idpaquetes',$paquete_categorias->paquete->id) as $paquete_destino)
-                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}},
-                                                            @php $i++; @endphp
-                                        @endforeach" data-placement="top">
-                                            @if($i > 2)
-                                                {{$i-2}} more...
-                                            @endif
-                                        </button>
-                                    </p>
-
-                                </div>
-                                <div class="padding-rl-10">
-                                    <div class="list-services text-center spacer-10">
-                                        <ul class="no-padding margin-bottom-0">
-                                            <li>
-                                                <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
-                                            </li>
-                                            -                              <li>
-                                                <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                            <li>
-                                                <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                                            </li>
-                                        </ul>
+                                <div class="padding-bottom-10 padding-rl-10">
+                                    <div class="col-md-6 no-padding">
+                                        <b class="text-20 color-goto-green">{{$paquete_categorias->paquete->duracion}} days</b>
+                                    </div>
+                                    <div class="col-md-6 no-padding text-right">
+                                        <b class="text-20 color-goto-green"><sup class="color-goto-light">from $ </sup>
+                                            @foreach($paquete_categorias->paquete->precio_paquetes as $precio)
+                                                @if($precio->estrellas == 2)
+                                                    {{$precio->precio_d}}
+                                                @endif
+                                            @endforeach
+                                        </b>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="padding-bottom-10 padding-rl-10">
-                                <div class="col-md-6 no-padding">
-                                    <b class="text-20 color-goto-green">{{$paquete_categorias->paquete->duracion}} days</b>
-                                </div>
-                                <div class="col-md-6 no-padding text-right">
-                                    <b class="text-20 color-goto-green"><sup class="color-goto-light">from $ </sup>
-                                        @foreach($paquete_categorias->paquete->precio_paquetes as $precio)
-                                            @if($precio->estrellas == 2)
-                                                {{$precio->precio_d}}
-                                            @endif
-                                        @endforeach
-                                    </b>
+                                <div class="col-md-12 margin-top-10 no-padding">
+                                    <div class="pacakges-footer"></div>
                                 </div>
                             </div>
-                            <div class="col-md-12 margin-top-10 no-padding">
-                                <div class="pacakges-footer"></div>
-                            </div>
+
                         </div>
 
+
                     </div>
-
-
-                </div>
+            @endforeach
+            </div>
         @endforeach
-        </div>
-    @endforeach
 
 
-    <div class="row margin-top-85">
-        <div class="col-md-12 text-center">
-            <a href="" class="btn btn-lg btn-warning">See Our Galapagos Tours</a>
+        <div class="row margin-top-85">
+            <div class="col-md-12 text-center">
+                <a href="" class="btn btn-lg btn-warning">See Our Galapagos Tours</a>
+            </div>
         </div>
+
     </div>
-
-</div>
 
 @stop

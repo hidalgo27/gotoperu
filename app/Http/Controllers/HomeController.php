@@ -8,6 +8,7 @@ use App\TPaquete;
 use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -88,6 +89,57 @@ class HomeController extends Controller
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
         $paquete = TPaquete::with('itinerario','paquetes_destinos', 'precio_paquetes')->where('titulo', $title)->get();
         return view('page.itinerary', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos]);
+    }
+    public function mail()
+    {
+        $from = 'info@gotoperu.com';
+
+        $category = $_POST['txt_category'];
+        $number = $_POST['txt_number'];
+        $days = $_POST['txt_days'];
+        $date = $_POST['txt_date'];
+        $description = $_POST['txt_description'];
+
+        $name = $_POST['txt_name'];
+        $email = $_POST['txt_email'];
+        $phone = $_POST['txt_phone'];
+
+//        dd($category, $number, $days, $date, $description, $name, $email, $phone);
+
+        try {
+            Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
+                $messaje->to($email, $name)
+                    ->subject('Inquire GotoPeru')
+                    /*->attach('ruta')*/
+                    ->from('info@gotoperu.com', 'GotoPeru');
+            });
+
+
+            Mail::send(['html' => 'notifications.page.admin-form-design'], [
+                'category' => $category,
+                'number' => $number,
+                'days' => $days,
+                'date' => $date,
+                'description' => $description,
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone
+            ], function ($messaje) use ($from) {
+                $messaje->to($from, 'GotoPeru')
+                    ->subject('Inquire GotoPeru.Travel')
+                    /*->attach('ruta')*/
+                    ->from('info@gotoperu.com', 'GotoPeru.Travel');
+            });
+
+
+            return 'Thank you for contact us, you will receive a reply in less than 24 hours, gurantee. :)';
+
+        }
+        catch (Exception $e){
+            return $e;
+        }
+
+//        return view('page.itinerary', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos]);
     }
 
     /**

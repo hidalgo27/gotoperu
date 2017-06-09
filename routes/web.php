@@ -38,6 +38,12 @@ Route::get('/packages/{titulo}', [
     'as' => 'home_show_path',
 ]);
 
+//---form
+Route::post('/design', [
+    'uses' => 'HomeController@mail',
+    'as' => 'mail_path',
+]);
+
 //Route::get('cliente/login', [
 //    'uses' => 'ClientAuthController@index',
 //    'as' => 'client_auth_index_path',

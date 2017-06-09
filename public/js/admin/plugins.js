@@ -24714,17 +24714,22 @@ $(document).ready(function(){
 
     //contact
     $('#step1-link').click(function(e) {
-        $("#step1-section").delay(300).fadeIn(400);
-        $("#step2-section").fadeOut(400);
-        $('#step2-link').removeClass('active');
-        $(this).addClass('active');
+        $("#step1-section").delay(100).fadeIn(100);
+        $("#step2-section").fadeOut(100);
+        $('#step2-link').removeClass('hide');
+        $('#f_send').removeClass('show');
+        $('#f_send').addClass('hide');
+        $(this).addClass('hide');
         e.preventDefault();
     });
     $('#step2-link').click(function(e) {
-        $("#step2-section").delay(100).fadeIn(400);
-        $("#step1-section").fadeOut(400);
+        $("#step2-section").delay(100).fadeIn(100);
+        $("#step1-section").fadeOut(100);
         $('#step1-link').removeClass('active');
-        $(this).addClass('active');
+        $('#step1-link').removeClass('hide');
+        $('#f_send').removeClass('hide');
+        $('#f_send').addClass('show');
+        $(this).addClass('hide');
         e.preventDefault();
     });
 
@@ -24861,3 +24866,5 @@ jQuery(document).ready(function($){
     $('[data-toggle="popover"]').popover()
 
 });
+
+//MAILS

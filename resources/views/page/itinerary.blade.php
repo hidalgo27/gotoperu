@@ -1,7 +1,167 @@
-@extends('layouts.page.itinerary')
+@extends('layouts.page.default')
 
 @section('content')
+    <div class="position-relative">
 
+        <div id="cd-intro-tagline" class="font-montserrat clearfix">
+            {{--<h1>Secondary Fixed Navigation</h1>--}}
+
+            <div class="banner position-relative">
+
+                <div class="banner-header banner-header-itinerary color-white">
+                    <div class="banner-header-top font-montserrat">
+                        <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
+                        <div class="list-services text-center">
+                            <ul class="no-padding margin-bottom-0">
+                                <li>
+                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                </li>
+                                <li>
+                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-10">
+                            <a href="" class="btn btn-info">Inquire Now</a>
+                        </div>
+                    </div>
+                    <div class="divider margin-top-20"></div>
+                    <div class="banner-header-bottom">
+                        <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
+                        <p class="no-margin color-goto-light">$150 average saving</p>
+                        <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
+                        <p class="no-margin color-goto-light">100s of testimonials</p>
+                    </div>
+                </div>
+
+                <div class="box-header container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-md-7">
+
+                            <div class="margin-top-20">
+                                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="text-right margin-top-10">
+                                <b class="text-30 margin-right-30">(813) 454-9707</b>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    {{--<div class="row margin-top-150">--}}
+                    {{--<div class="col-lg-12 text-center">--}}
+                    {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
+                    {{--<h1 class="color-goto-orange text-50">Machu Picchu Express</h1>--}}
+                    {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                </div>
+                <img src="{{asset('images/banners/itinerary/cusco.jpg')}}"/>
+            </div>
+
+            {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
+            {{--<a href="#0" id="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}
+        </div> <!-- #cd-intro-tagline -->
+
+    </div> <!-- #cd-intro -->
+
+    <div class="cd-secondary-nav cd-secondary-nav-tinerary">
+        <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+        <nav>
+            <ul class="no-margin">
+                <li>
+                    <a href="#cd-overview">
+                        <b>OVERVIEW</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+                <li>
+                    <a href="#cd-itinerary">
+                        <b>ITINERARY</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+                <li>
+                    <a href="#cd-prices">
+                        <b>PRICES</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+                <li>
+                    <a href="#cd-inquire" class="btn btn-warning">
+                        <b>INQUIRE NOW</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> <!-- .cd-secondary-nav -->
+
+    <div class="container-category">
+        <div class="row padding-top-10 padding-bottom-10"><!--.row -->
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/apotur.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/asta.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/expedia.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/facebook.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/meetup.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="{{asset('images/logos/new.png')}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="http://gotoperu.travel/img/logos/peru.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="http://gotoperu.travel/img/logos/prom-peru.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="http://gotoperu.travel/img/logos/tripadvisor.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="http://gotoperu.travel/img/logos/yelp.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <img src="http://gotoperu.travel/img/logos/youtube.png" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row margin-top-40">
             <div class="col-md-8 font-montserrat">
