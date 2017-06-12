@@ -467,6 +467,10 @@
             $("#f_send").removeAttr("disabled");
         }
     }
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 
 </body>
