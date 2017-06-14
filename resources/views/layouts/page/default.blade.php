@@ -34,16 +34,18 @@
         </li>
 
         <li>
-            <a href="#0">Getting To Peru</a>
+            <a href="https://gotoperu.com/getting-to-peru/" target="_blank">Getting To Peru</a>
         </li>
 
         <li>
-            <a href="#0">FAQ</a>
+            <a href="https://gotoperu.com/faq/" target="_blank">FAQ</a>
         </li>
 
         <li>
             <a href="#0">Travel Blog</a>
         </li>
+
+
     </ul> <!-- .cd-3d-nav -->
 
     <span class="cd-marker color-1"></span>

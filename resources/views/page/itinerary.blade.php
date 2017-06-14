@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
 
-                                <p>{{$itinerario->descripcion}}</p>
+                                @php echo $itinerario->descripcion; @endphp
 
                                 <button class="btn btn-default" data-toggle="modal" data-target=".img-gallery-{{$itinerario->dia}}">View Gallery</button>
 

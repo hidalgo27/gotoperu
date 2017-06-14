@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row margin-top-20" id="cd-tour-packages">
+        <div class="row margin-top-20" id="tour-packages">
             <div class="col-lg-12 text-center font-montserrat">
                 <h1 class="text-20 text-info"><strong>PERU TRAVEL PACKAGES</strong></h1>
                 <h2 class="text-30 color-goto-green"><b>GREAT ADVENTURE PACKAGES FOR EVERYONE WITH GOTOPERU</b></h2>

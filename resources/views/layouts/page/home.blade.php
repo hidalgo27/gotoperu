@@ -156,20 +156,38 @@
     <nav>
         <ul class="no-margin">
             <li>
-                <a href="#cd-tour-packages">
-                    <b>TOUR PACKAGES</b>
+                <a href="#tour-packages">
+                    <b>TRAVEL PACKAGES</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-hotels">
-                    <b>HOTELS</b>
+                <a href="{{route('packages_path')}}">
+                    <b>BY STYLE</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#cd-reviews">
+                <a href="#reviews">
                     <b>REVIEWS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="https://gotoperu.com/about-us/" target="_blank">
+                    <b>ABOUT US</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="#tour-packages" target="_blank">
+                    <b>FLIGHTS</b>
+                    {{--<span></span><!-- icon -->--}}
+                </a>
+            </li>
+            <li>
+                <a href="https://gotoperu.com/faq/" target="_blank">
+                    <b>FAQ</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
@@ -179,12 +197,12 @@
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
-            <li>
-                <a href="#cd-inquire">
-                    <b>INQUIRE NOW</b>
+            {{--<li>--}}
+                {{--<a href="#cd-inquire">--}}
+                    {{--<b>INQUIRE NOW</b>--}}
                     {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
+                {{--</a>--}}
+            {{--</li>--}}
         </ul>
     </nav>
 </div> <!-- .cd-secondary-nav -->
@@ -232,7 +250,7 @@
 
 @yield('content')
 
-<div class="container-testimonial margin-top-70" id="cd-reviews">
+<div class="container-testimonial margin-top-70" id="reviews">
     <div class="container">
         <div class="row margin-top-70 margin-bottom-70">
             <div class="col-md-6">
