@@ -123,7 +123,7 @@
 
                                             <div class="font-montserrat bg-goto-blue-light">
                                                 <div class="pacakges-img">
-                                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                                 </div>
                                                 <div class="pacakges-body">
                                                     <div class="padding-rl-10">
@@ -156,7 +156,7 @@
                                                                 <li>
                                                                     <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
                                                                 </li>
-                                 -                              <li>
+                                                                <li>
                                                                     <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
                                                                 </li>
                                                                 <li>
@@ -261,7 +261,7 @@
 
                                         <div class="font-montserrat bg-goto-blue-light">
                                             <div class="pacakges-img">
-                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                             </div>
                                             <div class="pacakges-body">
                                                 <div class="padding-rl-10">
@@ -356,7 +356,7 @@
 
                                         <div class="font-montserrat bg-goto-blue-light">
                                             <div class="pacakges-img">
-                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                             </div>
                                             <div class="pacakges-body">
                                                 <div class="padding-rl-10">
@@ -482,7 +482,7 @@
 
                                         <div class="font-montserrat bg-goto-blue-light">
                                             <div class="pacakges-img">
-                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                                <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                             </div>
                                             <div class="pacakges-body">
                                                 <div class="padding-rl-10">
@@ -591,7 +591,7 @@
                 <div class="content-b font-montserrat">
                     <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
                     <h3>Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
-                    <a href="" class="btn btn-lg btn-danger margin-top-20">Why us</a>
+                    <a href="https://gotoperu.com/about-us/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>
                 </div>
             </div>
         </div>

@@ -128,7 +128,7 @@
 
                             <div class="font-montserrat bg-goto-blue-light">
                                 <div class="pacakges-img">
-                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete_categorias->paquete->titulo)))}}"><img src="{{asset('images/packages/'.$paquete_categorias->paquete->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                 </div>
                                 <div class="pacakges-body">
                                     <div class="padding-rl-10">

@@ -52,39 +52,52 @@
 <div id="cd-intro">
     <div class="banner-header color-white">
         <div class="banner-header-top font-montserrat">
-            <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
-            <div class="list-services text-center">
-                <ul class="no-padding margin-bottom-0">
-                    <li>
-                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                    </li>
-                    <li>
-                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                    </li>
-                </ul>
-            </div>
-            <p class="text-16 margin-top-10">LAND $999<span class="display-block">LAND + FLIGHTS $1499</span></p>
-            <div class="text-center">
-                <a href="" class="btn btn-sm btn-success ">View Trip</a>
-            </div>
+            @foreach($paquete_h as $paquetes)
+
+                <p class="text-20 color-white text-center">{{ucfirst(strtolower($paquetes->titulo))}} <span class="display-block text-30"><b>({{$paquetes->duracion}} days)</b></span></p>
+                <div class="list-services text-center">
+                    <ul class="no-padding margin-bottom-0">
+                        <li>
+                            <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-16 margin-top-10">
+                    <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
+                        @foreach($paquetes->precio_paquetes as $precio)
+                            @if($precio->estrellas == 2)
+                                {{$precio->precio_d}}
+                            @endif
+                        @endforeach
+                    </b>
+                    All Included
+                </p>
+                <div class="text-center">
+                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-sm btn-success ">View Trip</a>
+                </div>
+            @endforeach
+
         </div>
         <div class="divider margin-top-20"></div>
         <div class="banner-header-bottom">
