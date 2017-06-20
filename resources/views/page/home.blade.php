@@ -1,6 +1,7 @@
 @extends('layouts.page.home')
 
 @section('content')
+
     <div class="container">
         <div class="row margin-top-20" id="tour-packages">
             <div class="col-lg-12 text-center font-montserrat">
@@ -10,7 +11,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="container">
         <div class="row margin-top-20">
             <div class="col-md-12">
