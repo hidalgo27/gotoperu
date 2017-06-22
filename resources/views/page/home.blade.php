@@ -15,105 +15,34 @@
     <div class="container">
         <div class="row margin-top-20">
             <div class="col-md-12">
+                <h2 class="text-center font-montserrat">Travel Offers</h2>
                 <div class="tab_container">
-                    <input id="tab1" type="radio" name="tabs" checked>
-                    <label for="tab1">
+                    <input id="tab1" type="radio" name="tabs" checked class="hidden-xs">
+                    <label for="tab1" class="hidden-xs">
                         {{--<i class="fa fa-code"></i>--}}
                         <span>Travel offers</span>
                     </label>
 
-                    <input id="tab2" type="radio" name="tabs">
-                    <label for="tab2">
+                    <input id="tab2" type="radio" name="tabs" class="hidden-xs">
+                    <label for="tab2" class="hidden-xs">
                         {{--<i class="fa fa-pencil-square-o"></i>--}}
                         <span>With us flights</span>
                     </label>
 
-                    <input id="tab3" type="radio" name="tabs">
-                    <label for="tab3">
+                    <input id="tab3" type="radio" name="tabs" class="hidden-xs">
+                    <label for="tab3" class="hidden-xs">
                         {{--<i class="fa fa-bar-chart-o"></i>--}}
                         <span>Machupicchu & Galapagos</span>
                     </label>
 
-                    <input id="tab4" type="radio" name="tabs">
-                    <label for="tab4">
+                    <input id="tab4" type="radio" name="tabs" class="hidden-xs">
+                    <label for="tab4" class="hidden-xs">
                         {{--<i class="fa fa-folder-open-o"></i>--}}
                         <span>Multicountries</span>
                     </label>
-                    
-                    {{--<input id="tab5" type="radio" name="tabs">--}}
-                    {{--<label for="tab5"><i class="fa fa-envelope-o"></i><span>Contact</span></label>--}}
 
                     <section id="content1" class="tab-content">
-                        {{--<div class="row margin-top-10">--}}
-                            {{--<div class="col-md-6">--}}
-                                {{--<div class="text-center font-montserrat">--}}
-                                    {{--<div class="row">--}}
-                                        {{--<div class="col-lg-12">--}}
-                                            {{--<p><b>By Days</b></p>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="warning">3 - 5</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="warning">6 - 8</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="warning">12 - 15</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="warning">16+</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="warning">unknown</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="col-md-6">--}}
-                                {{--<div class="text-center font-montserrat">--}}
-                                    {{--<div class="row">--}}
-                                        {{--<div class="col-lg-12">--}}
-                                            {{--<p><b>By Price</b></p>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="info">3 - 5</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="info">6 - 8</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="info">12 - 15</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="info">16+</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                    {{--<button type="button" class="btn" data-color="info">unknown</button>--}}
-                                    {{--<input type="checkbox" class="hidden" />--}}
-                                {{--</span>--}}
-                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+
                         <div class="row">
 
                             @foreach($paquete as $paquetes)
@@ -591,7 +520,7 @@
             <div class="content-a color-white">
                 <div class="content-b font-montserrat">
                     <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
-                    <h3>Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
+                    <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
                     <a href="https://gotoperu.com/about-us/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>
                 </div>
             </div>
@@ -608,7 +537,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 margin-bottom-30 clearfix">
                 <div class="grid-destinations">
                     <figure class="effect-destinations">
                         <img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">
@@ -620,7 +549,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 margin-bottom-30 clearfix">
                 <div class="grid-destinations">
                     <figure class="effect-destinations">
                         <img src="{{asset('images/destinations/home/cusco.jpg')}}" alt="" class="img-responsive">
@@ -632,7 +561,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 margin-bottom-30 clearfix">
                 <div class="grid-destinations">
                     <figure class="effect-destinations">
                         <img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">
@@ -648,7 +577,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="text-center margin-top-70">
+                <div class="text-center margin-top-40">
                     <a href="{{route('destinations_path')}}" class="btn btn-lg btn-warning">View featured destination</a>
                 </div>
             </div>
@@ -715,7 +644,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
                                 <img src="{{asset('images/icons/item/contact.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
@@ -725,7 +654,7 @@
 
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-12">
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
                                 <img src="{{asset('images/icons/item/design.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
@@ -735,7 +664,7 @@
 
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-12">
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
                                 <img src="{{asset('images/icons/item/vacations.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
@@ -747,7 +676,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 hidden-xs">
                     <img class="img-responsive" src="{{asset('images/contact.png')}}" alt="" width="140" height="140">
                 </div><!-- /.col-lg-4 -->
 
@@ -801,34 +730,34 @@
         {{--</div>--}}
     </div>
 
-    <div class="container">
+    <div class="container hidden-xs">
         <div class="text-center font-montserrat margin-top-60">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/groups.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <h4>Small Groups and Private tours</h4>
                         <p>Lorem ipsum dolor sit am. dolor sit am.</p>
                     </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/hour.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <h4>We live here, trully a 24/7 Assistance</h4>
                         <p>Lorem ipsum dolor sit am. dolor sit am.</p>
                     </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/customize.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <h4>Book Now option or Customize a dream trip!</h4>
                         <p>Lorem ipsum dolor si. ipsum dolor si.</p>
                     </div>
@@ -837,30 +766,30 @@
             </div>
             <div class="row margin-bottom-30 margin-top-30">
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/alert.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-1 col-xs-122">
                         <h4>Cutting the middlemen, headquarters at Peru</h4>
                         <p>Lorem ipsum dolor sit am. dolor sit am.</p>
                     </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/tripadvisor.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <h4>We take pride of our tripadvisor reviews!</h4>
                         <p>Lorem ipsum dolor sit amet. dolor sit amet.</p>
                     </div>
                     {{--<p></p>--}}
                 </div>
                 <div class="col-md-4">
-                    <div class="col-md-4 col-lg-offset-4">
+                    <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/women.png')}}" alt="">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-xs-12">
                         <h4>We can adapt to any arrival and departure</h4>
                         <p>Lorem ipsum dolor sit am. dolor sit am.</p>
                     </div>
