@@ -769,7 +769,7 @@
                     <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/alert.png')}}" alt="">
                     </div>
-                    <div class="col-md-1 col-xs-122">
+                    <div class="col-md-12 col-xs-12">
                         <h4>Cutting the middlemen, headquarters at Peru</h4>
                         <p>Lorem ipsum dolor sit am. dolor sit am.</p>
                     </div>
