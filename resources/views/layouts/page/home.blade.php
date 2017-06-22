@@ -153,15 +153,17 @@
 
         <div class="col-md-6 col-md-offset-5  margin-top-50">
             <div class="padding-10">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="padding-10">
-                        {{--<p class="text-16 no-margin">Customize</p>--}}
-                        <a href="#cd-inquire" class="cd-btn">Inquire Now</a>
+                        <p class="text-16 no-margin">A BETTER WAY TO TRAVEL TO PERU</p>
                     </div>
                     {{--<div class="padding-10">--}}
                         {{--<p class="text-16 no-margin">Book Today</p>--}}
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
+                </div>
+                <div class="col-md-6">
+                    <a href="#cd-inquire" class="cd-btn">Inquire Now</a>
                 </div>
             </div>
             {{--<a href="" class="cd-btn">Inquire Now</a>--}}

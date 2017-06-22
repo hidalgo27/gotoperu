@@ -170,7 +170,7 @@ a:focus{
   font-weight: 400;
 }
 .display-block{
-  display: block;
+  display: block !important;
 }
 .divider {
   height: 1px;
@@ -1413,7 +1413,7 @@ Placeholder Sections
   padding: 20px;
   background: #fff;
   color: #999;
-  border-bottom: 2px solid #f0f0f0;
+  //border-bottom: 2px solid #f0f0f0;
 }
 
 .tab_container .tab-content p,
@@ -2010,6 +2010,7 @@ Aside
 }
 .aside-itinerary ul{
   padding: 0;
+  list-style: none;
 }
 .aside-itinerary li {
   counter-increment: articles;

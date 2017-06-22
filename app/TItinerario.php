@@ -12,4 +12,9 @@ class TItinerario extends Model
     {
         return $this->belongsTo(TPaquete::class, 'idpaquetes');
     }
+
+    public function itinerario_imagen()
+    {
+        return $this->hasMany(TItinerarioImagen::class, 'iditinerario');
+    }
 }

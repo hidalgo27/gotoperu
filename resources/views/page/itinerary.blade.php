@@ -10,38 +10,53 @@
 
                 <div class="banner-header banner-header-itinerary color-white">
                     <div class="banner-header-top font-montserrat">
-                        <p class="text-20 color-white text-center">Peru & Machupicchu <span class="display-block text-30"><b>(3 days)</b></span></p>
-                        <div class="list-services text-center">
-                            <ul class="no-padding margin-bottom-0">
-                                <li>
-                                    <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-10">
-                            <a href="" class="btn btn-info">Inquire Now</a>
-                        </div>
+
+                        @foreach($paquete as $paquetes)
+
+                            <p class="text-20 color-white text-center">{{ucfirst(strtolower($paquetes->titulo))}} <span class="display-block text-30"><b>({{$paquetes->duracion}} days)</b></span></p>
+                            <div class="list-services text-center">
+                                <ul class="no-padding margin-bottom-0">
+                                    <li>
+                                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                    <li>
+                                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="text-16 margin-top-10">
+                                <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
+                                    @foreach($paquetes->precio_paquetes as $precio)
+                                        @if($precio->estrellas == 2)
+                                            {{$precio->precio_d}}
+                                        @endif
+                                    @endforeach
+                                </b>
+                                All Included
+                            </p>
+                            <div class="text-center">
+                                <a href="#cd-inquire" class="btn btn-sm btn-success ">Check Availability</a>
+                            </div>
+                        @endforeach
+
                     </div>
                     <div class="divider margin-top-20"></div>
                     <div class="banner-header-bottom">
@@ -273,24 +288,27 @@
             </div>
         </div>
 
-        <div class="row main-wrapper">
+        <div class="row">
+            <div class="main-wrapper clearfix">
             <div class="col-md-8">
                 <div class="cd-articles">
                     @foreach($paquete as $paquetes)
                         @foreach($paquetes->itinerario as $itinerario)
-                            <article class="text-justify">
+                            <article class="text-justify display-block margin-bottom-20">
                                 <header>
                                     {{--<img src="{{asset('images/banners/cusco.jpg')}}" alt="article image" class="img-responsive">--}}
                                     <h2 class="font-montserrat text-20"><b>Day {{$itinerario->dia}}:</b> {{ucwords(strtolower($itinerario->titulo))}}</h2>
                                 </header>
 
-                                <div class="col-md-6 pull-right margin-top-20">
+                                <div class="col-md-5 pull-right">
                                     <div class="project">
                                         <figure class="img-responsive">
-                                            <img src="{{asset('images/destinations/home/cusco.jpg')}}" class="img-responsive">
+                                            @foreach($itinerario->itinerario_imagen->take(1) as $imagen)
+                                                <img src="{{asset('images/itinerary/'.$imagen->nombre.'')}}" class="img-responsive" alt="{{$imagen->alt}}">
+                                            @endforeach
                                             <span class="actions">
-                                        <a href="#" data-toggle="modal" data-target=".img-gallery-{{$itinerario->id}}"><i class="fa fa-camera" aria-hidden="true"></i></a>
-                                    </span>
+                                                <a href="#" data-toggle="modal" data-target=".img-gallery-{{$itinerario->id}}"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                                            </span>
                                         </figure>
                                     </div>
                                 </div>
@@ -306,24 +324,24 @@
 
                                                 <!-- Wrapper for slides -->
                                                 <div class="carousel-inner">
+                                                    @foreach($itinerario->itinerario_imagen->take(1) as $imagen)
                                                     <div class="item active">
-                                                        <img class="img-responsive" src="{{asset('images/destinations/home/cusco.jpg')}}" alt="...">
+                                                        <img class="img-responsive" src="{{asset('images/itinerary/'.$imagen->nombre.'')}}" alt="{{$imagen->nombre}}">
                                                         <div class="carousel-caption">
                                                             Cusco
                                                         </div>
                                                     </div>
-                                                    <div class="item">
-                                                        <img class="img-responsive" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="...">
-                                                        <div class="carousel-caption">
-                                                            Machu Picchu
+                                                    @endforeach
+                                                    @foreach($itinerario->itinerario_imagen->take(-1) as $imagen)
+{{--                                                        <img src="{{asset('images/itinerary/'.$imagen->nombre.'')}}" class="img-responsive">--}}
+                                                        <div class="item">
+                                                            <img class="img-responsive" src="{{asset('images/itinerary/'.$imagen->nombre.'')}}" alt="{{$imagen->nombre}}">
+                                                            <div class="carousel-caption">
+                                                                {{$imagen->title}}
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img class="img-responsive" src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="...">
-                                                        <div class="carousel-caption">
-                                                            Titicaca
-                                                        </div>
-                                                    </div>
+                                                    @endforeach
+
                                                 </div>
 
                                                 <!-- Controls -->
@@ -363,6 +381,7 @@
 
                     </ul>
                 </aside> <!-- .cd-read-more -->
+            </div>
             </div>
         </div>
 
