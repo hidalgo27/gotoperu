@@ -367,7 +367,7 @@
             </div>
             <div class="col-md-4">
                 <aside class="aside-itinerary margin-top-30" id="sidebar">
-                    <img src="{{asset('images/itinerary/GTP500.jpg')}}" alt="" class="img-responsive">
+                    <img src="{{asset('images/maps/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive">
                     <ul>
                         @foreach($paquete as $paquetes_i)
                             @foreach($paquetes_i->itinerario->sortBy('duracion') as $itinerario)

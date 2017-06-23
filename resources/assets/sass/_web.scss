@@ -472,7 +472,7 @@ Main Components
   /* this is the 3D rotating navigation */
   position: relative;
   height: 100%;
-  background-color: #343c55;
+  background-color: #ececec;
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -517,23 +517,23 @@ Main Components
   list-style: none;
 }
 .cd-3d-nav li:first-of-type a::before {
-  background-image: url("../images/icons/include/assistances.png");
-  background-size: 100%;
-}
-.cd-3d-nav li:nth-of-type(2) a::before {
-  background-image: url("../images/icons/include/flight.png");
-  background-size: 100%;
-}
-.cd-3d-nav li:nth-of-type(3) a::before {
   background-image: url("../images/icons/include/tours.png");
   background-size: 100%;
 }
+.cd-3d-nav li:nth-of-type(2) a::before {
+  background-image: url("../images/icons/item/destinations.png");
+  background-size: 100%;
+}
+.cd-3d-nav li:nth-of-type(3) a::before {
+  background-image: url("../images/icons/item/getting.png");
+  background-size: 100%;
+}
 .cd-3d-nav li:nth-of-type(4) a::before {
-  background-image: url("../images/icons/include/transfers.png");
+  background-image: url("../images/icons/item/faq.png");
   background-size: 100%;
 }
 .cd-3d-nav li:nth-of-type(5) a::before {
-  background-image: url("../images/icons/include/entrances.png");
+  background-image: url("../images/icons/item/inquire.png");
   background-size: 100%;
 }
 .cd-3d-nav a {
@@ -594,7 +594,7 @@ Main Components
 @media only screen and (min-width: 768px) {
   .cd-3d-nav a {
     padding: 5.6em 1em 0;
-    color: #ffffff;
+    color: #949494;
     font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
@@ -979,7 +979,7 @@ Intro
   background: rgba(0,0,0,.7);
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 27%;
   //margin: 7% 0;
   width: 20%;
   //height: 73%;

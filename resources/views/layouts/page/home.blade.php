@@ -94,18 +94,18 @@
                     All Included
                 </p>
                 <div class="text-center">
-                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-sm btn-success ">View Trip</a>
+                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning color-white">View Trip</a>
                 </div>
             @endforeach
 
         </div>
-        <div class="divider margin-top-20"></div>
-        <div class="banner-header-bottom">
-            <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
-            <p class="no-margin color-goto-light">$150 average saving</p>
-            <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
-            <p class="no-margin color-goto-light">100s of testimonials</p>
-        </div>
+        {{--<div class="divider margin-top-20"></div>--}}
+        {{--<div class="banner-header-bottom">--}}
+            {{--<h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>--}}
+            {{--<p class="no-margin color-goto-light">$150 average saving</p>--}}
+            {{--<p class="no-margin color-goto-light">24/7 local authentic assistance</p>--}}
+            {{--<p class="no-margin color-goto-light">100s of testimonials</p>--}}
+        {{--</div>--}}
     </div>
     <div class="container-fluid">
         {{--<div class="col-md-5">--}}
@@ -152,18 +152,22 @@
         {{--<h1>Secondary Fixed Navigation</h1>--}}
 
         <div class="col-md-6 col-md-offset-5  margin-top-50">
-            <div class="padding-10">
-                <div class="col-md-6">
-                    <div class="padding-10">
-                        <p class="text-16 no-margin">A BETTER WAY TO TRAVEL TO PERU</p>
+            <div class="">
+                <div class="col-md-9 no-padding">
+                    <div class="text-right">
+                        <p class="text-20 no-margin">A <b class="color-goto-orange">BETTER</b> WAY TO TRAVEL TO PERU</p>
+                        <p class="text-16 no-margin">$150 average saving</p>
+                        <p class="text-16 no-margin">24/7 local assistance</p>
+                        <p class="text-16 no-margin">100s of testimonials</p>
                     </div>
                     {{--<div class="padding-10">--}}
                         {{--<p class="text-16 no-margin">Book Today</p>--}}
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
                 </div>
-                <div class="col-md-6">
-                    <a href="#cd-inquire" class="cd-btn">Inquire Now</a>
+                <div class="col-md-3">
+                    {{--<a href="#cd-inquire" class="cd-btn">Inquire Now</a>--}}
+                    <a href="#cd-inquire"><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive"></a>
                 </div>
             </div>
             {{--<a href="" class="cd-btn">Inquire Now</a>--}}
