@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row margin-top-40 margin-bottom-20" id="cd-inquire">
+    <div class="row margin-top-40" id="cd-inquire">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
                 <h2>Create Your Dream Adventure</h2>
@@ -519,7 +519,7 @@
 
 
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-3 col-xs-12">
             <section>
                 <div class="wizard">
                     <div class="wizard-inner hide">
@@ -574,58 +574,58 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <div class="form-design">
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-2 hidden-xs">
                                                     <div class="row">
                                                         <div class="content-icon col-md-12">
                                                             <i class="fa fa-home fa-2x" aria-hidden="true"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-10">
+                                                <div class="col-lg-10 col-xs-12">
                                                     <div class="row">
-                                                        <div class="col-lg-3 no-padding">
+                                                        <div class="col-lg-3 col-xs-3 no-padding">
                                                             <div data-toggle="buttons" class="btn-group">
                                                                 <label class="btn btn-default">
                                                                     <div class="design-content">
                                                                         <input type="checkbox" name="category[]" value="Luxury">
                                                                         <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                        <span class="text-19"><b>Luxury</b></span>
+                                                                        <span class="text-19 text-xs-12"><b>Luxury</b></span>
                                                                         <span class="color-goto-orange">★★★★★</span>
                                                                     </div>
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-3 no-padding">
+                                                        <div class="col-lg-3 col-xs-3 no-padding">
                                                             <div data-toggle="buttons" class="btn-group">
                                                                 <label class="btn btn-default">
                                                                     <div class="design-content">
                                                                         <input type="checkbox" name="category[]" value="Superior">
                                                                         <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                        <span class="text-19"><b>Superior</b></span>
+                                                                        <span class="text-19 text-xs-12"><b>Superior</b></span>
                                                                         <span class="color-goto-orange">★★★★</span>
                                                                     </div>
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-3 no-padding">
+                                                        <div class="col-lg-3 col-xs-3 no-padding">
                                                             <div data-toggle="buttons" class="btn-group">
                                                                 <label class="btn btn-default">
                                                                     <div class="design-content">
                                                                         <input type="checkbox" name="category[]" value="Best Value">
                                                                         <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                        <span class="text-19"><b>Best Value</b></span>
+                                                                        <span class="text-19 text-xs-12"><b>Best Value</b></span>
                                                                         <span class="color-goto-orange">★★★</span>
                                                                     </div>
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-3 no-padding">
+                                                        <div class="col-lg-3 col-xs-3 no-padding">
                                                             <div data-toggle="buttons" class="btn-group">
                                                                 <label class="btn btn-default">
                                                                     <div class="design-content">
                                                                         <input type="checkbox" name="category[]" value="Budget">
                                                                         <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                        <span class="text-19"><b>Budget</b></span>
+                                                                        <span class="text-19 text-xs-12"><b>Budget</b></span>
                                                                         <span class="color-goto-orange">★★</span>
                                                                     </div>
                                                                 </label>
@@ -652,16 +652,16 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-male fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10">
+                                                    <div class="col-lg-10 col-xs-12">
                                                         <div class="row">
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -674,7 +674,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -687,7 +687,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -700,7 +700,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -713,7 +713,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -726,7 +726,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
@@ -763,93 +763,93 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10">
+                                                    <div class="col-lg-10 col-xs-12">
                                                         <div class="row">
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="3 a 5">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-19"><b>3-5</b></span>
-                                                                                <span class="color-goto-orange">Days</span>
+                                                                                <span class="text-19 text-xs-12"><b>3-5</b></span>
+                                                                                <span class="color-goto-orange text-xs-12">Days</span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="6 a 8">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-19"><b>6-8</b></span>
-                                                                                <span class="color-goto-orange">Days</span>
+                                                                                <span class="text-19 text-xs-12"><b>6-8</b></span>
+                                                                                <span class="color-goto-orange text-xs-12">Days</span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="9 a 11">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-19"><b>9-11</b></span>
-                                                                                <span class="color-goto-orange">Days</span>
+                                                                                <span class="text-19 text-xs-12"><b>9-11</b></span>
+                                                                                <span class="color-goto-orange text-xs-12">Days</span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="12 a 15">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-19"><b>12-15</b></span>
-                                                                                <span class="color-goto-orange">Days</span>
+                                                                                <span class="text-19 text-xs-12"><b>12-15</b></span>
+                                                                                <span class="color-goto-orange text-xs-12">Days</span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="16+">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-19"><b>16+</b></span>
-                                                                                <span class="color-goto-orange">Days</span>
+                                                                                <span class="text-19 text-xs-12"><b>16+</b></span>
+                                                                                <span class="color-goto-orange text-xs-12">Days</span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2 no-padding">
+                                                            <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
                                                                     <div data-toggle="buttons" class="btn-group">
                                                                         <label class="btn btn-default">
                                                                             <div class="design-content">
                                                                                 <input type="checkbox" name="days[]" value="Undecided">
                                                                                 <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
-                                                                                <span class="text-9 padding-spacer-19"><b>Undecided</b></span>
+                                                                                <span class="text-9 text-xs-9 padding-spacer-19 padding-spacer-xs-11"><b>Undecided</b></span>
                                                                             </div>
                                                                         </label>
                                                                     </div>
@@ -871,16 +871,16 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 no-padding">
+                                                    <div class="col-lg-10 no-padding col-xs-12">
                                                         <div class="row">
-                                                            <div class="col-lg-12">
+                                                            <div class="col-lg-12 col-xs-12">
                                                                 <div class="">
                                                                     <div class="design-content">
                                                                         <input type="text" name="" id="f_date" value="" placeholder=" Tentative or set departure dates" size="45">
@@ -911,14 +911,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 no-padding">
+                                                    <div class="col-lg-10 col-xs-12 no-padding">
                                                         <div class="row">
                                                             <div class="col-lg-12">
                                                                 <div class="">
@@ -943,14 +943,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10">
+                                                    <div class="col-lg-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">
@@ -975,14 +975,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10">
+                                                    <div class="col-lg-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">
@@ -1007,14 +1007,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2">
+                                                    <div class="col-lg-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10">
+                                                    <div class="col-lg-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">

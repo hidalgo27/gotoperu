@@ -50,7 +50,7 @@
 </nav> <!-- .cd-3d-nav-container -->
 
 <div id="cd-intro">
-    <div class="banner-header color-white">
+    <div class="banner-header color-white hidden-xs">
         <div class="banner-header-top font-montserrat">
             @foreach($paquete_h as $paquetes)
 
@@ -126,9 +126,13 @@
             {{--<div class="margin-top-30">--}}
             {{--<b class="text-30">...once in your lifetime!</b>--}}
             {{--</div>--}}
-            <div class="margin-top-20">
+            <div class="margin-top-20 hidden-xs">
                 <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive"></a>
             </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive padding-20"></a>
+            </div>
+
         </div>
         {{--<div class="col-md-2">--}}
         {{--<div class="padding-10">--}}
@@ -136,8 +140,11 @@
         {{--</div>--}}
         {{--</div>--}}
         <div class="col-md-5">
-            <div class="text-right font-montserrat margin-top-10">
-                <b class="text-30 margin-right-30">(813) 454-9707</b>
+            <div class="text-right font-montserrat margin-top-10 hidden-xs">
+                <b class="text-30 margin-right-30 hidden-xs">(813) 454-9707</b>
+            </div>
+            <div class="text-center font-montserrat">
+                <b class="text-30 hidden-sm hidden-md hidden-lg">(813) 454-9707</b>
             </div>
         </div>
     </div>
@@ -146,15 +153,17 @@
 
         <div class="col-md-6 col-md-offset-5  margin-top-50">
             <div class="padding-10">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="padding-10">
-                        {{--<p class="text-16 no-margin">Customize</p>--}}
-                        <a href="#cd-inquire" class="cd-btn">Inquire Now</a>
+                        <p class="text-16 no-margin">A BETTER WAY TO TRAVEL TO PERU</p>
                     </div>
                     {{--<div class="padding-10">--}}
                         {{--<p class="text-16 no-margin">Book Today</p>--}}
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
+                </div>
+                <div class="col-md-6">
+                    <a href="#cd-inquire" class="cd-btn">Inquire Now</a>
                 </div>
             </div>
             {{--<a href="" class="cd-btn">Inquire Now</a>--}}
@@ -220,7 +229,7 @@
     </nav>
 </div> <!-- .cd-secondary-nav -->
 
-<div class="container-category">
+<div class="container-category hidden-xs">
     <div class="row padding-top-10 padding-bottom-10"><!--.row -->
         <div class="col-md-1">
             <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -263,7 +272,7 @@
 
 @yield('content')
 
-<div class="container-testimonial margin-top-70" id="reviews">
+<div class="container-testimonial margin-top-70 hidden-xs" id="reviews">
     <div class="container">
         <div class="row margin-top-70 margin-bottom-70">
             <div class="col-md-6">
@@ -288,14 +297,14 @@
         <div class="content-a color-white">
             <div class="content-b font-montserrat">
                 <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
-                <h3>Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
+                <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
                 <a href="https://gotoperu.com/testimonials/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container hidden-xs">
     <div class="row margin-top-100">
         <div class="col-md-6">
             <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
@@ -339,13 +348,13 @@
     </div>
 
     <div class="row margin-top-20 font-montserrat">
-        <div class="col-md-6">
+        <div class="col-md-6 margin-bottom-30">
             <a href="" class="color-goto-grey">
                 <h4>Peru travel useful information</h4>
                 <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
             </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 margin-bottom-30">
             <a href="" class="color-goto-grey">
                 <h4>Andes travel guide</h4>
                 <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
