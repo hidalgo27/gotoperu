@@ -184,20 +184,20 @@
                     <div class="col-md-12">
                         @foreach($paquete as $paquetes)
                         <h1 class="color-goto-orange"><strong>Peru Packages: {{ucwords(strtolower($paquetes->titulo))}}</strong></h1>
-                        <p class="text-18"><b>Machu Picchu, Cusco, Sacred Valley</b></p>
+                        {{--<p class="text-18"><b>Machu Picchu, Cusco, Sacred Valley</b></p>--}}
                         @endforeach
                     </div>
                 </div>
                 <div class="row" id="cd-overview">
                     <div class="col-md-12">
-                        <h3 class="color-goto-grey"><strong>Overview</strong></h3>
+                        <h3 class="color-goto-grey"><strong>Outline</strong></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box-route-ininerary clearfix">
-                            <div class="col-md-3 bg-goto-gray-1">
-                                <h3 class="color-goto-grey"><i class="fa fa-map-marker" aria-hidden="true"></i> Route</h3>
+                            <div class="col-md-3 bg-goto-gray-1 text-center">
+                                <i class="fa fa-map-o fa-5x margin-top-30" aria-hidden="true"></i>
                             </div>
                             <div class="col-md-9 box-route-ininerary-right">
                                 @foreach($paquete as $paquetes)
@@ -233,7 +233,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box-price-aside text-20 font-montserrat color-goto-grey">
-                            <b class="text-primary display-block text-left text-30">{{$paquetes->duracion}} Days</b>
+                            <b class="color-goto-grey display-block text-left text-30">{{$paquetes->duracion}} Days</b>
                             <span class="color-goto-orange">From<sup>$</sup>
                                 <b class="text-50">
                                     @foreach($paquete as $paquetes)
@@ -252,21 +252,23 @@
                                     @endforeach
                                 @endforeach
                             </p>
-                            <a class="btn btn-primary btn-embossed" style="width: 100%;padding: 10px 0px;" href="#cd-inquire">
+                            <a class="btn bg-goto-green color-white btn-embossed" style="width: 100%;padding: 10px 0px;" href="#cd-inquire">
                                 Choose This Package <span class="fui-triangle-down-small"></span>
                             </a>
+
+                            <ul class="itinerary-destinations text-left margin-top-20 margin-bottom-0">
+                                <li class="color-goto-green text-18"><b>Destinations</b></li>
+                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Cusco Tour</li>
+                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu</li>
+                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Sacred Valley</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row margin-top-20">
                     <div class="col-md-12">
                         <ul class="nav nav-list no-mobile">
-                            <li class="h4"><b>Tour Highlights</b></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Cusco Tour</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Machu Picchu</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i> Sacred Valley</li>
-                            <li class="divider margin-top-20 margin-bottom-20"></li>
                             <li class="h4"><b>Trip Style</b></li>
                             <li>
                                 <i class="fa fa-check" aria-hidden="true"></i> Culture / History            </li>

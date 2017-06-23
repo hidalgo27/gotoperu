@@ -97,7 +97,7 @@ a:focus{
 
 /* MARGIN BOTTOM */
 .no-margin{margin: 0}
-.margin-bottom-0{margin-bottom:0;}
+.margin-bottom-0{margin-bottom:0 !important;}
 .margin-bottom-5{margin-bottom:5px;}
 .margin-bottom-10{margin-bottom:10px;}
 .margin-bottom-15{margin-bottom:15px;}
@@ -885,7 +885,7 @@ Intro
   height: 100%;
   background: url('../images/slider/mapi-6.jpg') no-repeat center center;
   background-size: cover;
-  z-index: 2;
+  //z-index: 2;
 }
 #cd-intro #cd-intro-tagline {
   width: 90%;
@@ -959,6 +959,7 @@ Intro
     /* assign a position fixed and move outside the viewport (on the right) */
     opacity: 0;
     position: fixed;
+    z-index: 3;
     right: -20%;
     top: 0;
     padding: 5px 20px;
@@ -1002,8 +1003,11 @@ Secondary Fixed Navigation
 
 -------------------------------- */
 .cd-secondary-nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 3;
+  background: rgba(0,0,0,.4);
+  bottom: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1081,7 +1085,7 @@ Secondary Fixed Navigation
   .cd-secondary-nav {
     z-index: 1;
     //height: 100px;
-    background-color: rgba(51, 51, 51, 0.96);
+    //background-color: rgba(51, 51, 51, 0.96);
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     transition: height 0.3s;
@@ -1913,7 +1917,9 @@ figure.effect-category:hover p {
 
 
 //---itinerary
-
+.itinerary-destinations{
+  list-style: none;
+}
 
 /* --------------------------------
 
