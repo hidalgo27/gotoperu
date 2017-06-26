@@ -53,12 +53,21 @@ class HomeController extends Controller
         //
     }
 
-    public function packages()
+    public function category()
     {
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.packages',['categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
+        return view('page.category',['categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
+    }
+
+    public function packages()
+    {
+        $paquete = TPaquete::get();
+        $categoria = TCategoria::get();
+        $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        return view('page.packages',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
     }
     public function destinations()
     {

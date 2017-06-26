@@ -23,6 +23,11 @@ Route::get('/packages', [
     'uses' => 'HomeController@packages',
     'as' => 'packages_path',
 ]);
+//---category
+Route::get('/category', [
+    'uses' => 'HomeController@category',
+    'as' => 'category_path',
+]);
 //---destinarions
 Route::get('/destinations', [
     'uses' => 'HomeController@destinations',
