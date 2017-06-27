@@ -25,7 +25,8 @@
 </div> <!-- .cd-header -->
 <nav class="cd-3d-nav-container">
     <ul class="cd-3d-nav no-padding">
-        <li class="cd-selected">
+        {{--<li class="cd-selected">--}}
+        <li>
             <a href="{{route('packages_path')}}">Tour Packages</a>
         </li>
 

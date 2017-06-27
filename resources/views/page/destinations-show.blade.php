@@ -148,7 +148,7 @@
                                                         <li>
                                                             <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
                                                         </li>
-                                                        -                              <li>
+                                                        <li>
                                                             <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
                                                         </li>
                                                         <li>

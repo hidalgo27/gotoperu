@@ -2175,6 +2175,7 @@ Aside
   border-left: 1px solid #dedede;
   padding: 15px 0 15px 60px;
 }
+
 .box-route-ininerary h3{
   position: absolute;
   top: 50%;
@@ -2307,6 +2308,9 @@ Aside
 .pacakges-box{
   height: 450px;
 }
+.pacakges-box-package{
+  height: 370px;
+}
 //.pacakges-box:hover .list-services img{
 //  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 //  filter: grayscale(100%);
@@ -2315,7 +2319,28 @@ Aside
   margin-top: 17%;
   color: rgba(255,255,255,.7);
 }
-
+.box-duration{
+  padding: 0 20px;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  -moz-column-gap: 1.5em;
+  -o-column-gap: 1.5em;
+  //padding: 15px 0 15px 60px;
+  background: #f8f8f8;
+}
+.box-duration-title{
+  padding: 11px 20px;
+  background: #f8f8f8;
+}
+.box-duration a:hover {
+  transition: 0.25s;
+  color: #ffa500;
+  background-color: transparent !important;
+}
 //destinations
 .nav-destinations a{
   padding: 0 !important;

@@ -63,7 +63,7 @@ class HomeController extends Controller
 
     public function packages()
     {
-        $paquete = TPaquete::get();
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get();
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
