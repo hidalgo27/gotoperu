@@ -604,7 +604,7 @@
                         @foreach($categoria as $categorias)
                             <div class="item">
                                 <div class="grid-category position-relative">
-                                    <a href="{{route('packages_path')}}#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="color-goto-grey">
+                                    <a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="color-goto-grey">
                                         <img src="{{asset('images/category/'.str_replace(' ','-', strtolower($categorias->nombre)).'.jpg')}}" alt="" class="img-responsive"/>
                                         <div class="grid-box padding-30 text-center">
                                             <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($categorias->nombre)), 0, strlen($categorias->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($categorias->nombre)), strlen($categorias->nombre)/2, strlen($categorias->nombre))}}</b></span>

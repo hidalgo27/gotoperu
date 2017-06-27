@@ -183,7 +183,7 @@
     <nav>
         <ul class="no-margin">
             <li>
-                <a href="#tour-packages">
+                <a href="{{route('packages_path')}}">
                     <b>TRAVEL PACKAGES</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
