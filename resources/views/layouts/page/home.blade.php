@@ -99,48 +99,21 @@
             @endforeach
 
         </div>
-        {{--<div class="divider margin-top-20"></div>--}}
-        {{--<div class="banner-header-bottom">--}}
-            {{--<h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>--}}
-            {{--<p class="no-margin color-goto-light">$150 average saving</p>--}}
-            {{--<p class="no-margin color-goto-light">24/7 local authentic assistance</p>--}}
-            {{--<p class="no-margin color-goto-light">100s of testimonials</p>--}}
-        {{--</div>--}}
+
     </div>
     <div class="container-fluid">
-        {{--<div class="col-md-5">--}}
-        {{--<div class="margin-top-10">--}}
-        {{--<a href="">--}}
-        {{--<div class="col-md-2 no-padding">--}}
-        {{--<img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--<div class="col-md-10 no-padding">--}}
-        {{--<div class="margin-top-10">--}}
-        {{--<img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        {{--</a>--}}
-        
-        {{--</div>--}}
-        {{--</div>--}}
-        <div class="col-md-7">
-            {{--<div class="margin-top-30">--}}
-            {{--<b class="text-30">...once in your lifetime!</b>--}}
-            {{--</div>--}}
-            <div class="margin-top-20 hidden-xs">
-                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive"></a>
+
+        <div class="col-md-5">
+            <div class="hidden-xs">
+                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
+                <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
             </div>
             <div class="hidden-sm hidden-md hidden-lg">
                 <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive padding-20"></a>
             </div>
-
         </div>
-        {{--<div class="col-md-2">--}}
-        {{--<div class="padding-10">--}}
-        {{--<img src="{{asset('images/logos/logo-gotoperu-ave.png')}}" alt="" class="img-responsive">--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        <div class="col-md-5">
+
+        <div class="col-md-7">
             <div class="text-right font-montserrat margin-top-10 hidden-xs">
                 <b class="text-30 margin-right-30 hidden-xs">(813) 454-9707</b>
             </div>
@@ -168,7 +141,7 @@
                 </div>
                 <div class="col-md-3">
                     {{--<a href="#cd-inquire" class="cd-btn">Inquire Now</a>--}}
-                    <a href="#cd-inquire"><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive"></a>
+                    <a href="#cd-inquire" class="cd-btn"><span class="hide">Inquire Now</span><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive pull-right"></a>
                 </div>
             </div>
             {{--<a href="" class="cd-btn">Inquire Now</a>--}}

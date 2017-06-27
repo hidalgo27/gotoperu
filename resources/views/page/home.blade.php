@@ -5,9 +5,9 @@
     <div class="container">
         <div class="row margin-top-20" id="tour-packages">
             <div class="col-lg-12 text-center font-montserrat">
-                <h1 class="text-20 text-info"><strong>PERU TRAVEL PACKAGES</strong></h1>
+                <h1 class="text-20 color-goto-orange"><strong>PERU TRAVEL PACKAGES</strong></h1>
                 <h2 class="text-30 color-goto-green"><b>GREAT ADVENTURE PACKAGES FOR EVERYONE WITH GOTOPERU</b></h2>
-                <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
+                <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. <strong>let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</strong></p>
             </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row margin-top-20">
             <div class="col-md-12">
-                <h2 class="text-center font-montserrat">Travel Offers</h2>
+                <h2 class="text-center font-montserrat hidden-sm hidden-md hidden-lg">Travel Offers</h2>
                 <div class="tab_container">
                     <input id="tab1" type="radio" name="tabs" checked class="hidden-xs">
                     <label for="tab1" class="hidden-xs">
@@ -45,9 +45,94 @@
                     <section id="content1" class="tab-content">
 
                         <div class="row">
+                            <div class="col-md-3">
+
+                                <div class="panel panel-primary panel-offers">
+
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            Top Category
+                                        </h3>
+                                    </div>
+
+                                    <div class="panel-body">
+
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                                            {{--<ol class="carousel-indicators">--}}
+                                                {{--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>--}}
+                                                {{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
+                                                {{--<li data-target="#carousel-example-generic" data-slide-to="2"></li>--}}
+                                                {{--<li data-target="#carousel-example-generic" data-slide-to="3"></li>--}}
+                                            {{--</ol>--}}
+
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="{{asset('images/large-1.png')}}">
+                                                </div>
+
+                                                @foreach($categoria as $categorias)
+                                                    {{--<div class="item">--}}
+                                                        {{--<div class="grid-category position-relative">--}}
+                                                            {{--<a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="color-goto-grey">--}}
+                                                                {{--<img src="{{asset('images/category/'.str_replace(' ','-', strtolower($categorias->nombre)).'.jpg')}}" alt="" class="img-responsive"/>--}}
+                                                                {{--<div class="grid-box padding-30 text-center">--}}
+                                                                    {{--<span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($categorias->nombre)), 0, strlen($categorias->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($categorias->nombre)), strlen($categorias->nombre)/2, strlen($categorias->nombre))}}</b></span>--}}
+                                                                    {{--<div class="line"></div>--}}
+                                                                {{--</div>--}}
+                                                            {{--</a>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+
+                                                    <div class="item">
+                                                        <img src="{{asset('images/large-1.png')}}">
+                                                        <div class="carousel-caption">
+                                                            <h3>{{ucfirst(strtolower($categorias->nombre))}}</h3>
+                                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                                            <a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="btn btn-warning">View</a>
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    {{--<div class="panel-footer ">--}}
+
+                                        {{--<div class="col-md-6" style="position:relative;">--}}
+                                            {{--<button class="btn btn-primary  btn-md btn-block pull-left" role="button">--}}
+                                                {{--<div class="fa fa-rocket"></div>--}}
+                                                {{--<div class="icon-label">Launch</div>--}}
+                                            {{--</button>--}}
+                                        {{--</div>--}}
+
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<button class="btn btn-primary  btn-md  btn-block pull-right" role="button">--}}
+                                                {{--<div class="fa fa-envelope"></div>--}}
+                                                {{--<div class="icon-label">Email</div>--}}
+                                            {{--</button>--}}
+                                        {{--</div>--}}
+
+                                    {{--</div>--}}
+
+
+                                </div>
+
+                            </div>
 
                             @foreach($paquete as $paquetes)
-                                <div class="col-md-4 margin-bottom-30">
+                                <div class="col-md-3 margin-bottom-30">
 
 
                                         <div class="pacakges-box clearfix">
