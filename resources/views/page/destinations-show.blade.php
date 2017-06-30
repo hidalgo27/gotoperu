@@ -34,7 +34,7 @@
 {{--            {{asset('images/banners/destinations/destinations/'.str_replace(' ','-', strtoupper($destino->nombre)).'.jpg')}}--}}
 {{--            <img src="{{asset('images/banners/itinerary/machupicchu.jpg')}}"/>--}}
 
-                <img src="{{asset('images/banners/destinations/'.str_replace(' ','-', strtoupper($title)).'.jpg')}}"/>
+                <img src="{{asset('images/banners/destinations/'.str_replace(' ','-', strtolower($title)).'.jpg')}}"/>
 
         </div>
 

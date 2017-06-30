@@ -154,7 +154,7 @@
                 <div class="col-md-4 margin-bottom-30">
                     <div class="grid-category position-relative">
                         <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                            <img src="{{asset('images/destinations/'.str_replace(' ','-', strtoupper($destino->nombre)).'.jpg')}}" alt="" class="img-responsive"/>
+                            <img src="{{asset('images/destinations/'.str_replace(' ','-', strtolower($destino->nombre)).'.jpg')}}" alt="" class="img-responsive"/>
                             <div class="grid-box padding-30 text-center">
                                 {{--<span class="no-margin text-20"><b>{{ucwords(strtolower($destino->nombre))}}</span>--}}
                                 <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
