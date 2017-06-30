@@ -139,162 +139,39 @@
 </div>
 
 <div class="container">
-    <div class="row margin-top-20" id="cd-peru">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>PERU DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
+    @foreach($destinos->sortBy('nombre')->unique('pais') as  $destino)
+
+
+        <div class="row margin-top-20" id="cd-peru">
+            <div class="col-lg-12 text-center font-montserrat">
+                <h1 class="text-30 color-goto-orange"><b>{{strtoupper($destino->pais)}} DESTINATIONS</b></h1>
+                <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
+            </div>
         </div>
-    </div>
-    <div class="row margin-top-30">
-        <div class="col-md-4">
-            <div class="grid-category position-relative">
-                <a href="" class="color-goto-grey">
-                    <img src="{{asset('images/destinations/machupicchu.jpg')}}" alt="" class="img-responsive"/>
-                    <div class="grid-box padding-30 text-center">
-                        <span class="no-margin text-20"><i>Machu</i><b>picchu</b></span>
-                        <div class="line"></div>
+        <div class="row margin-top-30">
+
+            @foreach($destinos->where('pais',$destino->pais)->sortBy('nombre') as  $destino)
+                <div class="col-md-4 margin-bottom-30">
+                    <div class="grid-category position-relative">
+                        <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
+                            <img src="{{asset('images/destinations/'.str_replace(' ','-', strtoupper($destino->nombre)).'.jpg')}}" alt="" class="img-responsive"/>
+                            <div class="grid-box padding-30 text-center">
+                                {{--<span class="no-margin text-20"><b>{{ucwords(strtolower($destino->nombre))}}</span>--}}
+                                <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
+                                <div class="line"></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-        </div>
-        @foreach($destinos->where('pais','peru')->sortBy('nombre') as  $destino)
-            <div class="col-md-4 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            {{--<span class="no-margin text-20"><b>{{ucwords(strtolower($destino->nombre))}}</span>--}}
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
 
-    </div>
-
-    <div class="row margin-top-40" id="cd-ecuador">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>ECUADOR DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
         </div>
-    </div>
-    <div class="row margin-top-30">
-        @foreach($destinos->where('pais','ecuador') as  $destino)
-            <div class="col-md-6 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        @endforeach
-        {{--<div class="col-md-12">--}}
 
-            {{--<div class="grid-category position-relative">--}}
-                {{--<a href="" class="color-goto-grey">--}}
-                    {{--<img src="{{asset('images/destinations/ecuador.jpg')}}" alt="" class="img-responsive"/>--}}
-                    {{--<div class="grid-box padding-30 text-center">--}}
-                        {{--<span class="no-margin text-20"><i>Gala</i><b>pagos</b></span>--}}
-                        {{--<div class="line"></div>--}}
-                    {{--</div>--}}
-                {{--</a>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    </div>
 
-    <div class="row margin-top-40" id="cd-brasil">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>BRASIL DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
-        </div>
-    </div>
-    <div class="row margin-top-30">
-        @foreach($destinos->where('pais','brasil') as  $destino)
-            <div class="col-md-6 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
+    @endforeach
 
-    <div class="row margin-top-40" id="cd-argentina">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>ARGENTINA DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
-        </div>
-    </div>
-    <div class="row margin-top-30">
-        @foreach($destinos->where('pais','argentina') as  $destino)
-            <div class="col-md-6 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
 
-    <div class="row margin-top-40" id="cd-chile">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>CHILE DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
-        </div>
-    </div>
-    <div class="row margin-top-30">
-        @foreach($destinos->where('pais','chile') as  $destino)
-            <div class="col-md-6 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
 
-    <div class="row margin-top-40" id="cd-bolivia">
-        <div class="col-lg-12 text-center font-montserrat">
-            <h1 class="text-30 color-goto-orange"><b>BOLIVIA DESTINATIONS</b></h1>
-            <p class="text-15">Offering you an authentic and reliable travel experience in peru welcoming you to explore the many fully customized travel packages we have that suit every budget. let us plan your unforgettable trip to our majestic machu picchu and the rest of our homeland… peru!</p>
-        </div>
-    </div>
-    <div class="row margin-top-30">
-        @foreach($destinos->where('pais','bolivia') as  $destino)
-            <div class="col-md-6 margin-bottom-30">
-                <div class="grid-category position-relative">
-                    <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
-                        <img src="{{asset('images/destinations/cusco.jpg')}}" alt="" class="img-responsive"/>
-                        <div class="grid-box padding-30 text-center">
-                            <span class="no-margin text-20"><i>{{substr(ucfirst(strtolower($destino->nombre)), 0, strlen($destino->nombre)/2)}}</i><b>{{substr(ucfirst(strtolower($destino->nombre)), strlen($destino->nombre)/2, strlen($destino->nombre))}}</b></span>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
 
 </div>
 

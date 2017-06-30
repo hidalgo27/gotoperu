@@ -31,7 +31,11 @@
                     </div>
                 </div>
             </div>
-            <img src="{{asset('images/banners/itinerary/machupicchu.jpg')}}"/>
+{{--            {{asset('images/banners/destinations/destinations/'.str_replace(' ','-', strtoupper($destino->nombre)).'.jpg')}}--}}
+{{--            <img src="{{asset('images/banners/itinerary/machupicchu.jpg')}}"/>--}}
+
+                <img src="{{asset('images/banners/destinations/'.str_replace(' ','-', strtoupper($title)).'.jpg')}}"/>
+
         </div>
 
         {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
@@ -115,7 +119,7 @@
 
                                     <div class="font-montserrat bg-goto-blue-light">
                                         <div class="pacakges-img">
-                                            <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/GTPE1005.jpg')}}" alt="" class="img-responsive"></a>
+                                            <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}"><img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive"></a>
                                         </div>
                                         <div class="pacakges-body">
                                             <div class="padding-rl-10">
