@@ -96,7 +96,10 @@
                     {{--</div>--}}
                     {{--</div>--}}
                 </div>
-                <img src="{{asset('images/banners/itinerary/cusco.jpg')}}"/>
+                @foreach($paquete as $paquetes)
+                    <img src="{{asset('images/banners/itinerary/'.$paquetes->codigo.'.jpg')}}"/>
+                    {{--<p class="text-18"><b>Machu Picchu, Cusco, Sacred Valley</b></p>--}}
+                @endforeach
             </div>
 
             {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
