@@ -2558,7 +2558,12 @@ span.round-tab:hover {
     margin: 0px auto;
   }
 }
-@media (min-width: 768px){ }
+@media (min-width: 768px){
+  .carousel-caption-home{
+    //margin-bottom: 250px;
+    background: rgba(0,0,0,.5);
+  }
+}
 @media (min-width: 992px) { }
 @media (min-width: 1200px) {}
 

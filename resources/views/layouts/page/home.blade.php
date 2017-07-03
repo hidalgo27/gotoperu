@@ -125,11 +125,13 @@
     <div id="cd-intro-tagline" class="font-montserrat clearfix">
         {{--<h1>Secondary Fixed Navigation</h1>--}}
 
-        <div class="col-md-6 col-md-offset-5  margin-top-50">
+        <div class="col-md-7 col-md-offset-5  margin-top-50">
             <div class="">
-                <div class="col-md-9 no-padding">
+                <div class="col-md-12 margin-bottom-20">
+                    <p class="text-20 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATIONS</p>
+                </div>
+                <div class="col-md-7 no-padding">
                     <div class="text-right">
-                        <p class="text-20 no-margin">A <b class="color-goto-orange">BETTER</b> WAY TO TRAVEL TO PERU</p>
                         <p class="text-16 no-margin">$150 average saving</p>
                         <p class="text-16 no-margin">24/7 local assistance</p>
                         <p class="text-16 no-margin">100s of testimonials</p>
@@ -139,7 +141,7 @@
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     {{--<a href="#cd-inquire" class="cd-btn">Inquire Now</a>--}}
                     <a href="#cd-inquire" class="cd-btn"><span class="hide">Inquire Now</span><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive pull-right"></a>
                 </div>
