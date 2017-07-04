@@ -53,57 +53,66 @@
     <div class="banner-header color-white hidden-xs">
         <div class="banner-header-top font-montserrat">
             @foreach($paquete_h as $paquetes)
-
-                <p class="text-20 color-white text-center">{{ucfirst(strtolower($paquetes->titulo))}} <span class="display-block text-30"><b>({{$paquetes->duracion}} days)</b></span></p>
-                <div class="list-services text-center">
-                    <ul class="no-padding margin-bottom-0">
-                        <li>
-                            <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="text-18 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">({{$paquetes->duracion}} days)</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
+                    </div>
+                    <div class="col-md-5 no-padding">
+                        <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-15">View Trip</a>
+                    </div>
+                    <div class="col-md-12 text-center margin-top-10">
+                        <b class="text-18">ALL FLIGHTS INCLUDED</b>
+                    </div>
                 </div>
-                <p class="text-16 margin-top-10">
-                    <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
-                        @foreach($paquetes->precio_paquetes as $precio)
-                            @if($precio->estrellas == 2)
-                                {{$precio->precio_d}}
-                            @endif
-                        @endforeach
-                    </b>
-                    All Included
-                </p>
-                <div class="text-center">
-                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning color-white">View Trip</a>
+            <div class="row margin-top-10">
+                <div class="col-md-12">
+                    <div class="list-services text-center">
+                        <ul class="no-padding margin-bottom-0">
+                            <li>
+                                <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-16 margin-top-5">
+                        <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
+                            @foreach($paquetes->precio_paquetes as $precio)
+                                @if($precio->estrellas == 2)
+                                    {{$precio->precio_d}}
+                                @endif
+                            @endforeach
+                        </b>
+                        All Included
+                    </p>
                 </div>
             @endforeach
-
+            </div>
         </div>
 
     </div>
     <div class="container-fluid">
 
-        <div class="col-md-5">
+        <div class="col-md-4">
             <div class="hidden-xs">
                 <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
                 <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
@@ -113,7 +122,7 @@
             </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="text-right font-montserrat margin-top-10 hidden-xs">
                 <b class="text-30 margin-right-30 hidden-xs">(813) 454-9707</b>
             </div>
@@ -128,7 +137,7 @@
         <div class="col-md-7 col-md-offset-5  margin-top-50">
             <div class="">
                 <div class="col-md-12 margin-bottom-20">
-                    <p class="text-20 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATIONS</p>
+                    <p class="text-23 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATIONS</p>
                 </div>
                 <div class="col-md-7 no-padding">
                     <div class="text-right">

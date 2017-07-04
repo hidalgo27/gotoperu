@@ -31,25 +31,25 @@
                         <div class="item active">
                             <a href="">
                             <img src="{{asset('images/large-1.png')}}" class="img-responsive">
-                            <div class="carousel-caption carousel-caption-home no-padding">
-                                <b class="text-20">Primero</b>
+                            {{--<div class="carousel-caption carousel-caption-home no-padding">--}}
+                                {{--<b class="text-20">Primero</b>--}}
                                 {{--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>--}}
                                 {{--<a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="btn btn-warning">View</a>--}}
-                            </div>
+                            {{--</div>--}}
                             </a>
                         </div>
 
-                        @foreach($categoria as $categorias)
+                        {{--@foreach($categoria as $categorias)--}}
 
-                            <div class="item">
-                                <img src="{{asset('images/large-1.png')}}" class="img-responsive">
-                                <div class="carousel-caption carousel-caption-home no-padding">
-                                    <b class="text-20">{{ucfirst(strtolower($categorias->nombre))}}</b>
+                            {{--<div class="item">--}}
+                                {{--<img src="{{asset('images/large-1.png')}}" class="img-responsive">--}}
+                                {{--<div class="carousel-caption carousel-caption-home no-padding">--}}
+                                    {{--<b class="text-20">{{ucfirst(strtolower($categorias->nombre))}}</b>--}}
                                     {{--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>--}}
                                     {{--<a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="btn btn-warning">View</a>--}}
-                                </div>
-                            </div>
-                        @endforeach
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--@endforeach--}}
 
                     </div>
 
