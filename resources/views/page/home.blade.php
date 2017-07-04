@@ -6,7 +6,7 @@
         <div class="row margin-top-20" id="tour-packages">
             <div class="col-lg-12 text-center font-montserrat">
                 <h1 class="text-20 color-goto-orange"><strong>PERU TRAVEL PACKAGES</strong></h1>
-                <h2 class="text-30 color-goto-green"><b>GREAT ADVENTURE PACKAGES FOR EVERYONE WITH GOTOPERU</b></h2>
+                <h2 class="text-30 color-goto-green"><b>GENUINE PERU AND SOUTH AMERICA ADVENTURES WITH GOTOPERU</b></h2>
                 <p class="text-15">Founded in 2009, we have served over 10,000+ highly satisfied travelers. We offer personalized Peru and South America vacations including the best hotels at
                     each category, local passionate guides, top transportation , and friendly representatives from start to finish with authentic 24/7 local assistance.</p>
                 <p><strong>
@@ -86,7 +86,7 @@
                     </label>
 
                     <input id="tab3" type="radio" name="tabs" class="hidden-xs">
-                    <label for="tab3" class="hidden-xs">
+                    <label for="tab3" class="hidden-xs padding-6">
                         {{--<i class="fa fa-bar-chart-o"></i>--}}
                         <span>Machupicchu Galapagos</span>
                     </label>
@@ -564,10 +564,10 @@
             </div>
 
         </div>
-        <div class="row margin-top-20 margin-bottom-100">
+        <div class="row margin-top-20 margin-bottom-70">
             <div class="col-md-12">
                 <div class="text-center margin-top-20">
-                    <a href="{{route('packages_path')}}" class="btn btn-lg btn-warning">View all packages</a>
+                    <a href="{{route('packages_path')}}" class="btn btn-lg btn-danger">VIEW ALL PROGRAMS</a>
                 </div>
             </div>
         </div>
@@ -579,7 +579,7 @@
                 <div class="content-b font-montserrat">
                     <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
                     <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
-                    <a href="https://gotoperu.com/about-us/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>
+                    {{--<a href="https://gotoperu.com/about-us/" target="_blank" class="btn btn-lg btn-warning margin-top-20">Why us</a>--}}
                 </div>
             </div>
         </div>
@@ -595,41 +595,56 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 margin-bottom-30 clearfix">
-                <div class="grid-destinations">
-                    <figure class="effect-destinations">
-                        <img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">
-                        <figcaption>
-                            <h2>Machu<span>picchu</span></h2>
-                            <p>Ciudad de los incas</p>
-                            <a href="{{route('destinations_show_path', 'machupicchu')}}">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div class="col-md-4 margin-bottom-30 text-center box-home-destinations position-relative">
+                {{--<div class="grid-destinations">--}}
+                    {{--<figure class="effect-destinations">--}}
+                        {{--<img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">--}}
+                        {{--<figcaption>--}}
+                            {{--<h2>Machu<span>picchu</span></h2>--}}
+                            {{--<p>Ciudad de los incas</p>--}}
+                            {{--<a href="{{route('destinations_show_path', 'machupicchu')}}">View more</a>--}}
+                        {{--</figcaption>--}}
+                    {{--</figure>--}}
+                {{--</div>--}}
+                <a href="{{route('destinations_show_path', 'machupicchu')}}">
+                    <img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">
+                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                    <b class="text-20">MachuPicchu</b>
+                </a>
             </div>
-            <div class="col-md-4 margin-bottom-30 clearfix">
-                <div class="grid-destinations">
-                    <figure class="effect-destinations">
-                        <img src="{{asset('images/destinations/home/cusco.jpg')}}" alt="" class="img-responsive">
-                        <figcaption>
-                            <h2>Cu<span>sco</span></h2>
-                            <p>Capital del imperio Inca</p>
-                            <a href="{{route('destinations_show_path', 'cusco')}}">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div class="col-md-4 margin-bottom-30 text-center box-home-destinations">
+                {{--<div class="grid-destinations">--}}
+                    {{--<figure class="effect-destinations">--}}
+                        {{--<img src="{{asset('images/destinations/home/galapagos.jpg')}}" alt="" class="img-responsive">--}}
+                        {{--<figcaption>--}}
+                            {{--<h2>Gala<span>Pagos</span></h2>--}}
+                            {{--<p>Capital del imperio Inca</p>--}}
+                            {{--<a href="{{route('destinations_show_path', 'galapagos')}}">View more</a>--}}
+                        {{--</figcaption>--}}
+                    {{--</figure>--}}
+                {{--</div>--}}
+                <a href="{{route('destinations_show_path', 'galapagos')}}">
+                    <img src="{{asset('images/destinations/home/galapagos.jpg')}}" alt="" class="img-responsive">
+                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                    <b class="text-20">Galapagos</b>
+                </a>
             </div>
-            <div class="col-md-4 margin-bottom-30 clearfix">
-                <div class="grid-destinations">
-                    <figure class="effect-destinations">
-                        <img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">
-                        <figcaption>
-                            <h2>Titi<span>caca</span></h2>
-                            <p>Civilizacion andina más antigua</p>
-                            <a href="{{route('destinations_show_path', 'titicaca')}}">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div class="col-md-4 margin-bottom-30 clearfix text-center box-home-destinations">
+                {{--<div class="grid-destinations">--}}
+                    {{--<figure class="effect-destinations">--}}
+                        {{--<img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">--}}
+                        {{--<figcaption>--}}
+                            {{--<h2>Titi<span>caca</span></h2>--}}
+                            {{--<p>Civilizacion andina más antigua</p>--}}
+                            {{--<a href="{{route('destinations_show_path', 'titicaca')}}">View more</a>--}}
+                        {{--</figcaption>--}}
+                    {{--</figure>--}}
+                {{--</div>--}}
+                <a href="{{route('destinations_show_path', 'titicaca')}}">
+                    <img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">
+                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                    <b class="text-20">Titicaca</b>
+                </a>
             </div>
 
         </div>
@@ -702,7 +717,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
+                            <div class="col-md-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/contact.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
@@ -712,7 +727,7 @@
 
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-12">
-                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
+                            <div class="col-md-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/design.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
@@ -722,7 +737,7 @@
 
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-12">
-                            <div class="col-md-3 col-xs-6 col-xs-offset-3">
+                            <div class="col-md-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/vacations.png')}}" alt="" class="img-responsive img-circle">
                             </div>
                             <div class="col-md-9">
