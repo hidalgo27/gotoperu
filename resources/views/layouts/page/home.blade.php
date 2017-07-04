@@ -54,14 +54,14 @@
         <div class="banner-header-top font-montserrat">
             @foreach($paquete_h as $paquetes)
                 <div class="row">
-                    <div class="col-md-7">
-                        <p class="text-18 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">({{$paquetes->duracion}} days)</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
+                    <div class="col-md-6">
+                        <p class="text-18 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">{{$paquetes->duracion}} days</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
                     </div>
-                    <div class="col-md-5 no-padding">
-                        <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-15">View Trip</a>
+                    <div class="col-md-6">
+                        <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-20">View Trip</a>
                     </div>
                     <div class="col-md-12 text-center margin-top-10">
-                        <b class="text-18">ALL FLIGHTS INCLUDED</b>
+                        <b class="text-21">ALL FLIGHTS INCLUDED</b>
                     </div>
                 </div>
             <div class="row margin-top-10">
@@ -94,7 +94,7 @@
                             </li>
                         </ul>
                     </div>
-                    <p class="text-16 margin-top-5">
+                    <p class="text-20 margin-top-5">
                         <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
                             @foreach($paquetes->precio_paquetes as $precio)
                                 @if($precio->estrellas == 2)
