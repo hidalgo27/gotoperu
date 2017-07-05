@@ -137,7 +137,7 @@
         <div class="col-md-7 col-md-offset-5  margin-top-50">
             <div class="">
                 <div class="col-md-12 margin-bottom-20">
-                    <p class="text-23 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATIONS</p>
+                    <p class="text-23 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATION!</p>
                 </div>
                 <div class="col-md-7 no-padding">
                     <div class="text-right">

@@ -69,6 +69,74 @@ class HomeController extends Controller
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
         return view('page.packages',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
     }
+
+    public function type($type)
+    {
+        switch ($type) {
+            case 'featured':
+                $type_e = 1;
+                break;
+            case 'with-air-from-usa':
+                $type_e = 2;
+                break;
+            case 'machupicchu-galapagos':
+                $type_e = 3;
+                break;
+            case 'south-america':
+                $type_e = 4;
+                break;
+            default:
+                $type_e = 0;
+                break;
+        }
+
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get()->where('estado', $type_e);
+        $categoria = TCategoria::get();
+        $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        return view('page.packages-type',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type]);
+    }
+
+
+    public function duration_type($type,$duration)
+    {
+        switch ($type) {
+            case 'featured':
+                $type_e = 1;
+                break;
+            case 'with-air-from-usa':
+                $type_e = 2;
+                break;
+            case 'machupicchu-galapagos':
+                $type_e = 3;
+                break;
+            case 'south-america':
+                $type_e = 4;
+                break;
+            default:
+                $type_e = 0;
+                break;
+        }
+
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get()->where('estado', $type_e)->where('duracion', $duration);
+        $paquete_d = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get()->where('estado', $type_e);
+        $categoria = TCategoria::get();
+        $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        return view('page.packages-type-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type, 'duration'=>$duration, 'paquete_d'=>$paquete_d]);
+    }
+
+
+    public function duration($duration)
+    {
+        $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get()->where('duracion', $duration);
+        $paquete_d = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get();
+        $categoria = TCategoria::get();
+        $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        return view('page.packages-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'duration'=>$duration, 'paquete_d'=>$paquete_d]);
+    }
+
     public function destinations()
     {
         $destinos = TDestino::get();

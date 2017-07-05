@@ -23,6 +23,20 @@ Route::get('/packages', [
     'uses' => 'HomeController@packages',
     'as' => 'packages_path',
 ]);
+Route::get('/packages/{duration}-days', [
+    'uses' => 'HomeController@duration',
+    'as' => 'duration_show_path',
+]);
+Route::get('/packages/{type}', [
+    'uses' => 'HomeController@type',
+    'as' => 'type_show_path',
+]);
+
+Route::get('/packages/{type}/{duration_type}', [
+    'uses' => 'HomeController@duration_type',
+    'as' => 'duration_type_show_path',
+]);
+
 //---category
 Route::get('/category', [
     'uses' => 'HomeController@category',
@@ -38,7 +52,7 @@ Route::get('/destinations/{title}', [
     'as' => 'destinations_show_path',
 ]);
 //---itinerary
-Route::get('/packages/{titulo}', [
+Route::get('/travel-packages/{titulo}', [
     'uses' => 'HomeController@show',
     'as' => 'home_show_path',
 ]);

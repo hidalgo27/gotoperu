@@ -1,7 +1,7 @@
 a:focus{
   outline: 0;
 }
-.color-white{color:#fff;}
+.color-white{color:#fff !important;}
 .color-black{color:#000;}
 .color-grey{color: #636b6f}
 
@@ -1031,6 +1031,9 @@ Intro
 .banner-header-bottom{
   line-height: 19px;
 }
+.banner-header-itinerary{
+  top: 25%;
+}
 /* --------------------------------
 
 Secondary Fixed Navigation
@@ -1052,16 +1055,16 @@ Secondary Fixed Navigation
   bottom: -1px;
   background: rgba(0,0,0,.4);
 }
-.cd-secondary-nav.cd-secondary-nav-packages{
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  bottom: -1px;
-  background: rgba(255,255,255,.7);
-}
-.cd-secondary-nav.cd-secondary-nav-packages li a b{
-  color: rgba(0, 0, 0, 0.9);
-}
+//.cd-secondary-nav.cd-secondary-nav-packages{
+//  position: absolute;
+//  z-index: 3;
+//  width: 100%;
+//  bottom: -1px;
+//  //background: rgba(255,255,255,.7);
+//}
+//.cd-secondary-nav.cd-secondary-nav-packages li a b{
+//  color: rgba(0, 0, 0, 0.9);
+//}
 
 .cd-secondary-nav.cd-secondary-nav-packages li a:hover b, .cd-secondary-nav.cd-secondary-nav-packages li a.active b{
   color: #333333;
@@ -1216,12 +1219,21 @@ Secondary Fixed Navigation
     height: 50px;
   }
 
-  .cd-secondary-nav.cd-secondary-nav-packages.animate-children {
-    /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
-    /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.96);
+  .cd-secondary-nav.animate-children.cd-secondary-nav-packages{
+    background: rgba(255, 255, 255, .95);
   }
+
+
+  .cd-secondary-nav.animate-children.cd-secondary-nav-packages li a b{
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  //.cd-secondary-nav.cd-secondary-nav-packages.animate-children {
+  //  /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
+  //  /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
+  //  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  //  background: rgba(255, 255, 255, 0.96);
+  //}
 
   .cd-secondary-nav.animate-children li a {
     padding: 15px;
@@ -2216,7 +2228,7 @@ Aside
   float:left;
   position:absolute;
   top:0px;
-  z-index: 1;
+  //z-index: 1;
   width: 100%;
 }
 .box-route-ininerary{
@@ -2337,8 +2349,6 @@ Aside
 .project figure .actions a i {
   margin-top: 27%;
 }
-
-
 
 
 .panel-pricing .panel-heading {

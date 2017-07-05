@@ -30,11 +30,11 @@
                     </div>
 
 
-                        <div class="col-lg-12 text-center">
-                            {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
-                            <h1 class="color-white text-50 color-title-packages">Travel Packages to Peru</h1>
-                            {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
-                        </div>
+                    <div class="col-lg-12 text-center">
+                        {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
+                        <h1 class="color-white text-50 color-title-packages">TRAVEL PACKAGES: {{str_replace('-', ' ', strtoupper($type))}}</h1>
+                        {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
+                    </div>
                 </div>
             </div>
 
@@ -126,7 +126,7 @@
     <div class="container">
         <div class="row margin-top-20">
             <div class="col-lg-12 text-center font-montserrat">
-                <h2 class="text-30 color-goto-orange"><b>PERU TRAVEL PACKAGES</b></h2>
+                <h2 class="text-30 color-goto-orange"><b>PERU TRAVEL PACKAGES: {{str_replace('-', ' ', strtoupper($type))}}</b></h2>
                 <p class="text-15">Our most popular Peru and South America itineraries, these packages could be used as a reference to customize your own trip. At GOTOPERU we specialize in crafting personalize experiences based on your preferences; we invited to review these programs to have glimpse of the most important destinations for instance MachuPicchu, Lake Titicaca, Nazca and the Amazon.</p>
             </div>
         </div>
@@ -231,9 +231,9 @@
                         <div class="box-duration-title text-18"><b>Duration</b></div>
                         <div class="box-duration">
                             @foreach($paquete->unique('duracion')->sortBy('duracion') as $duracion)
-                                <p class="no-margin"><a href="{{route('duration_show_path', $duracion->duracion)}}"><i class="fa fa-check" aria-hidden="true"></i> {{$duracion->duracion}} days</a></p>
+                                <p class="no-margin"><a href="{{route('duration_type_show_path', [$type,$duracion->duracion])}}"><i class="fa fa-check" aria-hidden="true"></i> {{$duracion->duracion}} days</a></p>
                             @endforeach
-                                {{--<li class="divider margin-top-20 margin-bottom-20"></li>--}}
+                            {{--<li class="divider margin-top-20 margin-bottom-20"></li>--}}
                         </div>
                         <div class="nav-destinations">
                             <ul class="nav nav-list no-mobile">

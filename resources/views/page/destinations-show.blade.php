@@ -8,34 +8,34 @@
         {{--<h1>Secondary Fixed Navigation</h1>--}}
 
         <div class="banner position-relative">
+            <img src="{{asset('images/banners/destinations/'.str_replace(' ','-', strtolower($title)).'.jpg')}}"/>
             <div class="box-header container-fluid">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="margin-top-20">
-                            <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-2.png')}}" alt="" class="img-responsive"></a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="hidden-xs">
+                        <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
+                        <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
                     </div>
-
-                    <div class="col-md-5">
-                        <div class="text-right margin-top-10">
-                            <b class="text-30 margin-right-30">(813) 454-9707</b>
-                        </div>
+                    <div class="hidden-sm hidden-md hidden-lg">
+                        <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu.png')}}" alt="" class="img-responsive padding-20"></a>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
-                        <h1 class="color-white text-50 color-title-packages">Destination {{ucwords(strtolower($title))}}</h1>
-                        {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
+                <div class="col-md-8">
+                    <div class="text-right font-montserrat margin-top-10 hidden-xs">
+                        <b class="text-30 margin-right-30 hidden-xs">(813) 454-9707</b>
                     </div>
+                    <div class="text-center font-montserrat">
+                        <b class="text-30 hidden-sm hidden-md hidden-lg">(813) 454-9707</b>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-12 text-center">
+                    {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
+                    <h1 class="color-white text-50 color-title-packages">Destination {{ucwords(strtolower($title))}}</h1>
+                    {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
                 </div>
             </div>
-{{--            {{asset('images/banners/destinations/destinations/'.str_replace(' ','-', strtoupper($destino->nombre)).'.jpg')}}--}}
-{{--            <img src="{{asset('images/banners/itinerary/machupicchu.jpg')}}"/>--}}
-
-                <img src="{{asset('images/banners/destinations/'.str_replace(' ','-', strtolower($title)).'.jpg')}}"/>
-
         </div>
 
         {{--<a href="http://codyhouse.co/?p=296" class="cd-btn">View Offers</a>--}}
@@ -44,13 +44,21 @@
 
 </div> <!-- #cd-intro -->
 
-<div class="cd-secondary-nav cd-secondary-nav-tinerary">
+<div class="cd-secondary-nav cd-secondary-nav-packages">
     <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
     <nav>
         <ul class="no-margin">
+            @foreach($destinos->sortBy('nombre')->unique('pais') as  $destino)
+                <li>
+                    <a href="{{route('destinations_path')}}/#{{strtolower($destino->pais)}}">
+                        <b>{{strtolower($destino->pais)}}</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+            @endforeach
             <li>
                 <a href="#cd-inquire" class="btn btn-warning">
-                    <b>INQUIRE NOW</b>
+                    <b class="color-white">INQUIRE NOW</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>

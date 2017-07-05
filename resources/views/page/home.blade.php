@@ -103,7 +103,7 @@
                         <div class="row">
 
 
-                            @foreach($paquete as $paquetes)
+                            @foreach($paquete->take(6) as $paquetes)
                                 <div class="col-md-4 margin-bottom-30">
 
 
@@ -198,48 +198,7 @@
                     </section>
 
                     <section id="content2" class="tab-content">
-                        {{--<div class="row margin-top-10">--}}
-                            {{--<div class="col-md-12">--}}
 
-                                {{--<div class="text-center font-montserrat">--}}
-                                    {{--<div class="row">--}}
-                                        {{--<div class="col-lg-12">--}}
-                                            {{--<p><b>From</b></p>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">New York</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">Miami</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">Washington DC</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">Los Angeles</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">Chicago</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<span class="button-checkbox">--}}
-                                        {{--<button type="button" class="btn" data-color="warning">Houston</button>--}}
-                                        {{--<input type="checkbox" class="hidden" />--}}
-                                    {{--</span>--}}
-                                    {{--<label for="success" class="btn btn-success">3 - 5 <input type="checkbox" id="success" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">6 - 8 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">12 - 15 <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">16+ <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                    {{--<label for="default" class="btn btn-success">unknown <input type="checkbox" id="default" class="badgebox"><span class="badge">&check;</span></label>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-
-                        {{--</div>--}}
                         <div class="row">
                             @foreach($paquete_f as $paquetes)
                                 <div class="col-md-4 margin-bottom-30">
@@ -430,37 +389,7 @@
                     </section>
 
                     <section id="content4" class="tab-content">
-                        {{--<div class="row margin-top-10">--}}
-                            {{--<div class="col-md-12 filter-destinations text-center">--}}
-                                {{--<ul class="no-padding">--}}
-                                    {{--<li><input type="checkbox" id="cb1" />--}}
-                                        {{--<label for="cb1">--}}
-                                            {{--<img src="{{asset('images/destinations/tabs/machupicchu.jpg')}}" class="img-responsive"/>--}}
-                                            {{--<span>Peru</span>--}}
-                                        {{--</label>--}}
-                                    {{--</li>--}}
-                                    {{--<li><input type="checkbox" id="cb2" />--}}
-                                        {{--<label for="cb2">--}}
-                                            {{--<img src="{{asset('images/destinations/tabs/uyuni.jpg')}}" class="img-responsive"/>--}}
-                                            {{--<span>Bolivia</span>--}}
-                                        {{--</label>--}}
-                                    {{--</li>--}}
-                                    {{--<li><input type="checkbox" id="cb3" />--}}
-                                        {{--<label for="cb3">--}}
-                                            {{--<img src="{{asset('images/destinations/tabs/rio.jpg')}}" class="img-responsive"/>--}}
-                                            {{--<span>Brasil</span>--}}
-                                        {{--</label>--}}
-                                    {{--</li>--}}
-                                    {{--<li><input type="checkbox" id="cb4" />--}}
-                                        {{--<label for="cb4">--}}
-                                            {{--<img src="{{asset('images/destinations/tabs/galapagos.jpg')}}" class="img-responsive"/>--}}
-                                            {{--<span>Ecuador</span>--}}
-                                        {{--</label>--}}
-                                    {{--</li>--}}
-                                {{--</ul>--}}
-                            {{--</div>--}}
 
-                        {{--</div>--}}
                         <div class="row">
                             @foreach($paquete_m as $paquetes)
                                 <div class="col-md-4 margin-bottom-30">
@@ -725,7 +654,7 @@
                                 <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
                             </div>
 
-                        </div><!-- /.col-lg-4 -->
+                        </div><!-- /.col-lg-4 -->va
                         <div class="col-lg-12">
                             <div class="col-md-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/design.png')}}" alt="" class="img-responsive img-circle">
