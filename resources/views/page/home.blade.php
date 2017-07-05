@@ -200,7 +200,7 @@
                     <section id="content2" class="tab-content">
 
                         <div class="row">
-                            @foreach($paquete_f as $paquetes)
+                            @foreach($paquete_f->take(6) as $paquetes)
                                 <div class="col-md-4 margin-bottom-30">
 
 
@@ -241,7 +241,7 @@
                                                             <li>
                                                                 <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
                                                             </li>
-                                                            -                              <li>
+                                                            <li>
                                                                 <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
                                                             </li>
                                                             <li>
@@ -336,7 +336,7 @@
                                                             <li>
                                                                 <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
                                                             </li>
-                                                            -                              <li>
+                                                            <li>
                                                                 <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
                                                             </li>
                                                             <li>
@@ -432,7 +432,7 @@
                                                             <li>
                                                                 <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive" title="Assistances">
                                                             </li>
-                                                            -                              <li>
+                                                            <li>
                                                                 <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
                                                             </li>
                                                             <li>
