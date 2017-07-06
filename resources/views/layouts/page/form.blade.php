@@ -45,6 +45,7 @@
                     </div>
 
                     <form role="form" id="f_form">
+                        {{csrf_field()}}
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <div class="row">

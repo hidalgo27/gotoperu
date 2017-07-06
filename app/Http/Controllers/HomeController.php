@@ -179,7 +179,13 @@ class HomeController extends Controller
         $description = $_POST['txt_description'];
 
         $name = $_POST['txt_name'];
-        $package = $_POST['txt_package'];
+
+        if (isset($_POST['txt_package'])){
+            $package = $_POST['txt_package'];
+        }else{
+            $package = "";
+        }
+
         $email = $_POST['txt_email'];
         $phone = $_POST['txt_phone'];
 
