@@ -2,8 +2,11 @@
     <div class="row margin-top-40" id="cd-inquire">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
-                <h2>Create Your Dream Adventure</h2>
-                <h3>We have it all. Just ask!</h3>
+                @foreach($paquete as $paquetes)
+                    <h2>{{$paquetes->codigo}}: {{$paquetes->titulo}}</h2>
+                @endforeach
+                {{--<h2>Create Your Dream Adventure</h2>--}}
+                {{--<h3>We have it all. Just ask!</h3>--}}
                 {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
             </div>
         </div>
@@ -441,6 +444,7 @@
                                                                 <div class="">
                                                                     <div class="design-content">
                                                                         <input type="text" name="f_name" id="f_name" placeholder=" Name (Required)" size="45">
+                                                                        <input type="hidden" name="f_package" id="f_package" value="{{$paquetes->codigo}}: {{$paquetes->titulo}}">
                                                                     </div>
                                                                 </div>
                                                             </div>

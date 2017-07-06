@@ -389,118 +389,118 @@
 </script>
 <script src="{{asset("js/app.js")}}"></script>
 <script src="{{asset("js/admin/plugins.js")}}"></script>
-<script>
-    function sendDesign(){
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('[name="_token"]').val()
-            }
-        });
+{{--<script>--}}
+    {{--function sendDesign(){--}}
+        {{--$.ajaxSetup({--}}
+            {{--headers: {--}}
+                {{--'X-CSRF-TOKEN': $('[name="_token"]').val()--}}
+            {{--}--}}
+        {{--});--}}
 
-        $("#f_send").attr("disabled", true);
+        {{--$("#f_send").attr("disabled", true);--}}
 
-        var filter=/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
+        {{--var filter=/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;--}}
 
-        var s_category = document.getElementsByName('category[]');
-        var $category = "";
-        for (var i = 0, l = s_category.length; i < l; i++) {
-            if (s_category[i].checked) {
-                $category += s_category[i].value+' , ';
-            }
-        }
-        s_category = $category.substring(0,$category.length-3);
+        {{--var s_category = document.getElementsByName('category[]');--}}
+        {{--var $category = "";--}}
+        {{--for (var i = 0, l = s_category.length; i < l; i++) {--}}
+            {{--if (s_category[i].checked) {--}}
+                {{--$category += s_category[i].value+' , ';--}}
+            {{--}--}}
+        {{--}--}}
+        {{--s_category = $category.substring(0,$category.length-3);--}}
 
-        var s_number = document.getElementsByName('number[]');
-        var $number = "";
-        for (var i = 0, l = s_number.length; i < l; i++) {
-            if (s_number[i].checked) {
-                $number += s_number[i].value+' , ';
-            }
-        }
+        {{--var s_number = document.getElementsByName('number[]');--}}
+        {{--var $number = "";--}}
+        {{--for (var i = 0, l = s_number.length; i < l; i++) {--}}
+            {{--if (s_number[i].checked) {--}}
+                {{--$number += s_number[i].value+' , ';--}}
+            {{--}--}}
+        {{--}--}}
 
-        s_number = $number.substring(0,$number.length-3);
-
-
-        var s_days = document.getElementsByName('days[]');
-        var $days = "";
-        for (var i = 0, l = s_days.length; i < l; i++) {
-            if (s_days[i].checked) {
-                $days += s_days[i].value+' , ';
-            }
-        }
-
-        s_days = $days.substring(0,$days.length-3);
+        {{--s_number = $number.substring(0,$number.length-3);--}}
 
 
-        var s_date = $('#f_date').val();
-        var s_description = $('#f_description').val();
-        var s_name = $('#f_name').val();
-        var s_email = $('#f_email').val();
-        var s_phone = $('#f_phone').val();
+        {{--var s_days = document.getElementsByName('days[]');--}}
+        {{--var $days = "";--}}
+        {{--for (var i = 0, l = s_days.length; i < l; i++) {--}}
+            {{--if (s_days[i].checked) {--}}
+                {{--$days += s_days[i].value+' , ';--}}
+            {{--}--}}
+        {{--}--}}
+
+        {{--s_days = $days.substring(0,$days.length-3);--}}
 
 
-        if (filter.test(s_email)){
-            sendMail = "true";
-        } else{
-            $('#f_email').css("border-bottom", "2px solid #FF0000");
-            sendMail = "false";
-        }
-        if (s_name.length == 0 ){
-            $('#f_name').css("border-bottom", "2px solid #FF0000");
-            var sendMail = "false";
-        }
-        if (s_date.length == 0 ){
-            $('#f_date').css("border-bottom", "2px solid #FF0000");
-            var sendMail = "false";
-        }
+        {{--var s_date = $('#f_date').val();--}}
+        {{--var s_description = $('#f_description').val();--}}
+        {{--var s_name = $('#f_name').val();--}}
+        {{--var s_email = $('#f_email').val();--}}
+        {{--var s_phone = $('#f_phone').val();--}}
 
-        if(sendMail == "true"){
-            var datos = {
 
-                "txt_category" : s_category,
-                "txt_number" : s_number,
-                "txt_days" : s_days,
-                "txt_date" : s_date,
-                "txt_description" : s_description,
+        {{--if (filter.test(s_email)){--}}
+            {{--sendMail = "true";--}}
+        {{--} else{--}}
+            {{--$('#f_email').css("border-bottom", "2px solid #FF0000");--}}
+            {{--sendMail = "false";--}}
+        {{--}--}}
+        {{--if (s_name.length == 0 ){--}}
+            {{--$('#f_name').css("border-bottom", "2px solid #FF0000");--}}
+            {{--var sendMail = "false";--}}
+        {{--}--}}
+        {{--if (s_date.length == 0 ){--}}
+            {{--$('#f_date').css("border-bottom", "2px solid #FF0000");--}}
+            {{--var sendMail = "false";--}}
+        {{--}--}}
 
-                "txt_name" : s_name,
-                "txt_email" : s_email,
-                "txt_phone" : s_phone,
+        {{--if(sendMail == "true"){--}}
+            {{--var datos = {--}}
 
-            };
-            $.ajax({
-                data:  datos,
-                url:   "{{route('mail_path')}}",
-                type:  'post',
+                {{--"txt_category" : s_category,--}}
+                {{--"txt_number" : s_number,--}}
+                {{--"txt_days" : s_days,--}}
+                {{--"txt_date" : s_date,--}}
+                {{--"txt_description" : s_description,--}}
 
-                beforeSend: function () {
-                    $('#f_send').removeClass('show');
-                    $("#f_send").addClass('hide');
-                    $("#loader").removeClass('hide');
-                    $("#loader").addClass('show');
-                },
-                success:  function (response) {
-                    $('#f_form')[0].reset();
-                    $('#f_send').removeClass('show');
-                    $('#f_send').addClass('hide');
-                    $("#loader").removeClass('show');
-                    $("#loader").addClass('hide');
-                    $('#f_check').removeClass('hidden');
-                    $("#f_check").addClass('show');
-                    $("#f_congratulation b").html(response);
-                    $("#f_congratulation").fadeIn('slow');
-                    $("#f_send").removeAttr("disabled");
-                }
-            });
-        } else{
-            $("#f_send").removeAttr("disabled");
-        }
-    }
+                {{--"txt_name" : s_name,--}}
+                {{--"txt_email" : s_email,--}}
+                {{--"txt_phone" : s_phone,--}}
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
+            {{--};--}}
+            {{--$.ajax({--}}
+                {{--data:  datos,--}}
+                {{--url:   "{{route('mail_path')}}",--}}
+                {{--type:  'post',--}}
+
+                {{--beforeSend: function () {--}}
+                    {{--$('#f_send').removeClass('show');--}}
+                    {{--$("#f_send").addClass('hide');--}}
+                    {{--$("#loader").removeClass('hide');--}}
+                    {{--$("#loader").addClass('show');--}}
+                {{--},--}}
+                {{--success:  function (response) {--}}
+                    {{--$('#f_form')[0].reset();--}}
+                    {{--$('#f_send').removeClass('show');--}}
+                    {{--$('#f_send').addClass('hide');--}}
+                    {{--$("#loader").removeClass('show');--}}
+                    {{--$("#loader").addClass('hide');--}}
+                    {{--$('#f_check').removeClass('hidden');--}}
+                    {{--$("#f_check").addClass('show');--}}
+                    {{--$("#f_congratulation b").html(response);--}}
+                    {{--$("#f_congratulation").fadeIn('slow');--}}
+                    {{--$("#f_send").removeAttr("disabled");--}}
+                {{--}--}}
+            {{--});--}}
+        {{--} else{--}}
+            {{--$("#f_send").removeAttr("disabled");--}}
+        {{--}--}}
+    {{--}--}}
+
+    {{--$(function () {--}}
+        {{--$('[data-toggle="tooltip"]').tooltip()--}}
+    {{--})--}}
+{{--</script>--}}
 
 </body>
 </html>

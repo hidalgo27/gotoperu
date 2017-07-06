@@ -179,6 +179,7 @@ class HomeController extends Controller
         $description = $_POST['txt_description'];
 
         $name = $_POST['txt_name'];
+        $package = $_POST['txt_package'];
         $email = $_POST['txt_email'];
         $phone = $_POST['txt_phone'];
 
@@ -194,6 +195,7 @@ class HomeController extends Controller
 
 
             Mail::send(['html' => 'notifications.page.admin-form-design'], [
+                'package' => $package,
                 'category' => $category,
                 'number' => $number,
                 'days' => $days,

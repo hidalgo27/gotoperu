@@ -9,7 +9,7 @@
                     <tbody>
                     <tr>
                         <td style="text-align:left">
-
+                            <p><strong>Package: {{$package}}</strong></p>
                             <p><strong>Email: {{$email}}</strong></p>
                             <p><strong>Telephone: {{$phone}}</strong></p>
                             <p><strong>Travel Date: {{$date}}</strong></p>
