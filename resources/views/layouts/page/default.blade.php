@@ -55,7 +55,7 @@
 
 @yield('content')
 
-<div class="container-testimonial margin-top-70">
+<div class="container-testimonial margin-top-70 hidden-xs">
     <div class="container">
         <div class="row margin-top-70 margin-bottom-70">
             <div class="col-md-6">

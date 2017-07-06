@@ -654,7 +654,7 @@
                                 <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
                             </div>
 
-                        </div><!-- /.col-lg-4 -->va
+                        </div><!-- /.col-lg-4 -->
                         <div class="col-lg-12">
                             <div class="col-md-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/design.png')}}" alt="" class="img-responsive img-circle">

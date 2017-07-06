@@ -11,7 +11,7 @@
                     <img src="{{asset('images/banners/itinerary/'.$paquetes->codigo.'.jpg')}}"/>
                     {{--<p class="text-18"><b>Machu Picchu, Cusco, Sacred Valley</b></p>--}}
                 @endforeach
-                <div class="banner-header banner-header-itinerary color-white">
+                <div class="banner-header banner-header-itinerary color-white hidden-xs">
                     <div class="banner-header-top font-montserrat">
 
                         @foreach($paquete as $paquetes)
@@ -143,7 +143,7 @@
         </nav>
     </div> <!-- .cd-secondary-nav -->
 
-    <div class="container-category">
+    <div class="container-category hidden-xs">
         <div class="row padding-top-10 padding-bottom-10"><!--.row -->
             <div class="col-md-1">
                 <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -194,12 +194,12 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="row" id="cd-overview">
+                <div class="row hidden-xs" id="cd-overview">
                     <div class="col-md-12">
                         <h3 class="color-goto-grey"><strong>Outline</strong></h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row hidden-xs">
                     <div class="col-md-12">
                         <div class="box-route-ininerary clearfix">
                             <div class="col-md-3 bg-goto-gray-1 text-center">
@@ -218,14 +218,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 hidden-xs">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
                     </div>
                 </div>
 
-                <div class="row margin-top-40">
+                <div class="row margin-top-40 hidden-xs">
                     <div class="col-md-12">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -371,7 +371,7 @@
 
                 </div> <!-- .cd-articles -->
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-xs">
                 <aside class="aside-itinerary margin-top-30" id="sidebar">
                     <img src="{{asset('images/maps/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive">
                     <ul>

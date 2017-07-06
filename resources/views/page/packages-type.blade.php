@@ -82,7 +82,7 @@
         </nav>
     </div> <!-- .cd-secondary-nav -->
 
-    <div class="container-category">
+    <div class="container-category hidden-xs">
         <div class="row padding-top-10 padding-bottom-10"><!--.row -->
             <div class="col-md-1">
                 <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -225,7 +225,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-xs">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box-duration-title text-18"><b>Duration</b></div>
