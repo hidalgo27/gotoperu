@@ -30,7 +30,7 @@
                 </div>
 
 
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center hidden-sm">
                     {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
                     <h1 class="color-white text-50 color-title-packages">Destinations</h1>
                     {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
@@ -66,7 +66,7 @@
     </nav>
 </div> <!-- .cd-secondary-nav -->
 
-<div class="container-category hidden-xs">
+<div class="container-category hidden-xs hidden-sm">
     <div class="row padding-top-10 padding-bottom-10"><!--.row -->
         <div class="col-md-1">
             <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -120,7 +120,7 @@
         <div class="row margin-top-30">
 
             @foreach($destinos->where('pais',$destino->pais)->sortBy('nombre') as  $destino)
-                <div class="col-md-4 margin-bottom-30">
+                <div class="col-md-4 col-sm-6 margin-bottom-30">
                     <div class="grid-category position-relative">
                         <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="color-goto-grey">
                             <img src="{{asset('images/destinations/'.str_replace(' ','-', strtolower($destino->nombre)).'.jpg')}}" alt="" class="img-responsive"/>

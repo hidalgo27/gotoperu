@@ -60,14 +60,14 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <div class="form-design">
-                                                <div class="col-lg-2 hidden-xs">
+                                                <div class="col-lg-2 col-sm-2 hidden-xs">
                                                     <div class="row">
                                                         <div class="content-icon col-md-12">
                                                             <i class="fa fa-home fa-2x" aria-hidden="true"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-10 col-xs-12">
+                                                <div class="col-lg-10 col-sm-10 col-xs-12">
                                                     <div class="row">
                                                         <div class="col-lg-3 col-xs-3 no-padding">
                                                             <div data-toggle="buttons" class="btn-group">
@@ -138,14 +138,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-male fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
@@ -249,14 +249,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-2 col-xs-2 no-padding">
                                                                 <div class="">
@@ -357,14 +357,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 no-padding col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 no-padding col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 col-xs-12">
                                                                 <div class="">
@@ -397,14 +397,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12 no-padding">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12 no-padding">
                                                         <div class="row">
                                                             <div class="col-lg-12">
                                                                 <div class="">
@@ -429,14 +429,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">
@@ -461,14 +461,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">
@@ -493,14 +493,14 @@
                                         <div class="">
                                             <div class="form-group">
                                                 <div class="form-design">
-                                                    <div class="col-lg-2 hidden-xs">
+                                                    <div class="col-lg-2 col-sm-2 hidden-xs">
                                                         <div class="row">
                                                             <div class="content-icon col-md-12">
                                                                 <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-10 col-xs-12">
+                                                    <div class="col-lg-10 col-sm-10 col-xs-12">
                                                         <div class="row">
                                                             <div class="col-lg-12 no-padding">
                                                                 <div class="">

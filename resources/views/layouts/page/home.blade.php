@@ -54,10 +54,10 @@
         <div class="banner-header-top font-montserrat">
             @foreach($paquete_h as $paquetes)
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                         <p class="text-18 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">{{$paquetes->duracion}} days</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                         <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-20">View Trip</a>
                     </div>
                     <div class="col-md-12 text-center margin-top-10">
@@ -139,7 +139,7 @@
                 <div class="col-md-12 margin-bottom-20">
                     <p class="text-23 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATION!</p>
                 </div>
-                <div class="col-md-7 no-padding">
+                <div class="col-md-7 no-padding hidden-sm">
                     <div class="text-right">
                         <p class="text-16 no-margin">$150 average saving</p>
                         <p class="text-16 no-margin">24/7 local assistance</p>
@@ -150,7 +150,7 @@
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 hidden-sm">
                     {{--<a href="#cd-inquire" class="cd-btn">Inquire Now</a>--}}
                     <a href="#cd-inquire" class="cd-btn"><span class="hide">Inquire Now</span><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive pull-right"></a>
                 </div>
@@ -220,40 +220,40 @@
 
 <div class="container-category hidden-xs">
     <div class="row padding-top-10 padding-bottom-10"><!--.row -->
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/apotur.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/asta.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/expedia.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/facebook.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/meetup.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="{{asset('images/logos/new.png')}}" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="http://gotoperu.travel/img/logos/peru.png" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="http://gotoperu.travel/img/logos/prom-peru.png" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="http://gotoperu.travel/img/logos/tripadvisor.png" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="http://gotoperu.travel/img/logos/yelp.png" alt="" class="img-responsive">
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
             <img src="http://gotoperu.travel/img/logos/youtube.png" alt="" class="img-responsive">
         </div>
     </div>
@@ -261,9 +261,9 @@
 
 @yield('content')
 
-<div class="container-testimonial margin-top-70 hidden-xs" id="reviews">
+<div class="container-testimonial margin-top-70 hidden-xs hidden-sm" id="reviews">
     <div class="container">
-        <div class="row margin-top-70 margin-bottom-70">
+        <div class="row container-testimonial-box">
             <div class="col-md-6">
                 {{--<img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">--}}
             </div>
@@ -287,13 +287,13 @@
             <div class="content-b font-montserrat">
                 <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
                 <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
-                <a href="https://gotoperu.com/testimonials/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>
+                {{--<a href="https://gotoperu.com/testimonials/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>--}}
             </div>
         </div>
     </div>
 </div>
 
-<div class="container hidden-xs">
+<div class="container hidden-xs hidden-sm">
     <div class="row margin-top-100">
         <div class="col-md-6">
             <h2 class="font-montserrat color-goto-green">WE ARE ONE PERU´S LEADING GROUP TRAVEL PROVIDERS : GOTOPERU</h2>
@@ -337,13 +337,13 @@
     </div>
 
     <div class="row margin-top-20 font-montserrat">
-        <div class="col-md-6 margin-bottom-30">
+        <div class="col-md-6 col-sm-6 margin-bottom-30">
             <a href="" class="color-goto-grey">
                 <h4>Peru travel useful information</h4>
                 <img src="{{asset('images/blog/currency.jpg')}}" alt="" class="img-responsive">
             </a>
         </div>
-        <div class="col-md-6 margin-bottom-30">
+        <div class="col-md-6 col-sm-6 margin-bottom-30">
             <a href="" class="color-goto-grey">
                 <h4>Andes travel guide</h4>
                 <img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">
@@ -364,17 +364,17 @@
 
 <div class="container">
     <div class="row margin-top-85 margin-bottom-10"><!--.row -->
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="https://www.facebook.com/GOTOPERUcom/" target="_blank"><img src="{{asset('images/logos/logo-facebook.png')}}" title="gotoperu facebook 30k like" alt="gotoperu facebook 30k like"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="https://www.facebook.com/GOTOPERUcom/" target="_blank"><img src="{{asset('images/logos/logo-facebook.png')}}" title="gotoperu facebook 30k like" alt="gotoperu facebook 30k like" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.asta.org/MemberServices/MemberDirectoryIndivdualDisplayASTA.cfm?navItemNumber=11304&amp;id=900235751" target="_blank"><img src="{{asset('images/logos/logo-asta-grey.png')}}" title="asta" alt="logo asta"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.asta.org/MemberServices/MemberDirectoryIndivdualDisplayASTA.cfm?navItemNumber=11304&amp;id=900235751" target="_blank"><img src="{{asset('images/logos/logo-asta-grey.png')}}" title="asta" alt="logo asta" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://investors.nytco.com/press/press-releases/press-release-details/2014/The-New-York-Times-Travel-Show-Announces-Special-Travel-Discounts-for-Show-Attendees/default.aspx" target="_blank"><img src="{{asset('images/logos/logo-newyorktimes.png')}}" title="the new york times" alt="the new york times"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://investors.nytco.com/press/press-releases/press-release-details/2014/The-New-York-Times-Travel-Show-Announces-Special-Travel-Discounts-for-Show-Attendees/default.aspx" target="_blank"><img src="{{asset('images/logos/logo-newyorktimes.png')}}" title="the new york times" alt="the new york times" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://apoturperu.org/" target="_blank"><img src="{{asset('images/logos/logo-apotur.png')}}" title="apotur" alt="logo apotur"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://apoturperu.org/" target="_blank"><img src="{{asset('images/logos/logo-apotur.png')}}" title="apotur" alt="logo apotur" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.peru.travel/en-us/Search-Travel-Services/pageindex/0/categoryid/5/subcategoryidl1/-1/subcategoryidl2/-1.aspx?keyword=go+to+peru&amp;destid=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" target="_blank"><img src="{{asset('images/logos/logo-promperu.png')}}" title="promperu" alt="logo promperu"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.peru.travel/en-us/Search-Travel-Services/pageindex/0/categoryid/5/subcategoryidl1/-1/subcategoryidl2/-1.aspx?keyword=go+to+peru&amp;destid=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" target="_blank"><img src="{{asset('images/logos/logo-promperu.png')}}" title="promperu" alt="logo promperu" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#" target="_blank"><img src="{{asset('images/logos/logo-meetup.png')}}" title="meetup" alt="logo meetup"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#" target="_blank"><img src="{{asset('images/logos/logo-meetup.png')}}" title="meetup" alt="logo meetup" class="img-responsive"></a></div>
     </div>
 </div>
 

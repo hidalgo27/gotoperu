@@ -57,7 +57,7 @@
 
 <div class="container-testimonial margin-top-70 hidden-xs">
     <div class="container">
-        <div class="row margin-top-70 margin-bottom-70">
+        <div class="row container-testimonial-box">
             <div class="col-md-6">
                 {{--<img src="{{asset('images/blog/cusco.jpg')}}" alt="" class="img-responsive">--}}
             </div>
@@ -78,17 +78,17 @@
 
 <div class="container">
     <div class="row margin-top-85 margin-bottom-10"><!--.row -->
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="https://www.facebook.com/GOTOPERUcom/" target="_blank"><img src="{{asset('images/logos/logo-facebook.png')}}" title="gotoperu facebook 30k like" alt="gotoperu facebook 30k like"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="https://www.facebook.com/GOTOPERUcom/" target="_blank"><img src="{{asset('images/logos/logo-facebook.png')}}" title="gotoperu facebook 30k like" alt="gotoperu facebook 30k like" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.asta.org/MemberServices/MemberDirectoryIndivdualDisplayASTA.cfm?navItemNumber=11304&amp;id=900235751" target="_blank"><img src="{{asset('images/logos/logo-asta-grey.png')}}" title="asta" alt="logo asta"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.asta.org/MemberServices/MemberDirectoryIndivdualDisplayASTA.cfm?navItemNumber=11304&amp;id=900235751" target="_blank"><img src="{{asset('images/logos/logo-asta-grey.png')}}" title="asta" alt="logo asta" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://investors.nytco.com/press/press-releases/press-release-details/2014/The-New-York-Times-Travel-Show-Announces-Special-Travel-Discounts-for-Show-Attendees/default.aspx" target="_blank"><img src="{{asset('images/logos/logo-newyorktimes.png')}}" title="the new york times" alt="the new york times"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://investors.nytco.com/press/press-releases/press-release-details/2014/The-New-York-Times-Travel-Show-Announces-Special-Travel-Discounts-for-Show-Attendees/default.aspx" target="_blank"><img src="{{asset('images/logos/logo-newyorktimes.png')}}" title="the new york times" alt="the new york times" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://apoturperu.org/" target="_blank"><img src="{{asset('images/logos/logo-apotur.png')}}" title="apotur" alt="logo apotur"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://apoturperu.org/" target="_blank"><img src="{{asset('images/logos/logo-apotur.png')}}" title="apotur" alt="logo apotur" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.peru.travel/en-us/Search-Travel-Services/pageindex/0/categoryid/5/subcategoryidl1/-1/subcategoryidl2/-1.aspx?keyword=go+to+peru&amp;destid=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" target="_blank"><img src="{{asset('images/logos/logo-promperu.png')}}" title="promperu" alt="logo promperu"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="http://www.peru.travel/en-us/Search-Travel-Services/pageindex/0/categoryid/5/subcategoryidl1/-1/subcategoryidl2/-1.aspx?keyword=go+to+peru&amp;destid=,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" target="_blank"><img src="{{asset('images/logos/logo-promperu.png')}}" title="promperu" alt="logo promperu" class="img-responsive"></a></div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#" target="_blank"><img src="{{asset('images/logos/logo-meetup.png')}}" title="meetup" alt="logo meetup"></a></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#" target="_blank"><img src="{{asset('images/logos/logo-meetup.png')}}" title="meetup" alt="logo meetup" class="img-responsive"></a></div>
     </div>
 </div>
 

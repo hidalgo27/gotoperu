@@ -1507,7 +1507,7 @@ Placeholder Sections
 
 @media only screen and (max-width: 768px) {
   .tab_container label span {
-    display: none;
+    //display: none;
   }
 
   .tab_container label .fa {
@@ -2610,7 +2610,24 @@ span.round-tab:hover {
     //margin-bottom: 250px;
     background: rgba(0,0,0,.5);
   }
+  .banner-header{
+    width: 37.5%;
+    top: 45%;
+  }
+  .container-testimonial-box{
+    margin-bottom: 25px;
+  }
 }
-@media (min-width: 992px) { }
-@media (min-width: 1200px) {}
+@media (min-width: 992px) {
+  .banner-header{
+    width: 21.5%;
+    top: 33%;
+  }
+  .container-testimonial-box{
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+
+}
 

@@ -55,14 +55,14 @@
                                 </b>
                                 All Included
                             </p>
-                            <div class="text-center">
+                            <div class="text-center hidden-sm">
                                 <a href="#cd-inquire" class="btn btn-sm btn-success ">Check Availability</a>
                             </div>
                         @endforeach
 
                     </div>
-                    <div class="divider margin-top-20"></div>
-                    <div class="banner-header-bottom">
+                    <div class="divider margin-top-20 hidden-sm"></div>
+                    <div class="banner-header-bottom hidden-sm">
                         <h4 class="text-18 color-white margin-bottom-10">A <b class="color-goto-orange ">BETTER</b> WAY TO TRAVEL TO PERU</h4>
                         <p class="no-margin color-goto-light">$150 average saving</p>
                         <p class="no-margin color-goto-light">24/7 local authentic assistance</p>
@@ -143,7 +143,7 @@
         </nav>
     </div> <!-- .cd-secondary-nav -->
 
-    <div class="container-category hidden-xs">
+    <div class="container-category hidden-xs hidden-sm">
         <div class="row padding-top-10 padding-bottom-10"><!--.row -->
             <div class="col-md-1">
                 <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <div class="row margin-top-40">
-            <div class="col-md-8 font-montserrat">
+            <div class="col-md-8 col-sm-7 font-montserrat">
                 <div class="row">
                     <div class="col-md-12">
                         @foreach($paquete as $paquetes)
@@ -235,7 +235,7 @@
                 </div>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-5">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box-price-aside text-20 font-montserrat color-goto-grey">
@@ -298,7 +298,7 @@
 
         <div class="row">
             <div class="main-wrapper clearfix">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-7">
                 <div class="cd-articles">
                     @foreach($paquete as $paquetes)
                         @foreach($paquetes->itinerario as $itinerario)
@@ -371,7 +371,7 @@
 
                 </div> <!-- .cd-articles -->
             </div>
-            <div class="col-md-4 hidden-xs">
+            <div class="col-md-4 col-sm-5 hidden-xs">
                 <aside class="aside-itinerary margin-top-30" id="sidebar">
                     <img src="{{asset('images/maps/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive">
                     <ul>
@@ -403,7 +403,7 @@
             @foreach($paquete as $paquetes)
                 @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
 
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 col-sm-6 text-center">
                             <div class="panel panel-default panel-pricing">
                                 <div class="panel-heading">
                                     @for ($i = 0; $i < $precio->estrellas; $i++)
@@ -433,7 +433,7 @@
             @foreach($paquete as $paquetes)
                 @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
 
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-3 col-sm-6 text-center">
                         <div class="panel panel-default panel-pricing">
                             <div class="panel-heading">
                                 @for ($i = 0; $i < $precio->estrellas; $i++)
@@ -465,7 +465,7 @@
         </div>
 
         <div class="row margin-top-40">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <h4 class="font-montserrat"><b>Included</b></h4>
                 <ul>
                     <li>4 nights in Peru high quality Hotels</li>
@@ -478,7 +478,7 @@
                     <li>A prepaid cellphone for extended Programs</li>
                 </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <h4 class="font-montserrat"><b>Not Included</b></h4>
                 <ul>
                     <li>Internal Flights</li>

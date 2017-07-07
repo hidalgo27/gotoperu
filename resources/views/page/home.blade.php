@@ -17,39 +17,15 @@
     
     <div class="container">
         <div class="row margin-top-20">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-sm">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-                    {{--<ol class="carousel-indicators">--}}
-                    {{--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>--}}
-                    {{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
-                    {{--<li data-target="#carousel-example-generic" data-slide-to="2"></li>--}}
-                    {{--<li data-target="#carousel-example-generic" data-slide-to="3"></li>--}}
-                    {{--</ol>--}}
 
                     <div class="carousel-inner">
                         <div class="item active">
                             <a href="">
                             <img src="{{asset('images/large-1.png')}}" class="img-responsive">
-                            {{--<div class="carousel-caption carousel-caption-home no-padding">--}}
-                                {{--<b class="text-20">Primero</b>--}}
-                                {{--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>--}}
-                                {{--<a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="btn btn-warning">View</a>--}}
-                            {{--</div>--}}
                             </a>
                         </div>
-
-                        {{--@foreach($categoria as $categorias)--}}
-
-                            {{--<div class="item">--}}
-                                {{--<img src="{{asset('images/large-1.png')}}" class="img-responsive">--}}
-                                {{--<div class="carousel-caption carousel-caption-home no-padding">--}}
-                                    {{--<b class="text-20">{{ucfirst(strtolower($categorias->nombre))}}</b>--}}
-                                    {{--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>--}}
-                                    {{--<a href="{{route('category_path')}}/#cd-{{str_replace(' ','-',strtolower($categorias->nombre))}}" class="btn btn-warning">View</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--@endforeach--}}
 
                     </div>
 
@@ -60,7 +36,6 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
 
-
                 </div>
 
                 <div class="margin-top-20">
@@ -68,9 +43,8 @@
                 </div>
 
 
-
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-12">
                 <h2 class="text-center font-montserrat hidden-sm hidden-md hidden-lg">Travel Offers</h2>
                 <div class="tab_container">
                     <input id="tab1" type="radio" name="tabs" checked class="hidden-xs">
@@ -104,7 +78,7 @@
 
 
                             @foreach($paquete->take(6) as $paquetes)
-                                <div class="col-md-4 margin-bottom-30">
+                                <div class="col-md-4 col-sm-4 margin-bottom-30">
 
 
                                         <div class="pacakges-box clearfix">
@@ -201,7 +175,7 @@
 
                         <div class="row">
                             @foreach($paquete_f->take(6) as $paquetes)
-                                <div class="col-md-4 margin-bottom-30">
+                                <div class="col-md-4 col-sm-4 margin-bottom-30">
 
 
                                     <div class="pacakges-box clearfix">
@@ -296,7 +270,7 @@
                     <section id="content3" class="tab-content">
                         <div class="row">
                             @foreach($paquete_mg as $paquetes)
-                                <div class="col-md-4 margin-bottom-30">
+                                <div class="col-md-4 col-sm-4 margin-bottom-30">
 
 
                                     <div class="pacakges-box clearfix">
@@ -392,7 +366,7 @@
 
                         <div class="row">
                             @foreach($paquete_m as $paquetes)
-                                <div class="col-md-4 margin-bottom-30">
+                                <div class="col-md-4 col-sm-4 margin-bottom-30">
 
 
                                     <div class="pacakges-box clearfix">
@@ -524,7 +498,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 margin-bottom-30 text-center box-home-destinations position-relative">
+            <div class="col-md-4 col-sm-4 margin-bottom-30 text-center box-home-destinations position-relative">
                 {{--<div class="grid-destinations">--}}
                     {{--<figure class="effect-destinations">--}}
                         {{--<img src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="" class="img-responsive">--}}
@@ -541,7 +515,7 @@
                     <b class="text-20">MachuPicchu</b>
                 </a>
             </div>
-            <div class="col-md-4 margin-bottom-30 text-center box-home-destinations">
+            <div class="col-md-4 col-sm-4 margin-bottom-30 text-center box-home-destinations">
                 {{--<div class="grid-destinations">--}}
                     {{--<figure class="effect-destinations">--}}
                         {{--<img src="{{asset('images/destinations/home/galapagos.jpg')}}" alt="" class="img-responsive">--}}
@@ -558,7 +532,7 @@
                     <b class="text-20">Galapagos</b>
                 </a>
             </div>
-            <div class="col-md-4 margin-bottom-30 clearfix text-center box-home-destinations">
+            <div class="col-md-4 col-sm-4 margin-bottom-30 clearfix text-center box-home-destinations">
                 {{--<div class="grid-destinations">--}}
                     {{--<figure class="effect-destinations">--}}
                         {{--<img src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="" class="img-responsive">--}}
@@ -643,33 +617,33 @@
         <div class="row">
             <div class="text-center margin-top-60 font-montserrat">
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="col-md-3 margin-top-40">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="col-md-3 col-sm-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/contact.png')}}" alt="" class="img-responsive img-circle">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-sm-9">
                                 <h3>CONTACT</h3>
                                 <p>Chat with us, give us a call (813)600-3042, send us an e-mail or fill out our online form. Share with us your travel preferences! If you already have an outline, an idea, any questions… we will be more than happy to assist your needs.</p>
                             </div>
 
                         </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-12">
-                            <div class="col-md-3 margin-top-40">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="col-md-3 col-sm-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/design.png')}}" alt="" class="img-responsive img-circle">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-sm-9">
                                 <h3>DESIGN</h3>
                                 <p>We will craft out a first travel proposal according to the outline or idea that you shared with us. From then on we will customize it until you are satisfied with the planning! We will then send you a day by day itinerary and leave the rest to you!</p>
                             </div>
 
                         </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-12">
-                            <div class="col-md-3 margin-top-40">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="col-md-3 col-sm-3 margin-top-40">
                                 <img src="{{asset('images/icons/item/vacations.png')}}" alt="" class="img-responsive img-circle">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-sm-9">
                                 <h3>VACATION</h3>
                                 <p>Be ready for an unforgettable vacation to the land of the Incas, with promptly transfers at every point (airports, hotels, buses,trains) with knowledgable local Guides on each destination plus the best hotel locations and perks...GOTOPERU team will be always with you</p>
                             </div>
@@ -678,7 +652,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 hidden-xs">
+                <div class="col-md-6 hidden-xs hidden-sm">
                     <img class="img-responsive" src="{{asset('images/contact.png')}}" alt="" width="140" height="140">
                 </div><!-- /.col-lg-4 -->
 
@@ -735,7 +709,7 @@
     <div class="container hidden-xs">
         <div class="text-center font-montserrat margin-top-60">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/groups.png')}}" alt="">
                     </div>
@@ -745,7 +719,7 @@
                     </div>
                     {{--<p></p>--}}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/hour.png')}}" alt="">
                     </div>
@@ -755,7 +729,7 @@
                     </div>
                     {{--<p></p>--}}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/customize.png')}}" alt="">
                     </div>
@@ -767,7 +741,7 @@
                 </div>
             </div>
             <div class="row margin-bottom-30 margin-top-30">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/alert.png')}}" alt="">
                     </div>
@@ -777,7 +751,7 @@
                     </div>
                     {{--<p></p>--}}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/tripadvisor.png')}}" alt="">
                     </div>
@@ -787,7 +761,7 @@
                     </div>
                     {{--<p></p>--}}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="col-md-4 col-lg-offset-4 col-lg-offset-4 col-xs-6 col-xs-offset-3">
                         <img class="img-responsive" src="{{asset('images/icons/item/women.png')}}" alt="">
                     </div>

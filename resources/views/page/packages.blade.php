@@ -1,4 +1,4 @@
-@extends('layouts.page.default')
+    @extends('layouts.page.default')
 
 @section('content')
 
@@ -30,7 +30,7 @@
                     </div>
 
 
-                        <div class="col-lg-12 text-center">
+                        <div class="col-lg-12 text-center hidden-sm">
                             {{--<p class="color-white text-25 no-margin"><b>6 Day</b></p>--}}
                             <h1 class="color-white text-50 color-title-packages">Travel Packages to Peru</h1>
                             {{--<i class="color-white text-25">Machu Picchu, Cusco, Sacred Valley</i>--}}
@@ -82,7 +82,7 @@
         </nav>
     </div> <!-- .cd-secondary-nav -->
 
-    <div class="container-category hidden-xs">
+    <div class="container-category hidden-xs hidden-sm">
         <div class="row padding-top-10 padding-bottom-10"><!--.row -->
             <div class="col-md-1">
                 <img src="{{asset('images/logos/apavit.png')}}" alt="" class="img-responsive">
@@ -131,10 +131,10 @@
             </div>
         </div>
         <div class="row margin-top-20">
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-8">
                 <div class="row">
                     @foreach($paquete as $paquetes)
-                        <div class="col-md-4 margin-bottom-30">
+                        <div class="col-md-4 col-sm-6 margin-bottom-30">
 
 
                             <div class="pacakges-box pacakges-box-package clearfix">
@@ -225,7 +225,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="col-md-3 hidden-xs">
+            <div class="col-md-3 col-sm-4 hidden-xs">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box-duration-title text-18"><b>Duration</b></div>
