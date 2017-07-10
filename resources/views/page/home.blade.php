@@ -481,7 +481,7 @@
             <div class="content-a color-white">
                 <div class="content-b font-montserrat">
                     <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
-                    <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
+                    <h3 class="hidden-xs">Tours starting Daily with our passionate guides, best hotels and smooth local operations.</h3>
                     {{--<a href="https://gotoperu.com/about-us/" target="_blank" class="btn btn-lg btn-warning margin-top-20">Why us</a>--}}
                 </div>
             </div>
@@ -565,9 +565,11 @@
             <div class="row margin-top-40 margin-bottom-20">
                 <div class="col-md-12">
                     <div class="text-center font-montserrat">
-                        <h2>Category</h2>
-                        <h3>Nuestra categorias</h3>
-                        <p>Paquetes turisticos para todo tipo de ocaciones</p>
+                        <h2>Our Categories</h2>
+                        <h3>Pick one category or All ! .... we will make it happen!</h3>
+                        <p>In the bid to provide our travelers with the best holiday experience conceivable, GOTOPERU carefully handpicks a list of TRAVEL STYLES in Peru .</p>
+                        <p>You can create your own holiday experience in Latin America! For example with travel packages including MachuPicchu , Rio and Iguazu Falls or a unforgettable vacation to the Galapagos Islands!.</p>
+                        <p>Our bundle of Peru tour packages focuses on extremely spectacular features at the land of the Incas! ; in addition to this, your Peru travel could be extended to interesting locations in South America for example Ecuador, Brasil, Argentina, Bolivia or Chile.</p>
                     </div>
                 </div>
             </div>
@@ -680,7 +682,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center margin-top-20 margin-bottom-60">
-                        <p class="text-16"><b>Lorem ipsum dolor sit amet, consectetur m illo impedit ipsum laboriosam laudantium modi officiis perspiciatis porro quam similique tenetur. Ad dolore eum nesciunt officia velit.</b></p>
+                        <p class="text-16"><b>From budget accommodations to the most luxury hotels that are a destination itself, we are partners with practically every top quality hotel at every category ( 2 stars. 3 stars, 4 stars, 5 stars ) plus our volume let us offer you great Vacation packages prices as we translate our volume savings to you.</b></p>
                         <a href="" class="btn btn-lg btn-primary margin-top-20">Hotels</a>
                     </div>
                 </div>

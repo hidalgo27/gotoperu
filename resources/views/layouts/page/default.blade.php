@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{mix("css/font-awesome.css")}}">
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 <div class="cd-header">
     {{--    <a href="#0" class="cd-logo"><img src="{{asset('images/cd-logo.svg')}}" alt="Logo"></a>--}}

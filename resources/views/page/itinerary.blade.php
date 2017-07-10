@@ -395,7 +395,7 @@
 
         <div class="row" id="cd-prices">
             <div class="col-md-12">
-                <h3 class="color-goto-grey font-montserrat"><strong>Prices Double</strong></h3>
+                <h3 class="color-goto-grey font-montserrat"><strong>Prices under Double accommodation</strong></h3>
             </div>
         </div>
 
@@ -426,7 +426,7 @@
         </div>
         <div class="row" id="cd-prices">
             <div class="col-md-12">
-                <h3 class="color-goto-grey font-montserrat"><strong>Prices Single</strong></h3>
+                <h3 class="color-goto-grey font-montserrat"><strong>Prices under Single accommodation</strong></h3>
             </div>
         </div>
         <div class="row">

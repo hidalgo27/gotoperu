@@ -2631,3 +2631,33 @@ span.round-tab:hover {
 
 }
 
+.nav-stacked-nav{
+  border-left: solid 1px #C98250;
+}
+.nav-stacked-nav > li > a, .nav-stacked-sub > li > a{
+  color: #000;
+  font-size: 17px;
+}
+.nav-stacked-nav > li.active > a, .nav-stacked-nav > li.active > a:hover, .nav-stacked-nav > li.active > a:focus{
+  background: #EDEDED;
+  border-left: 3px solid #D96011;
+  border-radius: 0;
+  color: #000;
+  font-weight: bold;
+}
+.nav-stacked-sub{
+  margin-left: 20px;
+}
+.nav-stacked-sub > li.active > a, .nav-stacked-sub > li.active > a:hover, .nav-stacked-sub > li.active > a:focus{
+  background: #EDEDED;
+  //border-left: 3px solid #D96011;
+  border-radius: 0;
+  color: #000;
+  font-weight: bold;
+}
+.nav-stacked-box{
+  border-left: 1px solid #a75411;
+}
+.nav-stacked-sub{
+  //border-left: solid 1px #C98250;
+}

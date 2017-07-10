@@ -254,4 +254,8 @@
     </div>
 </div>
 
+    @if($title == "LAKE TITICACA")
+        @include('layouts.page.destinations.lake-titicaca')
+    @endif
+
 @stop

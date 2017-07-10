@@ -286,7 +286,7 @@
         <div class="content-a color-white">
             <div class="content-b font-montserrat">
                 <h2>LOCAL PERUVIAN TRAVEL OPERATOR HIGHLY RECOMENDED IN TRIPADVISOR</h2>
-                <h3 class="hidden-xs">Tours starting Daily with our passionateguides, best hotels and smooth local operations.</h3>
+                <h3 class="hidden-xs">Tours starting Daily with our passionate guides, best hotels and smooth local operations.</h3>
                 {{--<a href="https://gotoperu.com/testimonials/" target="_blank" class="btn btn-lg btn-danger margin-top-20">Why us</a>--}}
             </div>
         </div>
