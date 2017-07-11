@@ -22,7 +22,7 @@
 
                     <div class="carousel-inner">
                         <div class="item active">
-                            <a href="">
+                            <a href="#cd-inquire">
                             <img src="{{asset('images/large-1.png')}}" class="img-responsive">
                             </a>
                         </div>
@@ -39,7 +39,12 @@
                 </div>
 
                 <div class="margin-top-20">
-                    <img src="{{asset('images/large-2.png')}}" class="img-responsive">
+                    <div class="panel panel-info">
+                        <div class="panel-heading text-18 font-montserrat text-center"><b>MACHUPICCHU CRUISE EXCURSION</b></div>
+                        <div class="panel-body">
+                            <img src="{{asset('images/large-2.png')}}" class="img-responsive">
+                        </div>
+                    </div>
                 </div>
 
 
