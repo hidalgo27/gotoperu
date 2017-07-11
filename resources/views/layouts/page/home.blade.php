@@ -137,20 +137,20 @@
         <div class="col-md-7 col-md-offset-5  margin-top-50">
             <div class="">
                 <div class="col-md-12 margin-bottom-20">
-                    <p class="text-23 no-margin">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATION!</p>
+                    <p class="text-23 no-margin color-white-xs">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATION!</p>
                 </div>
                 <div class="col-md-7 no-padding hidden-sm">
                     <div class="text-right">
-                        <p class="text-16 no-margin">$150 average saving</p>
-                        <p class="text-16 no-margin">24/7 local assistance</p>
-                        <p class="text-16 no-margin">100s of testimonials</p>
+                        <p class="text-16 no-margin color-white-xs">$150 average saving</p>
+                        <p class="text-16 no-margin color-white-xs">24/7 local assistance</p>
+                        <p class="text-16 no-margin color-white-xs">100s of testimonials</p>
                     </div>
                     {{--<div class="padding-10">--}}
                         {{--<p class="text-16 no-margin">Book Today</p>--}}
                         {{--<a href="" class="cd-btn-header bg-goto-green">View Offers</a>--}}
                     {{--</div>--}}
                 </div>
-                <div class="col-md-2 hidden-sm">
+                <div class="col-md-2 hidden-sm hidden-xs">
                     {{--<a href="#cd-inquire" class="cd-btn">Inquire Now</a>--}}
                     <a href="#cd-inquire" class="cd-btn"><span class="hide">Inquire Now</span><img src="{{asset('images/icons/item/inquire.png')}}" alt="" class="img-responsive pull-right"></a>
                 </div>
@@ -378,9 +378,8 @@
     </div>
 </div>
 
-<footer class="margin-top-60">
-    <img src="{{asset('images/footer-1.jpg')}}" alt="" class="img-responsive">
-</footer>
+@include('layouts.page.footer')
+
 {{--scripts--}}
 <script>
     window.Laravel = {!! json_encode([

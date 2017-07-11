@@ -14,6 +14,7 @@ a:focus{
 .color-goto-light{color:#adadad;}
 
 /* background colors */
+.bg-white{background:#FFFFFF;}
 .bg-goto-green{background:#7F8429;}
 .bg-goto-orange{background:#ffa500;}
 .bg-goto-gray{background:#333333;}
@@ -2595,6 +2596,12 @@ span.round-tab:hover {
   .text-xs-14{
     font-size:14px;
   }
+  .color-white-xs{
+    color: #FFFFFF;
+  }
+  .text-center-xs{
+    text-align: center;
+  }
   .pacakges-box{
     height: auto !important;
   }
@@ -2660,4 +2667,21 @@ span.round-tab:hover {
 }
 .nav-stacked-sub{
   //border-left: solid 1px #C98250;
+}
+footer p{
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+footer a{
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.divider-footer{
+  border: 1px solid #7F8429;
+}
+
+footer .img-logos img{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }

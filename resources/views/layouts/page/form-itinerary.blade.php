@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <div class="text-center font-montserrat">
                 @foreach($paquete as $paquetes)
-                    <h2>{{$paquetes->codigo}}: {{$paquetes->titulo}}</h2>
+                    <h2 class="color-goto-pink">{{$paquetes->codigo}}: {{$paquetes->titulo}}</h2>
                 @endforeach
                 {{--<h2>Create Your Dream Adventure</h2>--}}
                 {{--<h3>We have it all. Just ask!</h3>--}}

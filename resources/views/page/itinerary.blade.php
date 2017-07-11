@@ -219,13 +219,13 @@
 
                 <div class="row">
                     <div class="col-md-12 hidden-xs">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt illum nihil quia quisquam. Aspernatur distinctio ducimus et expedita fugit libero quibusdam, rerum tempore? Asperiores assumenda cupiditate excepturi officiis sint.
+                        <p>A visit to Machu Picchu would leave you with an irresistible feeling of enchantment. The Incas civilization had an incontestable reputation for stonemasonry which is evident by the classical style in which Machu Picchu was built. The exotic magnificence of the Machu Picchu is captured by the intricate stone craft and structural design which led many archeologists to believe that it was the lost city of the Incas.</p>
+                        <p>Also, this program offer you the best of Cusco city including rich sophistication of buildings and structural designs that are reflective of the diverse historical and cultural influences that the Inca civilization had. From the tough Inca walls to the soaring Spanish churches, you would find that the city is meritorious as a UNESCO World Heritage Site. In addition to all of these historical features, a myriad of tasteful hotels, bars, cafés and every other establishment that is required for a fun filled city experience.</p>
+                        <p>Plus the Sacred Valley excursion would certainly bring you through authentic local markets and exceptional ruins. Indeed, you would mingle with the more traditional Peruvians for a more intimate encounter of village life.</p>
                     </div>
                 </div>
 
-                <div class="row margin-top-40 hidden-xs">
+                <div class="row margin-top-40 hidden-xs hidden">
                     <div class="col-md-12">
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -251,22 +251,25 @@
                                     @endforeach
                                 </b>USD
                             </span>
-                            <p class="text-15">
-                                @foreach($paquete as $paquetes_d)
-                                    @foreach($paquete_destinos->where('idpaquetes',$paquetes_d->id)->take(2) as $paquete_destino)
-                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}},
-                                    @endforeach
-                                @endforeach
-                            </p>
-                            <a class="btn bg-goto-green color-white btn-embossed" style="width: 100%;padding: 10px 0px;" href="#cd-inquire">
+                            {{--<p class="text-15">--}}
+                                {{--@foreach($paquete as $paquetes_d)--}}
+                                    {{--@foreach($paquete_destinos->where('idpaquetes',$paquetes_d->id)->take(2) as $paquete_destino)--}}
+                                        {{--{{ucwords(strtolower($paquete_destino->destinos->nombre))}},--}}
+                                    {{--@endforeach--}}
+                                {{--@endforeach--}}
+                            {{--</p>--}}
+                            <a class="btn bg-goto-green color-white btn-embossed margin-top-20" style="width: 100%;padding: 10px 0px;" href="#cd-inquire">
                                 Choose This Package <span class="fui-triangle-down-small"></span>
                             </a>
 
                             <ul class="itinerary-destinations text-left margin-top-20 margin-bottom-0">
                                 <li class="color-goto-green text-18"><b>Destinations</b></li>
-                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Cusco Tour</li>
-                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Machu Picchu</li>
-                                <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> Sacred Valley</li>
+                                @foreach($paquete as $paquetes_d)
+                                    @foreach($paquete_destinos->where('idpaquetes',$paquetes_d->id) as $paquete_destino)
+                                        <li class="text-16"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ucwords(strtolower($paquete_destino->destinos->nombre))}}</li>
+                                    @endforeach
+                                @endforeach
+
                             </ul>
                         </div>
                     </div>
@@ -302,7 +305,7 @@
                 <div class="cd-articles">
                     @foreach($paquete as $paquetes)
                         @foreach($paquetes->itinerario as $itinerario)
-                            <article class="text-justify display-block margin-bottom-20">
+                            <article class="text-justify display-block margin-bottom-20 clearfix">
                                 <header>
                                     {{--<img src="{{asset('images/banners/cusco.jpg')}}" alt="article image" class="img-responsive">--}}
                                     <h2 class="font-montserrat text-20"><b>Day {{$itinerario->dia}}:</b> {{ucwords(strtolower($itinerario->titulo))}}</h2>
@@ -323,7 +326,7 @@
 
                                 @php echo $itinerario->descripcion; @endphp
 
-                                <button class="btn btn-default" data-toggle="modal" data-target=".img-gallery-{{$itinerario->dia}}">View Gallery</button>
+                                <button class="btn btn-default display-block margin-top-10" data-toggle="modal" data-target=".img-gallery-{{$itinerario->id}}">View Gallery</button>
 
                                 <div class="modal fade img-gallery-{{$itinerario->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">

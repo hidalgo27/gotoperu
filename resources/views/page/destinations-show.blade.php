@@ -254,8 +254,6 @@
     </div>
 </div>
 
-    @if($title == "LAKE TITICACA")
-        @include('layouts.page.destinations.lake-titicaca')
-    @endif
+    @includeIf('layouts.page.destinations.'.str_replace(' ','-',strtolower($title)).'')
 
 @stop
