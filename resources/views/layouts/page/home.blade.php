@@ -60,8 +60,8 @@
                     <div class="col-md-6 col-sm-6">
                         <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-20">View Trip</a>
                     </div>
-                    <div class="col-md-12 text-center margin-top-10">
-                        <b class="text-21">ALL FLIGHTS INCLUDED</b>
+                    <div class="col-md-12 margin-top-10">
+                        <b class="text-22">ALL FLIGHTS INCLUDED</b>
                     </div>
                 </div>
             <div class="row margin-top-10">
@@ -94,15 +94,15 @@
                             </li>
                         </ul>
                     </div>
-                    <p class="text-20 margin-top-5">
-                        <b class="text-25 color-goto-orange"><sup class="color-goto-light">from $ </sup>
+                    <p class="text-20 margin-top-5 text-right">
+                        <b class="text-25 text-right padding-right-10 color-goto-orange"><sup class="color-goto-light">from $ </sup>
                             @foreach($paquetes->precio_paquetes as $precio)
                                 @if($precio->estrellas == 2)
                                     {{$precio->precio_d}}
                                 @endif
                             @endforeach
                         </b>
-                        All Included
+                        {{--All Included--}}
                     </p>
                 </div>
             @endforeach
