@@ -329,7 +329,7 @@
     <div class="row margin-top-60 margin-bottom-20">
         <div class="col-md-12">
             <div class="text-center font-montserrat">
-                <h2 class="color-goto-orange">Outstanding work by our Chief Explorer Kim MacQuarrie</h2>
+                <h2 class="color-goto-orange">We work and live at the Destinations to create the best authentic vacation, yours!</h2>
                 {{--<h3>We have it all. Just ask!</h3>--}}
                 {{--<p>Paquetes turisticos para todo tipo de ocaciones</p>--}}
             </div>
