@@ -360,7 +360,7 @@
                     <img src="{{asset('images/maps/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-responsive">
                     <ul>
                         @foreach($paquete as $paquetes_i)
-                            @foreach($paquetes_i->itinerario->sortBy('duracion') as $itinerario)
+                            @foreach($paquetes_i->itinerario->sortBy('dia') as $itinerario)
                                 <li>
                                     <a href="{{str_replace(' ','-',strtolower( $paquetes_i->titulo))}}">
                                         <em>Day {{$itinerario->dia}}: {{ucwords(strtolower($itinerario->titulo))}}</em>
