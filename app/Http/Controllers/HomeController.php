@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\TCategoria;
 use App\TDestino;
+use App\TIncluyeIcono;
 use App\TPaquete;
 use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
+use App\TPaqueteIncluyeIcono;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -25,10 +27,11 @@ class HomeController extends Controller
         $paquete_m = TPaquete::with('paquetes_destinos', 'precio_paquetes')->where('estado', 4)->get();
         $paquete_h = TPaquete::with('paquetes_destinos', 'precio_paquetes')->where('estado', 5)->get();
         $categoria = TCategoria::get();
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
 
 
-        return view('page.home', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'paquete_f'=>$paquete_f, 'paquete_mg'=>$paquete_mg, 'paquete_m'=>$paquete_m, 'paquete_h'=>$paquete_h, 'categoria'=>$categoria]);
+        return view('page.home', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'paquete_f'=>$paquete_f, 'paquete_mg'=>$paquete_mg, 'paquete_m'=>$paquete_m, 'paquete_h'=>$paquete_h, 'categoria'=>$categoria, 'incluye_i'=>$incluye_i]);
 
     }
 
@@ -58,7 +61,8 @@ class HomeController extends Controller
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.category',['categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.category',['categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'incluye_i'=>$incluye_i]);
     }
 
     public function packages()
@@ -67,7 +71,8 @@ class HomeController extends Controller
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.packages',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.packages',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'incluye_i'=>$incluye_i]);
     }
 
     public function type($type)
@@ -94,7 +99,8 @@ class HomeController extends Controller
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.packages-type',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.packages-type',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type, 'incluye_i'=>$incluye_i]);
     }
 
 
@@ -123,7 +129,8 @@ class HomeController extends Controller
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.packages-type-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type, 'duration'=>$duration, 'paquete_d'=>$paquete_d]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.packages-type-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'type'=>$type, 'duration'=>$duration, 'paquete_d'=>$paquete_d, 'incluye_i'=>$incluye_i]);
     }
 
 
@@ -134,7 +141,8 @@ class HomeController extends Controller
         $categoria = TCategoria::get();
         $paquete_categoria = TPaqueteCategoria::with('paquete')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-        return view('page.packages-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'duration'=>$duration, 'paquete_d'=>$paquete_d]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.packages-duration',['paquete'=>$paquete,'categoria'=>$categoria, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'duration'=>$duration, 'paquete_d'=>$paquete_d, 'incluye_i'=>$incluye_i]);
     }
 
     public function destinations()
@@ -151,10 +159,10 @@ class HomeController extends Controller
         $destinos = TDestino::get();
         $paquete = TPaquete::with('paquetes_destinos', 'precio_paquetes')->get();
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
-
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
         $paquetes_de = TPaqueteDestino::with(['destinos'=>function($query) use ($destinations) { $query->where('nombre', $destinations);}])->get();
 //        dd($paquetes_de);
-        return view('page.destinations-show', ['paquetes_de'=>$paquetes_de, 'paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'destinos'=>$destinos, 'title'=>$destinations]);
+        return view('page.destinations-show', ['paquetes_de'=>$paquetes_de, 'paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'destinos'=>$destinos, 'title'=>$destinations, 'incluye_i'=>$incluye_i]);
     }
 
     /**
@@ -168,7 +176,8 @@ class HomeController extends Controller
         $title = str_replace('-', ' ', strtoupper($titulo));
         $paquete_destinos = TPaqueteDestino::with('destinos')->get();
         $paquete = TPaquete::with('itinerario','paquetes_destinos', 'precio_paquetes')->where('titulo', $title)->get();
-        return view('page.itinerary', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos]);
+        $incluye_i = TPaqueteIncluyeIcono::with('paquete')->get();
+        return view('page.itinerary', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos,'incluye_i'=>$incluye_i]);
     }
     public function mail()
     {

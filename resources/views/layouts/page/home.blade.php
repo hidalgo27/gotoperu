@@ -68,30 +68,11 @@
                 <div class="col-md-12">
                     <div class="list-services text-center">
                         <ul class="no-padding margin-bottom-0">
-                            <li>
-                                <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-responsive">
-                            </li>
-                            <li>
-                                <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-responsive">
-                            </li>
+                            @foreach($incluye_i->where('idpaquetes',$paquetes->id) as $icons)
+                                <li>
+                                    <img src="{{asset('images/icons/include/'.$icons->incluye_iconos->imagen.'')}}" alt="" class="img-responsive" title="Assistances">
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                     <p class="text-20 margin-top-5 text-right">
