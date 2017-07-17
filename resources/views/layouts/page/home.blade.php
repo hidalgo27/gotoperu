@@ -13,6 +13,17 @@
     {{--fonts--}}
     <link rel="stylesheet" href="{{mix("css/font-awesome.css")}}">
 
+    <script type="text/javascript" id="sayquick_floating_widget_moxy9jey">
+        (function(d) {
+            var t = 'script',
+                ul = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            ul.async = true;
+            ul.src = "https://sayquick.com/widgets/floating/moxy9jey.js";
+            s.parentNode.insertBefore(ul, s);
+        })(document);
+    </script>
+    
 </head>
 <body>
 
