@@ -32,6 +32,7 @@ a:focus{
 .text-16{font-size: 16px;}
 .text-14{font-size: 14px;}
 .text-15{font-size: 15px;}
+.text-17{font-size: 17px;}
 .text-18{font-size: 18px;}
 .text-19{font-size: 19px;}
 .text-20{font-size: 20px;}
@@ -2670,6 +2671,113 @@ span.round-tab:hover {
 .nav-stacked-sub{
   //border-left: solid 1px #C98250;
 }
+
+//about
+.about-box {
+  position: relative;
+  padding: 21px 0px 10px;
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+
+.about-box .line-about {
+  position: absolute;
+  width: 4px;
+  display: block;
+  background: currentColor;
+  top: 0px;
+  bottom: 0px;
+  margin-left: 30px;
+}
+
+.about-box .separator {
+  border-top: 1px solid currentColor;
+  padding: 5px;
+  padding-left: 40px;
+  font-style: italic;
+  font-size: .9em;
+  margin-left: 30px;
+}
+
+.about-box .line-about::before { top: -4px; }
+.about-box .line-about::after { bottom: -4px; }
+.about-box .line-about::before,
+.about-box .line-about::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.about-box .panel {
+  position: relative;
+  margin: 10px 0px 21px 70px;
+  clear: both;
+}
+
+.about-box .panel::before {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: -24px;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: inherit;
+  border-width: 12px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.about-box .panel .panel-heading.icon * { font-size: 20px; vertical-align: middle; line-height: 40px; }
+.about-box .panel .panel-heading.icon {
+  position: absolute;
+  left: -59px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+}
+
+.about-box .panel-outline {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-box .panel-outline .panel-body {
+  padding: 10px 0px;
+}
+
+.about-box .panel-outline .panel-heading:not(.icon),
+.about-box .panel-outline .panel-footer {
+  display: none;
+}
+
+.glyphicon-lg{font-size:3em}
+.blockquote-box{border-right:5px solid #E6E6E6;margin-bottom:25px}
+.blockquote-box .square{width:100px;min-height:50px;margin-right:22px;text-align:center!important;background-color:#E6E6E6;padding:20px 0}
+.blockquote-box.blockquote-primary{border-color:#357EBD}
+.blockquote-box.blockquote-primary .square{background-color:#428BCA;color:#FFF}
+.blockquote-box.blockquote-success{border-color:#4CAE4C}
+.blockquote-box.blockquote-success .square{background-color:#5CB85C;color:#FFF}
+.blockquote-box.blockquote-info{border-color:#46B8DA}
+.blockquote-box.blockquote-info .square{background-color:#5BC0DE;color:#FFF}
+.blockquote-box.blockquote-warning{border-color:#EEA236}
+.blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
+.blockquote-box.blockquote-danger{border-color:#D43F3A}
+.blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
+
+
+
 footer p{
   margin: 0;
   color: #FFFFFF;
@@ -2687,3 +2795,4 @@ footer .img-logos img{
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
+

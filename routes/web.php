@@ -57,6 +57,12 @@ Route::get('/travel-packages/{titulo}', [
     'as' => 'home_show_path',
 ]);
 
+//---about
+Route::get('/about', [
+    'uses' => 'HomeController@about',
+    'as' => 'about_path',
+]);
+
 //---form
 Route::post('/design', [
     'uses' => 'HomeController@mail',

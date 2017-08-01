@@ -35,6 +35,11 @@ class HomeController extends Controller
 
     }
 
+    public function about()
+    {
+        return view('page.about');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

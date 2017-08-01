@@ -23,7 +23,7 @@
             s.parentNode.insertBefore(ul, s);
         })(document);
     </script>
-    
+
 </head>
 <body>
 
@@ -177,7 +177,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://gotoperu.com/about-us/" target="_blank">
+                <a href="{{route('about_path')}}">
                     <b>ABOUT US</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
