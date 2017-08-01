@@ -183,7 +183,7 @@
                 </a>
             </li>
             <li>
-                <a href="#tour-packages" target="_blank">
+                <a href="#tour-packages">
                     <b>FLIGHTS</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
