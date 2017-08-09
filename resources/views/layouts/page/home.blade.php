@@ -66,13 +66,13 @@
             @foreach($paquete_h as $paquetes)
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-                        <p class="text-18 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">{{$paquetes->duracion}} days</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
+                        <p class="text-17 color-goto-orange no-margin"><span class="display-block text-30"><b class="color-white">{{$paquetes->duracion}} days</b></span> {{ucfirst(strtolower($paquetes->titulo))}}</p>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="btn btn-warning btn-lg color-white margin-top-20">View Trip</a>
                     </div>
                     <div class="col-md-12 margin-top-10">
-                        <b class="text-22">ALL FLIGHTS INCLUDED</b>
+                        <b class="text-18">ALL FLIGHTS INCLUDED</b>
                     </div>
                 </div>
             <div class="row margin-top-10">
@@ -106,7 +106,7 @@
 
         <div class="col-md-4">
             <div class="hidden-xs">
-                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
+                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-5.png')}}" alt="" class="img-responsive margin-top-20"></a>
                 <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
             </div>
             <div class="hidden-sm hidden-md hidden-lg">
@@ -126,12 +126,13 @@
     <div id="cd-intro-tagline" class="font-montserrat clearfix">
         {{--<h1>Secondary Fixed Navigation</h1>--}}
 
-        <div class="col-md-7 col-md-offset-5  margin-top-50">
+        <div class="col-md-7 col-md-offset-2  margin-top-65">
             <div class="">
                 <div class="col-md-12 margin-bottom-20">
-                    <p class="text-23 no-margin color-white-xs">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b> A DREAM VACATION!</p>
+                    <p class="text-30 no-margin color-white-xs">WE WILL CUSTOMIZE <b class="color-goto-orange">TOGETHER</b>
+                        <br>A DREAM VACATION!</p>
                 </div>
-                <div class="col-md-7 no-padding hidden-sm">
+                <div class="col-md-7 no-padding hidden-sm color-white">
                     <div class="text-right">
                         <p class="text-16 no-margin color-white-xs">$150 average saving</p>
                         <p class="text-16 no-margin color-white-xs">24/7 local assistance</p>
@@ -165,13 +166,13 @@
                 </a>
             </li>
             <li>
-                <a href="{{route('packages_path')}}">
+                <a href="{{route('category_path')}}">
                     <b>BY STYLE</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
             <li>
-                <a href="#reviews">
+                <a href="{{route('testimonials_path')}}">
                     <b>REVIEWS</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>
@@ -182,14 +183,14 @@
                     {{--<span></span><!-- icon -->--}}
                 </a>
             </li>
-            <li>
-                <a href="#tour-packages">
-                    <b>FLIGHTS</b>
+            {{--<li>--}}
+                {{--<a href="#tour-packages">--}}
+                    {{--<b>FLIGHTS</b>--}}
                     {{--<span></span><!-- icon -->--}}
-                </a>
-            </li>
+                {{--</a>--}}
+            {{--</li>--}}
             <li>
-                <a href="https://gotoperu.com/faq/" target="_blank">
+                <a href="{{route('faq_path')}}">
                     <b>FAQ</b>
                     {{--<span></span><!-- icon -->--}}
                 </a>

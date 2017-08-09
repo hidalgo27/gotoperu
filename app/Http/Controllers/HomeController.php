@@ -9,6 +9,7 @@ use App\TPaquete;
 use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
 use App\TPaqueteIncluyeIcono;
+use App\TTestimonio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -38,6 +39,23 @@ class HomeController extends Controller
     public function about()
     {
         return view('page.about');
+    }
+    public function faq()
+    {
+        return view('page.faq');
+    }
+    public function testimonials(Request $request)
+    {
+////        Route::get('tasks', function () {
+//            return view('page.testimonials',[]);
+////        });
+        $testimonials = TTestimonio::paginate(5);
+
+        if ($request->ajax()){
+            return response()->json(view('layouts.page.testimonials', ['testimonials'=>$testimonials])->render());
+        }
+
+        return view('page.testimonials', ['testimonials'=>$testimonials]);
     }
 
     /**

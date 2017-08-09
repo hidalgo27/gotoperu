@@ -12,7 +12,7 @@
                 <div class="box-header container-fluid">
                     <div class="col-md-4">
                         <div class="hidden-xs">
-                            <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
+                            <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-5.png')}}" alt="" class="img-responsive margin-top-20"></a>
                             <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="hidden-sm hidden-md hidden-lg">
@@ -49,35 +49,53 @@
         <nav>
             <ul class="no-margin">
                 <li>
-                    <a href="{{route('type_show_path', 'featured')}}">
-                        <b>Featured</b>
+                    <a href="{{route('packages_path')}}">
+                        <b>TRAVEL PACKAGES</b>
                         {{--<span></span><!-- icon -->--}}
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('type_show_path', 'with-air-from-usa')}}">
-                        <b>With Air From USA</b>
+                    <a href="{{route('category_path')}}">
+                        <b>BY STYLE</b>
                         {{--<span></span><!-- icon -->--}}
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('type_show_path', 'machupicchu-galapagos')}}">
-                        <b>MachuPicchu Galapagos</b>
+                    <a href="{{route('testimonials_path')}}">
+                        <b>REVIEWS</b>
                         {{--<span></span><!-- icon -->--}}
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('type_show_path', 'south-america')}}">
-                        <b>South America</b>
+                    <a href="{{route('about_path')}}">
+                        <b>ABOUT US</b>
+                        {{--<span></span><!-- icon -->--}}
+                    </a>
+                </li>
+                {{--<li>--}}
+                    {{--<a href="#tour-packages">--}}
+                        {{--<b>FLIGHTS</b>--}}
+                        {{--<span></span><!-- icon -->--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                <li>
+                    <a href="{{route('faq_path')}}">
+                        <b>FAQ</b>
                         {{--<span></span><!-- icon -->--}}
                     </a>
                 </li>
                 <li>
-                    <a href="#cd-inquire" class="btn btn-warning color-white">
-                        <b class="color-white">INQUIRE NOW</b>
+                    <a href="https://gotoperu.com/travel-agents/" target="_blank">
+                        <b>TRAVEL AGENTS</b>
                         {{--<span></span><!-- icon -->--}}
                     </a>
                 </li>
+                {{--<li>--}}
+                {{--<a href="#cd-inquire">--}}
+                {{--<b>INQUIRE NOW</b>--}}
+                {{--<span></span><!-- icon -->--}}
+                {{--</a>--}}
+                {{--</li>--}}
             </ul>
         </nav>
     </div> <!-- .cd-secondary-nav -->

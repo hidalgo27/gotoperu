@@ -14,6 +14,8 @@
 
 //web page
 //---homepage
+use App\TTestimonio;
+
 Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home_path',
@@ -61,6 +63,16 @@ Route::get('/travel-packages/{titulo}', [
 Route::get('/about', [
     'uses' => 'HomeController@about',
     'as' => 'about_path',
+]);
+//---faq
+Route::get('/faq', [
+    'uses' => 'HomeController@faq',
+    'as' => 'faq_path',
+]);
+//---testimonials
+Route::get('testimonials', [
+    'uses' => 'HomeController@testimonials',
+    'as' => 'testimonials_path',
 ]);
 
 //---form

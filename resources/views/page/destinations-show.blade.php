@@ -1,4 +1,4 @@
-@extends('layouts.page.default')
+@extends('layouts.page.packages')
 
 @section('content')
 
@@ -12,7 +12,7 @@
             <div class="box-header container-fluid">
                 <div class="col-md-4">
                     <div class="hidden-xs">
-                        <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-3.png')}}" alt="" class="img-responsive margin-top-20"></a>
+                        <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-5.png')}}" alt="" class="img-responsive margin-top-20"></a>
                         <a href="{{route('home_path')}}" id="cd-logo"><img src="{{asset('images/logos/logo-ave-gotoperu.png')}}" alt="" class="img-responsive"></a>
                     </div>
                     <div class="hidden-sm hidden-md hidden-lg">
